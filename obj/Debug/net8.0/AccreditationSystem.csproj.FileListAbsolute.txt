@@ -109,3 +109,4 @@ D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\refint\AccreditationSys
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.pdb
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.genruntimeconfig.cache
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\ref\AccreditationSystem.dll
+D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.sourcelink.json
