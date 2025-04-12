@@ -43,7 +43,7 @@ namespace AccreditationSystem.Pages.Auth
         public string ComfirmPassword { get; set; } = "";
 
         [Required(ErrorMessage = "Role is required")]
-        public string Role { get; set; } = "customer"; // Default role
+        public string Role { get; set; } = "client"; // Default role
 
         public string errorMessage = "";
         public string successMessage = "";
