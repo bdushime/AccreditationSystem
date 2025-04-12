@@ -1,0 +1,376 @@
+﻿@page
+@model AccreditationSchoolSystem.Pages.HomePageModel
+@{
+    ViewData["Title"] = "Accreditation School System";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/home page-style.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a asp-page="/Index" class="logo">
+                    <div class="logo-text">Accreditation System</div>
+                </a>
+                <ul class="nav-links">
+                    <li><a asp-page="/Explore">Explore</a></li>
+                    <li><a asp-page="/Register">Register</a></li>
+                    <li><a asp-page="/Services">Services</a></li>
+                    <li><a asp-page="/Resources">Resources</a></li>
+                    <li><a asp-page="/Help">Help</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <div class="search-icon"><i class="fas fa-search"></i></div>
+                    <div class="language-selector">EN</div>
+                    <a asp-page="/Account/Login" class="login-btn">Log in</a>
+                    <a asp-page="/Account/Register" class="signup-btn">Sign up</a>
+                </div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Accreditation-school-system</h1>
+                <p>Empowering Excellence: Accredited Education for a Brighter Future</p>
+
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-value">14</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-value">19</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-value">36</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+
+                <a asp-page="/Application/Apply" class="hero-btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <div class="container">
+        <div class="search-section">
+            <div class="search-tabs">
+                <div class="search-tab active"><i class="fas fa-search"></i> Track Application</div>
+                <div class="search-tab"><i class="fas fa-school"></i> School Registration</div>
+                <div class="search-tab"><i class="fas fa-check-circle"></i> Accreditation Status</div>
+                <div class="search-tab"><i class="fas fa-certificate"></i> Quality Check</div>
+            </div>
+
+            <div class="round-trip-options">
+                <div class="trip-option">
+                    <input type="radio" id="application-id" name="search-type" checked>
+                    <label for="application-id">Application ID</label>
+                </div>
+                <div class="trip-option">
+                    <input type="radio" id="school-name" name="search-type">
+                    <label for="school-name">School Name</label>
+                </div>
+                <div class="trip-option">
+                    <input type="radio" id="recent-applications" name="search-type">
+                    <label for="recent-applications">Recent Applications</label>
+                </div>
+            </div>
+
+            <form method="post" asp-page-handler="TrackApplication" class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label asp-for="TrackingId">From</label>
+                        <input asp-for="TrackingId" type="text" placeholder="Enter application ID or school name">
+                        <span asp-validation-for="TrackingId" class="text-danger"></span>
+                    </div>
+
+                    <div class="destination-arrows">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="StatusFilter">To</label>
+                        <select asp-for="StatusFilter" asp-items="Model.StatusOptions">
+                            <option value="">Select status</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group date-group">
+                        <label>Start Date</label>
+                        <div class="date-value">@Model.StartDate.ToString("dd MMM yyyy")</div>
+                        <input asp-for="StartDate" type="hidden">
+                    </div>
+
+                    <div class="form-group date-group">
+                        <label>End Date</label>
+                        <div class="date-value">@Model.EndDate.ToString("dd MMM yyyy")</div>
+                        <input asp-for="EndDate" type="hidden">
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ApplicationTypeId">Application Type</label>
+                        <select asp-for="ApplicationTypeId" asp-items="Model.ApplicationTypes">
+                            <option value="">Select type</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                    <label class="trip-option">
+                        <input asp-for="IncludeExpired" type="checkbox">
+                        <span>Include expired applications</span>
+                    </label>
+
+                    <a href="#" class="promo-code-link">
+                        <i class="fas fa-plus"></i> Add reference number
+                    </a>
+                </div>
+
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="container">
+        <div class="quick-links">
+            <div class="quick-links-grid">
+                @foreach (var quickLink in Model.QuickLinks)
+                {
+                    <a asp-page="@quickLink.Url" class="quick-link">
+                        <i class="@quickLink.IconClass"></i>
+                        <div class="quick-link-title">@quickLink.Title</div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Planning Section -->
+    <section class="container">
+        <h2 class="section-title">Start planning your next steps</h2>
+        <div class="services-grid">
+            @foreach (var service in Model.PlanningServices)
+            {
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('@service.ImageUrl')">
+                        <div class="service-img-overlay">
+                            <div class="service-img-title">@service.Title</div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">@service.Description</p>
+                        <a asp-page="@service.Url" class="service-btn">@service.ButtonText</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Find Great Options Section -->
+    <section class="container featured-destinations">
+        <h2 class="section-title">Find great options</h2>
+        <div class="services-grid">
+            @foreach (var option in Model.EducationOptions)
+            {
+                <div class="service-card destination-card">
+                    <img src="@option.ImageUrl" alt="@option.Title" class="destination-img">
+                    <div class="destination-overlay">
+                        <div class="destination-name">@option.Title</div>
+                        <div class="destination-dates">@option.DateRange</div>
+                        <div class="destination-price">@option.PriceInfo</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Never miss an update</h3>
+                    <p>Subscribe and be the first to receive our exclusive updates on educational standards and accreditation opportunities.</p>
+                </div>
+                <form method="post" asp-page-handler="Subscribe" class="newsletter-form">
+                    <input type="email" asp-for="SubscriberEmail" placeholder="Email address" required>
+                    <span asp-validation-for="SubscriberEmail" class="text-danger"></span>
+
+                    <input type="text" asp-for="SubscriberCity" placeholder="Preferred city">
+                    <span asp-validation-for="SubscriberCity" class="text-danger"></span>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" asp-for="SubscriberConsent" id="newsletter-consent">
+                        <label for="newsletter-consent">I would like to get offers and news from Accreditation System. I have read and understood the privacy notice.</label>
+                        <span asp-validation-for="SubscriberConsent" class="text-danger"></span>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h2>Milestones & Achievements</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">March 2025</div>
+                <div class="timeline-title">Launched Our First Web App</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">January 2024</div>
+                <div class="timeline-title">Recognized for Innovation in Tech Education</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">June 2023</div>
+                <div class="timeline-title">Expanded Globally to 5 New Countries</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                @foreach (var column in Model.FooterColumns)
+                {
+                    <div class="footer-column">
+                        <h4>@column.Title</h4>
+                        <ul class="footer-links">
+                            @foreach (var link in column.Links)
+                            {
+                                <li><a asp-page="@link.Url">@link.Text</a></li>
+                            }
+                        </ul>
+
+                        @if (column.Title == "Help")
+                        {
+                            <h4>Let's stay connected</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    @foreach (var link in Model.FooterBottomLinks)
+                    {
+                        <a asp-page="@link.Url">@link.Text</a>
+                    }
+                </div>
+                <p>Accreditation School System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Countdown timer functionality
+        function updateCountdown() {
+            // Set a target date for the special offer
+            const currentTime = new Date();
+            const targetTime = new Date();
+            targetTime.setHours(currentTime.getHours() + 14);
+            targetTime.setMinutes(currentTime.getMinutes() + 19);
+            targetTime.setSeconds(currentTime.getSeconds() + 36);
+
+            // Calculate remaining time
+            const timeRemaining = targetTime - currentTime;
+
+            if (timeRemaining <= 0) {
+                // Reset the countdown if expired
+                document.querySelector('.countdown-item:nth-child(1) .countdown-value').textContent = "00";
+                document.querySelector('.countdown-item:nth-child(3) .countdown-value').textContent = "00";
+                document.querySelector('.countdown-item:nth-child(5) .countdown-value').textContent = "00";
+                return;
+            }
+
+            // Calculate hours, minutes, seconds
+            const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Update the countdown display
+            document.querySelector('.countdown-item:nth-child(1) .countdown-value').textContent = hours.toString().padStart(2, '0');
+            document.querySelector('.countdown-item:nth-child(3) .countdown-value').textContent = minutes.toString().padStart(2, '0');
+            document.querySelector('.countdown-item:nth-child(5) .countdown-value').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+
+        // Initialize countdown
+        updateCountdown();
+
+        // Tab switching functionality
+        $(document).ready(function() {
+            $('.search-tab').click(function() {
+                // Remove active class from all tabs
+                $('.search-tab').removeClass('active');
+
+                // Add active class to clicked tab
+                $(this).addClass('active');
+            });
+
+            // Mobile menu toggle
+            $('.menu-toggle').click(function() {
+                $('.nav-links').toggleClass('mobile-visible');
+                $('.auth-buttons').toggleClass('mobile-visible');
+            });
+
+            // Show/hide success message
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <text>
+                            const successMessage = $('<div class="success-message">@TempData["SuccessMessage"]</div>');
+                            $('body').append(successMessage);
+                            setTimeout(() => {
+                                successMessage.fadeOut(() => {
+                                    successMessage.remove();
+                                });
+                            }, 5000);
+            </text>
+        }
+        });
+    </script>
+</body>
+</html>

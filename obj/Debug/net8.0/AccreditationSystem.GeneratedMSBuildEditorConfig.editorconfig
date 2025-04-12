@@ -9,65 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AccreditationSystem
 build_property.RootNamespace = AccreditationSystem
-build_property.ProjectDir = D:\C#projectsOthers\AccreditationSystem\
+build_property.ProjectDir = C:\Users\hp\source\repos\AccreditationSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\C#projectsOthers\AccreditationSystem
+build_property.MSBuildProjectDirectory = C:\Users\hp\source\repos\AccreditationSystem
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Admin/Dashboard.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Auth/ForgotPassword.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Auth/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Auth/Login.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Auth/Register.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Auth/VerifyEmail.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Auth/VerifyEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Customer/Dashboard.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Customer/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Error.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Index.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Privacy.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/_ViewImports.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/_ViewStart.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Shared/_Layout.cshtml]
+[C:/Users/hp/source/repos/AccreditationSystem/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nxwrk6nrl1
