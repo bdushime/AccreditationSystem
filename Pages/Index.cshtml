@@ -1,10 +1,199 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid p-0">
+    <!-- Hero Section -->
+    <div class="hero-section text-center py-5">
+        <div class="container py-3">
+            <h1 class="display-5 fw-bold text-white mb-3">Accreditation-school-system</h1>
+            <p class="lead mb-4 text-white">Empowering Excellence: Accredited Education for a Brighter Future</p>
+        </div>
+    </div>
+
+    <!-- Request Types Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Select Request Type</h2>
+
+        <div class="row g-4">
+            <!-- New School Registration -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-building fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">New School Registration</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/SchoolRegistration" class="btn btn-primary mt-2">Register New School</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Claim -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-file-earmark-text fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Submit Claim</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/SubmitClaim" class="btn btn-primary mt-2">Submit Claim</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tvet Trades -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-tools fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Tvet Trades</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/RequestTVETTrade" class="btn btn-primary mt-2">Register New School</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General combination -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-grid-3x3 fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">General combination</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/GeneralCombination" class="btn btn-outline-primary mt-2">Apply</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Level -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-book fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Primary Level</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/PrimaryLevelAddition" class="btn btn-outline-primary mt-2">Apply</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Level -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-book-half fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Secondary Level</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/SecondaryLevelAddition" class="btn btn-outline-primary mt-2">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Our Services</h2>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Track Application -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-search fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Track Application</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/Client/TrackApplication" class="btn btn-outline-primary mt-2">Track</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accreditated schools -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-container mb-3">
+                            <i class="bi bi-award fs-1"></i>
+                        </div>
+                        <h3 class="card-title fs-5">Accreditated schools</h3>
+                        <p class="card-text small">
+                            Start your journey in education by registering a new school. Get accredited and meet quality standards for establishing an educational institution.
+                        </p>
+                        <a href="/AccreditedSchools" class="btn btn-outline-primary mt-2">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+        <style>
+            .hero-section {
+                background-color: #1550a6;
+                padding: 3rem 0;
+            }
+
+            .icon-container {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                height: 4rem;
+                color: #333;
+            }
+
+            .btn-primary {
+                background-color: #1550a6;
+                border-color: #1550a6;
+            }
+
+            .btn-outline-primary {
+                color: #1550a6;
+                border-color: #1550a6;
+            }
+
+            .btn-outline-primary:hover {
+                background-color: #1550a6;
+                border-color: #1550a6;
+            }
+
+            .card {
+                transition: transform 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+        </style>
+}

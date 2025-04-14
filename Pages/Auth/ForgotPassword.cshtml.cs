@@ -89,9 +89,11 @@ namespace AccreditationSystem.Pages.Auth
                         protocol: Request.Scheme);
 
                     // Prepare email body
+
+
                     string emailBody = $@"
                         <h2>Password Reset Request</h2>
-                        <p>You requested to reset your password for your BestShop account. Please click the link below to set a new password:</p>
+                        <p>You requested to reset your password for your Accredu account. Please click the link below to set a new password:</p>
                         <p><a href='{resetLink}'>Reset Your Password</a></p>
                         <p>This link will expire in 24 hours.</p>
                         <p>If you didn't request this password reset, please ignore this email or contact support if you have concerns.</p>
