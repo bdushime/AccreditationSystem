@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#projectsOthers\\AccreditationSystem\\AccreditationSystem.csproj": {}
+    "C:\\Users\\hp\\Source\\Repos\\AccreditationSystem\\AccreditationSystem.csproj": {}
   },
   "projects": {
-    "D:\\C#projectsOthers\\AccreditationSystem\\AccreditationSystem.csproj": {
+    "C:\\Users\\hp\\Source\\Repos\\AccreditationSystem\\AccreditationSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#projectsOthers\\AccreditationSystem\\AccreditationSystem.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\AccreditationSystem\\AccreditationSystem.csproj",
         "projectName": "AccreditationSystem",
-        "projectPath": "D:\\C#projectsOthers\\AccreditationSystem\\AccreditationSystem.csproj",
-        "packagesPath": "C:\\Users\\BeniEgide\\.nuget\\packages\\",
-        "outputPath": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Source\\Repos\\AccreditationSystem\\AccreditationSystem.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Source\\Repos\\AccreditationSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\BeniEgide\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,9 +54,25 @@
               "target": "Package",
               "version": "[4.11.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "MimeKit": {
               "target": "Package",

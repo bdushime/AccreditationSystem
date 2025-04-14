@@ -1,0 +1,165 @@
+﻿@page
+@model AccreditationSystem.Pages.ApplicationsListModel
+@{
+    ViewData["Title"] = "Manage Applications";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold mb-0">Manage Applications</h2>
+    <button class="btn btn-primary">
+        <i class="bi bi-plus-lg me-2"></i>New Application
+    </button>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0">
+                        <i class="bi bi-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0 ps-0" placeholder="Search" id="searchInput">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="statusFilter">
+                    <option value="">All Statuses</option>
+                    <option value="draft">Draft</option>
+                    <option value="under-review">Under Review</option>
+                    <option value="approved">Approved</option>
+                    <option value="rejected">Rejected</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="serviceFilter">
+                    <option value="">Choose service</option>
+                    <option value="tvet-trades">TVET TRADES</option>
+                    <option value="primary-level">Primary Level</option>
+                    <option value="ordinary-level">Ordinary Level</option>
+                    <option value="advanced-level">Advanced Level</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col" style="width: 40px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="selectAll">
+                        </div>
+                    </th>
+                    <th scope="col">Profile</th>
+                    <th scope="col">Service</th>
+                    <th scope="col">National ID</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < 10; i++)
+                {
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar-circle bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <img src="https://via.placeholder.com/40" class="rounded-circle" alt="Profile">
+                                </div>
+                                <span>lycee@gmail.com</span>
+                            </div>
+                        </td>
+                        <td>
+                            @{
+                                string[] services = { "TVET TRADES", "Primary Level", "Ordinary Level" };
+                                int serviceIndex = i % services.Length;
+                            }
+                            @services[serviceIndex]
+                        </td>
+                        <td>1199256789012</td>
+                        <td>+250788102039</td>
+                        <td>
+                            @{
+                                string[] statuses = { "Draft", "Rejected", "Draft" };
+                                string[] statusClasses = { "status-draft", "status-rejected", "status-draft" };
+                                int statusIndex = i % statuses.Length;
+                            }
+                            <span class="status-indicator @statusClasses[statusIndex]">
+                                @if (statuses[statusIndex] == "Draft")
+                                {
+                                    <i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i>
+                                }
+                                else if (statuses[statusIndex] == "Rejected")
+                                {
+                                    <i class="bi bi-x-circle-fill me-1" style="font-size: 8px;"></i>
+                                }
+                                @statuses[statusIndex]
+                            </span>
+                        </td>
+                        <td class="text-end">
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    Actions
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer bg-white py-3">
+        <div class="row align-items-center">
+            <div class="col-md-6 small">
+                Showing <span class="fw-medium">5</span> of <span class="fw-medium">50</span>
+            </div>
+            <div class="col-md-6">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-end mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo; Prev</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">Next &raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Select all checkboxes functionality
+        document.getElementById('selectAll').addEventListener('change', function() {
+            const checkboxes = document.querySelectorAll('tbody .form-check-input');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+    </script>
+}

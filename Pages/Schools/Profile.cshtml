@@ -1,0 +1,338 @@
+﻿@page
+@model AccreditationSystem.Pages.SchoolProfileModel
+@{
+    ViewData["Title"] = "School Profile";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold mb-0">School Profile</h2>
+    <p class="text-secondary mb-0">Manage your school's information and accreditation details</p>
+    <button class="btn btn-primary" id="editProfileBtn">
+        <i class="bi bi-pencil me-2"></i>Edit Profile
+    </button>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="profile-avatar mx-auto mb-3">
+                    <span>CS</span>
+                </div>
+                <h4 class="fw-bold mb-1">Central School</h4>
+                <p class="text-muted mb-0">Est. 1992</p>
+
+                <div class="mt-3 mb-4">
+                    <span class="badge bg-light text-primary border border-primary border-opacity-25 px-3 py-2">
+                        <i class="bi bi-hourglass-split me-1"></i> In Progress
+                    </span>
+                </div>
+
+                <div class="text-muted small">
+                    <p class="mb-1">Last updated</p>
+                    <p class="fw-medium mb-0">Mar 15, 2025</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h5 class="card-subtitle mb-3 pb-2 border-bottom">Contact Information <a href="#" class="float-end text-decoration-none small">Edit</a></h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                    <span>
+                                        123 Education Ave<br>
+                                        Northern District<br>
+                                        City, State 12345
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                    <span>+1 (555) 123-4567</span>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-envelope text-primary me-2"></i>
+                                    <span>info@centralschool.edu</span>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-globe text-primary me-2"></i>
+                                    <span>www.centralschool.edu</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="card-subtitle mb-3 pb-2 border-bottom">Accreditation History</h5>
+                            <div class="timeline">
+                                <div class="timeline-item ps-4 mb-3">
+                                    <div class="d-flex">
+                                        <div class="me-2">
+                                            <small class="text-muted">Mar 2023 - Mar 2025</small>
+                                            <h6 class="mb-0 fw-semibold">Full Accreditation</h6>
+                                        </div>
+                                    </div>
+                                    <p class="small text-muted mb-0">Standard Academic Program</p>
+                                </div>
+                                <div class="timeline-item ps-4">
+                                    <div class="d-flex">
+                                        <div class="me-2">
+                                            <small class="text-muted">Mar 2021 - Mar 2023</small>
+                                            <h6 class="mb-0 fw-semibold">Provisional Accreditation</h6>
+                                        </div>
+                                    </div>
+                                    <p class="small text-muted mb-0">Standard Academic Program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h5 class="card-subtitle mb-3 pb-2 border-bottom">School Information <a href="#" class="float-end text-decoration-none small">Edit</a></h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">School Type</p>
+                                    <p class="fw-medium mb-0">Secondary School</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">Grade Levels</p>
+                                    <p class="fw-medium mb-0">Grades 9-12</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">Student Population</p>
+                                    <p class="fw-medium mb-0">1,250</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">Teacher-Student Ratio</p>
+                                    <p class="fw-medium mb-0">1:16</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">Number of Staff</p>
+                                    <p class="fw-medium mb-0">78</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-muted small mb-1">Programs Offered</p>
+                                    <p class="fw-medium mb-0">12</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="card-subtitle mb-3">Description</h5>
+                            <p class="text-muted small">Central School is a comprehensive secondary educational institution providing quality education to students from diverse backgrounds. The school focuses on academic excellence, character development, and preparing students for higher education and careers. Founded in 1992, we have a rich history of academic achievement and community engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+        <h5 class="card-title fw-bold mb-0">Facilities</h5>
+        <a href="#" class="btn btn-sm btn-outline-primary">Add Facility</a>
+    </div>
+    <div class="card-body">
+        <div class="row g-4">
+            <!-- Science Laboratory -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Science Laboratory</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Capacity:</span>
+                                <span class="fw-medium">30 students</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Equipment:</span>
+                                <span class="fw-medium">Microscopes, apparatus, chemicals, safety kits</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Lab -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Lab</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Capacity:</span>
+                                <span class="fw-medium">25 students</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Equipment:</span>
+                                <span class="fw-medium">25 desktop computers, interactive whiteboard</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Library -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Library</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Capacity:</span>
+                                <span class="fw-medium">50 students</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Resources:</span>
+                                <span class="fw-medium">Books, tablets, digital resources, study areas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Field -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports Field</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Type:</span>
+                                <span class="fw-medium">Multi-purpose</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Facilities:</span>
+                                <span class="fw-medium">Soccer field, basketball court, track</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Accreditation Documents -->
+<div class="card mb-4">
+    <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+        <h5 class="card-title fw-bold mb-0">Accreditation Documents</h5>
+        <button class="btn btn-sm btn-outline-primary">
+            <i class="bi bi-upload me-2"></i>Upload Document
+        </button>
+    </div>
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Document Name</th>
+                    <th>Type</th>
+                    <th>Uploaded Date</th>
+                    <th>Status</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <i class="bi bi-file-earmark-pdf text-danger me-2"></i>
+                        <span>School Registration Certificate.pdf</span>
+                    </td>
+                    <td>Registration</td>
+                    <td>Jan 15, 2025</td>
+                    <td><span class="badge bg-success-subtle text-success">Verified</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary me-1">View</button>
+                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-file-earmark-text text-primary me-2"></i>
+                        <span>Staff Qualifications.docx</span>
+                    </td>
+                    <td>Staff Records</td>
+                    <td>Feb 22, 2025</td>
+                    <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary me-1">View</button>
+                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="bi bi-file-earmark-excel text-success me-2"></i>
+                        <span>Student Performance Data.xlsx</span>
+                    </td>
+                    <td>Performance</td>
+                    <td>Mar 05, 2025</td>
+                    <td><span class="badge bg-success-subtle text-success">Verified</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary me-1">View</button>
+                        <button class="btn btn-sm btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Inspection History -->
+<div class="card">
+    <div class="card-header bg-white py-3">
+        <h5 class="card-title fw-bold mb-0">Inspection History</h5>
+    </div>
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Date</th>
+                    <th>Inspector</th>
+                    <th>Type</th>
+                    <th>Result</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mar 12, 2025</td>
+                    <td>John Doe</td>
+                    <td>Annual Review</td>
+                    <td><span class="badge bg-success-subtle text-success">Passed</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary">View Report</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sep 05, 2024</td>
+                    <td>Jane Smith</td>
+                    <td>Facilities Evaluation</td>
+                    <td><span class="badge bg-success-subtle text-success">Passed</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary">View Report</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mar 18, 2024</td>
+                    <td>Robert Johnson</td>
+                    <td>Annual Review</td>
+                    <td><span class="badge bg-warning-subtle text-warning">Conditional Pass</span></td>
+                    <td class="text-end">
+                        <button class="btn btn-sm btn-outline-secondary">View Report</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('editProfileBtn').addEventListener('click', function() {
+            // This would trigger the edit mode in a real implementation
+            alert('Edit profile functionality would open here');
+        });
+    </script>
+}

@@ -1,0 +1,597 @@
+﻿@page
+@model AccreditationSystem.Pages.EquipmentModel
+@{
+    ViewData["Title"] = "Equipment Management";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold mb-0">Equipment Management</h2>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEquipmentModal">
+        <i class="bi bi-plus-lg me-2"></i>Add Equipment
+    </button>
+</div>
+
+<!-- Filters and Search -->
+<div class="card mb-4">
+    <div class="card-body p-3">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0">
+                        <i class="bi bi-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0 ps-0" placeholder="Search equipment" id="searchEquipment">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="lab">Laboratory</option>
+                    <option value="computer">Computer</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="sports">Sports</option>
+                    <option value="office">Office</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="statusFilter">
+                    <option value="">All Statuses</option>
+                    <option value="available">Available</option>
+                    <option value="in-use">In Use</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="retired">Retired</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Equipment Summary -->
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle bg-primary bg-opacity-10 p-3 me-3">
+                        <i class="bi bi-boxes text-primary fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-semibold mb-0">Total Equipment</h6>
+                        <small class="text-muted">All items</small>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-0">487</h3>
+                <div class="progress mt-3" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle bg-success bg-opacity-10 p-3 me-3">
+                        <i class="bi bi-check-circle text-success fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-semibold mb-0">Available</h6>
+                        <small class="text-muted">Ready to use</small>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-0">352</h3>
+                <div class="progress mt-3" style="height: 5px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle bg-warning bg-opacity-10 p-3 me-3">
+                        <i class="bi bi-tools text-warning fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-semibold mb-0">Maintenance</h6>
+                        <small class="text-muted">Being repaired</small>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-0">38</h3>
+                <div class="progress mt-3" style="height: 5px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle bg-danger bg-opacity-10 p-3 me-3">
+                        <i class="bi bi-exclamation-triangle text-danger fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-semibold mb-0">Needs Attention</h6>
+                        <small class="text-muted">Critical issues</small>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-0">12</h3>
+                <div class="progress mt-3" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Equipment List -->
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col" style="width: 40px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="selectAll">
+                        </div>
+                    </th>
+                    <th scope="col">Equipment</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Purchase Date</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Condition</th>
+                    <th scope="col" class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lab Equipment -->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded p-2 me-3">
+                                <i class="bi bi-microscope text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="fw-medium d-block">Compound Microscope</span>
+                                <small class="text-muted">High-resolution, 1000x magnification</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>LAB-MS-1001</td>
+                    <td>Laboratory</td>
+                    <td>Science Lab 1</td>
+                    <td>Jan 15, 2024</td>
+                    <td><span class="badge bg-success-subtle text-success px-3 py-2">Available</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="progress" style="width: 50px; height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <span>Excellent</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>View Details</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-tools me-2"></i>Report Issue</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Computer Equipment -->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded p-2 me-3">
+                                <i class="bi bi-laptop text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="fw-medium d-block">Desktop Computer</span>
+                                <small class="text-muted">i5 Processor, 16GB RAM, 512GB SSD</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>COMP-PC-2035</td>
+                    <td>Computer</td>
+                    <td>Computer Lab</td>
+                    <td>Mar 22, 2024</td>
+                    <td><span class="badge bg-success-subtle text-success px-3 py-2">Available</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="progress" style="width: 50px; height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <span>Good</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>View Details</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-tools me-2"></i>Report Issue</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Classroom Equipment -->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded p-2 me-3">
+                                <i class="bi bi-display text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="fw-medium d-block">Interactive Whiteboard</span>
+                                <small class="text-muted">75-inch, touch-enabled</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>CLS-IWB-504</td>
+                    <td>Classroom</td>
+                    <td>Room 205</td>
+                    <td>Sep 10, 2024</td>
+                    <td><span class="badge bg-warning-subtle text-warning px-3 py-2">Maintenance</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="progress" style="width: 50px; height: 8px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <span>Fair</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>View Details</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-tools me-2"></i>Report Issue</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Sports Equipment -->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded p-2 me-3">
+                                <i class="bi bi-disc text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="fw-medium d-block">Basketball Hoops</span>
+                                <small class="text-muted">Regulation height, adjustable</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>SPT-BB-201</td>
+                    <td>Sports</td>
+                    <td>Gymnasium</td>
+                    <td>May 05, 2024</td>
+                    <td><span class="badge bg-success-subtle text-success px-3 py-2">Available</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="progress" style="width: 50px; height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <span>Good</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>View Details</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-tools me-2"></i>Report Issue</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Office Equipment -->
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-light rounded p-2 me-3">
+                                <i class="bi bi-printer text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="fw-medium d-block">Multifunction Printer</span>
+                                <small class="text-muted">Color, duplex, networked</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>OFF-PR-105</td>
+                    <td>Office</td>
+                    <td>Admin Office</td>
+                    <td>Feb 18, 2024</td>
+                    <td><span class="badge bg-danger-subtle text-danger px-3 py-2">Needs Repair</span></td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="progress" style="width: 50px; height: 8px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <span>Poor</span>
+                        </div>
+                    </td>
+                    <td class="text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-eye me-2"></i>View Details</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-tools me-2"></i>Report Issue</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-2"></i>Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer bg-white py-3">
+        <div class="row align-items-center">
+            <div class="col-md-6 small">
+                Showing <span class="fw-medium">5</span> of <span class="fw-medium">487</span> items
+            </div>
+            <div class="col-md-6">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-end mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo; Prev</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">Next &raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Equipment Modal -->
+<div class="modal fade" id="addEquipmentModal" tabindex="-1" aria-labelledby="addEquipmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="addEquipmentModalLabel">Add New Equipment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="equipmentName" class="form-label fw-medium">Equipment Name *</label>
+                            <input type="text" class="form-control" id="equipmentName" placeholder="Enter equipment name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="equipmentId" class="form-label fw-medium">Equipment ID *</label>
+                            <input type="text" class="form-control" id="equipmentId" placeholder="e.g., LAB-MS-1002" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="category" class="form-label fw-medium">Category *</label>
+                            <select class="form-select" id="category" required>
+                                <option value="" selected disabled>Select category</option>
+                                <option value="lab">Laboratory</option>
+                                <option value="computer">Computer</option>
+                                <option value="classroom">Classroom</option>
+                                <option value="sports">Sports</option>
+                                <option value="office">Office</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="location" class="form-label fw-medium">Location *</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter location" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="purchaseDate" class="form-label fw-medium">Purchase Date *</label>
+                            <input type="date" class="form-control" id="purchaseDate" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="purchasePrice" class="form-label fw-medium">Purchase Price *</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="purchasePrice" placeholder="0.00" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="status" class="form-label fw-medium">Status *</label>
+                            <select class="form-select" id="status" required>
+                                <option value="" selected disabled>Select status</option>
+                                <option value="available">Available</option>
+                                <option value="in-use">In Use</option>
+                                <option value="maintenance">Maintenance</option>
+                                <option value="retired">Retired</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="condition" class="form-label fw-medium">Condition *</label>
+                            <select class="form-select" id="condition" required>
+                                <option value="" selected disabled>Select condition</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="description" class="form-label fw-medium">Description</label>
+                            <textarea class="form-control" id="description" rows="3" placeholder="Enter detailed description"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="manufacturer" class="form-label fw-medium">Manufacturer</label>
+                            <input type="text" class="form-control" id="manufacturer" placeholder="Enter manufacturer">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="model" class="form-label fw-medium">Model</label>
+                            <input type="text" class="form-control" id="model" placeholder="Enter model number">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="serialNumber" class="form-label fw-medium">Serial Number</label>
+                            <input type="text" class="form-control" id="serialNumber" placeholder="Enter serial number">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="warrantyExpiry" class="form-label fw-medium">Warranty Expiry</label>
+                            <input type="date" class="form-control" id="warrantyExpiry">
+                        </div>
+                        <div class="col-12">
+                            <label for="equipmentImage" class="form-label fw-medium">Upload Image</label>
+                            <input class="form-control" type="file" id="equipmentImage">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Save Equipment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Select all functionality
+        document.getElementById('selectAll').addEventListener('change', function() {
+            const checkboxes = document.querySelectorAll('tbody .form-check-input');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+
+        // Search equipment functionality
+        document.getElementById('searchEquipment').addEventListener('keyup', function() {
+            const searchTerm = this.value.toLowerCase();
+            const tableRows = document.querySelectorAll('tbody tr');
+
+            tableRows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if(text.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filter functionality
+        document.getElementById('categoryFilter').addEventListener('change', function() {
+            const category = this.value.toLowerCase();
+            const tableRows = document.querySelectorAll('tbody tr');
+
+            if (category === '') {
+                tableRows.forEach(row => row.style.display = '');
+                return;
+            }
+
+            tableRows.forEach(row => {
+                const rowCategory = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
+                if (rowCategory.includes(category)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Status filter functionality
+        document.getElementById('statusFilter').addEventListener('change', function() {
+            const status = this.value.toLowerCase();
+            const tableRows = document.querySelectorAll('tbody tr');
+
+            if (status === '') {
+                tableRows.forEach(row => row.style.display = '');
+                return;
+            }
+
+            tableRows.forEach(row => {
+                const statusBadge = row.querySelector('td:nth-child(7) .badge');
+                if (statusBadge) {
+                    const rowStatus = statusBadge.textContent.toLowerCase();
+                    if (rowStatus.includes(status)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+}

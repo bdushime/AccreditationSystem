@@ -1,0 +1,291 @@
+﻿@page
+@model AccreditationSystem.Pages.FacilitiesEvaluationModel
+@{
+    ViewData["Title"] = "Facilities Evaluation";
+}
+
+<div class="mb-4">
+    <h2 class="fw-bold mb-3">Facilities Evaluation</h2>
+    <p class="text-muted">All items marked with * are required</p>
+</div>
+
+<form method="post">
+    <div class="accordion custom-accordion mb-4" id="facilitiesAccordion">
+        <!-- Classroom Facilities -->
+        <div class="accordion-item rounded-3 mb-3 shadow-sm border">
+            <h2 class="accordion-header" id="headingClassroom">
+                <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassroom" aria-expanded="true" aria-controls="collapseClassroom">
+                    <div class="d-flex align-items-center">
+                        <span class="fw-semibold">Classroom Facilities</span>
+                        <span class="ms-2 tag-critical">Critical</span>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapseClassroom" class="accordion-collapse collapse show" aria-labelledby="headingClassroom">
+                <div class="accordion-body">
+                    <h6 class="fw-semibold mb-3">Verification Checklist</h6>
+                    <div class="mb-4">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="classroomSize">
+                            <label class="form-check-label" for="classroomSize">
+                                Classrooms meet minimum size requirements (25 sq ft per student)
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="lighting">
+                            <label class="form-check-label" for="lighting">
+                                Adequate lighting and ventilation in all classrooms
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="seating">
+                            <label class="form-check-label" for="seating">
+                                Sufficient seating for all enrolled students
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="equipment">
+                            <label class="form-check-label" for="equipment">
+                                Teaching equipment as per curriculum requirements
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="emergencyExit">
+                            <label class="form-check-label" for="emergencyExit">
+                                Emergency exit signs and evacuation plans posted
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="classroomsVerified" class="form-label fw-medium">Number of Classrooms Verified *</label>
+                            <input type="number" class="form-control" id="classroomsVerified" placeholder="15" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="averageSize" class="form-label fw-medium">Average Size (sq ft) *</label>
+                            <input type="number" class="form-control" id="averageSize" placeholder="560" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="averageCapacity" class="form-label fw-medium">Average Capacity *</label>
+                            <input type="number" class="form-control" id="averageCapacity" placeholder="25" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="conditionRating" class="form-label fw-medium">Condition Rating *</label>
+                            <select class="form-select" id="conditionRating" required>
+                                <option value="Excellent" selected>Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Satisfactory">Satisfactory</option>
+                                <option value="NeedsImprovement">Needs Improvement</option>
+                                <option value="Unsatisfactory">Unsatisfactory</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Laboratory Facilities -->
+        <div class="accordion-item rounded-3 mb-3 shadow-sm border">
+            <h2 class="accordion-header" id="headingLab">
+                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLab" aria-expanded="false" aria-controls="collapseLab">
+                    <div class="d-flex align-items-center">
+                        <span class="fw-semibold">Laboratory Facilities</span>
+                        <span class="ms-2 tag-important">Important</span>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapseLab" class="accordion-collapse collapse" aria-labelledby="headingLab">
+                <div class="accordion-body">
+                    <h6 class="fw-semibold mb-3">Verification Checklist</h6>
+                    <div class="mb-4">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="labEquipment">
+                            <label class="form-check-label" for="labEquipment">
+                                Lab equipment meets curriculum requirements
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="safetyEquipment">
+                            <label class="form-check-label" for="safetyEquipment">
+                                Safety equipment (fire extinguishers, first aid) available
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="properStorage">
+                            <label class="form-check-label" for="properStorage">
+                                Proper storage for chemicals and hazardous materials
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="adequateSpace">
+                            <label class="form-check-label" for="adequateSpace">
+                                Adequate space for practical work (at least 40 sq ft per student)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="numberOfLabs" class="form-label fw-medium">Number of Laboratories *</label>
+                            <input type="number" class="form-control" id="numberOfLabs" placeholder="2" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="labTypes" class="form-label fw-medium">Types of Labs *</label>
+                            <input type="text" class="form-control" id="labTypes" placeholder="Science, Computer" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="equipmentCondition" class="form-label fw-medium">Equipment Condition *</label>
+                            <select class="form-select" id="equipmentCondition" required>
+                                <option value="Modern" selected>Modern</option>
+                                <option value="Good">Good</option>
+                                <option value="Adequate">Adequate</option>
+                                <option value="Outdated">Outdated</option>
+                                <option value="Inadequate">Inadequate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="safetyRating" class="form-label fw-medium">Safety Rating *</label>
+                            <select class="form-select" id="safetyRating" required>
+                                <option value="Excellent" selected>Excellent</option>
+                                <option value="Good">Good</option>
+                                <option value="Satisfactory">Satisfactory</option>
+                                <option value="NeedsImprovement">Needs Improvement</option>
+                                <option value="Unsatisfactory">Unsatisfactory</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Library Resources -->
+        <div class="accordion-item rounded-3 mb-3 shadow-sm border">
+            <h2 class="accordion-header" id="headingLibrary">
+                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLibrary" aria-expanded="false" aria-controls="collapseLibrary">
+                    <div class="d-flex align-items-center">
+                        <span class="fw-semibold">Library Resources</span>
+                        <span class="ms-2 tag-standard">Standard</span>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapseLibrary" class="accordion-collapse collapse" aria-labelledby="headingLibrary">
+                <div class="accordion-body">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="totalBooks" class="form-label fw-medium">Total Books *</label>
+                            <input type="number" class="form-control" id="totalBooks" placeholder="5240" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="digitalResources" class="form-label fw-medium">Digital Resources *</label>
+                            <select class="form-select" id="digitalResources" required>
+                                <option value="Extensive" selected>Extensive</option>
+                                <option value="Adequate">Adequate</option>
+                                <option value="Limited">Limited</option>
+                                <option value="None">None</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="seatingCapacity" class="form-label fw-medium">Seating Capacity *</label>
+                            <input type="number" class="form-control" id="seatingCapacity" placeholder="50" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="staff" class="form-label fw-medium">Staff *</label>
+                            <input type="text" class="form-control" id="staff" placeholder="2 Full-time librarians" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overall Assessment -->
+    <div class="card mb-4">
+        <div class="card-header bg-white py-3">
+            <h5 class="card-title fw-bold mb-0">Overall Assessment</h5>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">Overall Facilities Rating *</label>
+                        <div class="d-flex gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="facilitiesRating" id="ratingExcellent">
+                                <label class="form-check-label" for="ratingExcellent">Excellent</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="facilitiesRating" id="ratingGood" checked>
+                                <label class="form-check-label" for="ratingGood">Good</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="facilitiesRating" id="ratingSatisfactory">
+                                <label class="form-check-label" for="ratingSatisfactory">Satisfactory</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="facilitiesRating" id="ratingNeeds">
+                                <label class="form-check-label" for="ratingNeeds">Needs Improvement</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="facilitiesRating" id="ratingUnsatisfactory">
+                                <label class="form-check-label" for="ratingUnsatisfactory">Unsatisfactory</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">Compliance with Standards *</label>
+                        <div class="d-flex gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="compliance" id="complianceFully" checked>
+                                <label class="form-check-label" for="complianceFully">Fully Compliant</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="compliance" id="complianceMostly">
+                                <label class="form-check-label" for="complianceMostly">Mostly Compliant</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="compliance" id="compliancePartially">
+                                <label class="form-check-label" for="compliancePartially">Partially Compliant</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="compliance" id="complianceNon">
+                                <label class="form-check-label" for="complianceNon">Non-Compliant</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="comments" class="form-label fw-medium">Comments (Optional)</label>
+                <textarea class="form-control" id="comments" rows="4" placeholder="Enter any additional comments or observations..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-secondary me-2">Save Draft</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        // Enable tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    </script>
+}
