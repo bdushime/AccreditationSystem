@@ -114,7 +114,7 @@ namespace AccreditationSystem.Pages.Auth
 
                 // Prepare email body
                 string emailBody = $@"
-                    <h2>Welcome to BestShop, {FirstName}!</h2>
+                    <h2>Welcome to Accredu, {FirstName}!</h2>
                     <p>Thank you for registering with us. Please verify your email address by clicking the link below:</p>
                     <p><a href='{verificationLink}'>Verify Email Address</a></p>
                     <p>If you didn't create this account, please ignore this email.</p>
@@ -123,7 +123,7 @@ namespace AccreditationSystem.Pages.Auth
                 // Send verification email
                 await _emailService.SendEmailAsync(
                     Email,
-                    "BestShop - Verify Your Email Address",
+                    "AccreEdu - Verify Your Email Address",
                     emailBody);
 
                 successMessage = "Account created successfully! Please check your email to verify your account.";
