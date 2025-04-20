@@ -38,8 +38,8 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            padding: 0 2rem;
+            justify-content: flex-start;
+            padding: 2rem;
             overflow-y: auto;
             max-width: 50%;
         }
@@ -72,8 +72,8 @@
         }
 
         .btn-primary {
-            background-color: #4f46e5;
-            border: none;
+            background-color: #1550a6;
+            border-color: #1550a6;
             padding: 0.75rem 1rem;
             border-radius: 8px;
             font-weight: 500;
@@ -81,8 +81,8 @@
         }
 
         .btn-outline-primary {
-            border: 1px solid #4f46e5;
-            color: #4f46e5;
+            border: 1px solid #1550a6;
+            color: #1550a6;
             background-color: transparent;
             padding: 0.75rem 1rem;
             border-radius: 8px;
@@ -91,30 +91,34 @@
         }
 
         .btn-primary:hover {
-            background-color: #4338ca;
+            background-color: #0d3d7a;
+            border-color: #0d3d7a;
         }
 
         .btn-outline-primary:hover {
-            background-color: #4f46e5;
+            background-color: #1550a6;
             color: white;
+            border-color: #1550a6;
         }
 
         .link-primary {
-            color: #4f46e5;
+            color: #1550a6;
             text-decoration: none;
         }
 
-        .link-primary:hover {
-            text-decoration: underline;
+            .link-primary:hover {
+                text-decoration: underline;
+            }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
         }
 
-        .nav-link {
-            color: #4f46e5;
-            text-decoration: none;
-            text-align: right;
-            display: block;
-            margin-bottom: 1rem;
-        }
+            .nav-buttons .btn {
+                width: auto;
+            }
 
         @@media (max-width: 992px) {
             .split-screen {
@@ -128,6 +132,7 @@
             .form-container {
                 height: 70vh;
                 max-width: 100%;
+                padding: 1rem;
             }
 
             .form-content {
@@ -141,9 +146,9 @@
         <div class="building-image"></div>
         <div class="form-container">
             <div class="form-content">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <a href="/">Accreditation</a>
-                    <a class="nav-link" href="/Auth/Login">Login</a>
+                <div class="nav-buttons">
+                    <a href="/" class="btn btn-primary" style="max-width: 150px;">Accreditation</a>
+                    <a class="btn btn-outline-primary" href="/Auth/Login" style="max-width: 150px;">Login</a>
                 </div>
 
                 <div class="form-header">
@@ -153,17 +158,17 @@
 
                 @if (Model.errorMessage.Length > 0)
                 {
-                                <div class="alert alert-warning alert-dismissible fade show" role='alert'>
-                                    <strong>@Model.errorMessage</strong>
-                                    <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label='Close'></button>
-                                </div>
+                    <div class="alert alert-warning alert-dismissible fade show" role='alert'>
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
                 }
                 else if (Model.successMessage.Length > 0)
                 {
-                                <div class="alert alert-success alert-dismissible fade show" role='alert'>
-                                    <strong>@Model.successMessage</strong>
-                                    <button type="button" class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                                </div>
+                    <div class="alert alert-success alert-dismissible fade show" role='alert'>
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
                 }
 
                 <form method="post">
@@ -212,7 +217,7 @@
                     <div class="form-group">
                         <label class="form-label">Role</label>
                         <select class="form-select form-control" asp-for="Role">
-                            <option value="customer">Customer</option>
+                            <option value="client">Client</option>
                             <option value="admin">Admin</option>
                         </select>
                         <span asp-validation-for="Role" class="text-danger"></span>

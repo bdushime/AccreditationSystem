@@ -1,0 +1,48 @@
+﻿@* /Pages/Shared/_Header.cshtml *@
+@{
+    var currentPage = ViewContext.RouteData.Values["page"]?.ToString() ?? string.Empty;
+}
+
+<header class="bg-white shadow-sm border-b border-gray-200">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo -->
+            <div class="flex items-center flex-shrink-0">
+                <a href="#" class="text-indigo-600 font-bold text-xl">Accreditation</a>
+            </div>
+            <!-- Center Navigation -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a asp-area="" asp-page="/Hod_Dashboard/HOD_HOME"
+                   class="@(currentPage.EndsWith("/Hod_Dashboard/HOD_HOME") ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-gray-900") px-3 py-2 text-sm font-medium">
+                    Home
+                </a>
+                <a asp-area="" asp-page="/Hod_Dashboard/HOD_Applications"
+                   class="@(currentPage.EndsWith("HOD_Applications") ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-gray-900") px-3 py-2 text-sm font-medium">
+                    Applications
+                </a>
+                <a asp-area="" asp-page="/Hod_Dashboard/HOD_Schools"
+                   class="@(currentPage.EndsWith("HOD_Schools") ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-gray-900") px-3 py-2 text-sm font-medium">
+                    Schools
+                </a>
+                <a asp-area="" asp-page="/Hod_Dashboard/HOD_Inspections"
+                   class="@(currentPage.EndsWith("HOD_Inspections") ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-gray-900") px-3 py-2 text-sm font-medium">
+                    Inspections
+                </a>
+                <a asp-area="" asp-page="/Hod_Dashboard/HOD_Claims"
+                   class="@(currentPage.EndsWith("HOD_Claims") ? "text-indigo-600 border-b-2 border-indigo-600" : "text-gray-500 hover:text-gray-900") px-3 py-2 text-sm font-medium">
+                    Claims
+                </a>
+            </nav>
+            <!-- User menu -->
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <span class="bg-gray-200 text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-sm font-medium">JK</span>
+                    <span class="text-gray-700 font-medium">HOD</span>
+                </div>
+                <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-300 rounded shadow-sm text-sm">
+                    Sign out
+                </button>
+            </div>
+        </div>
+    </div>
+</header>

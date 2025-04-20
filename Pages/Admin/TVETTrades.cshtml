@@ -1,0 +1,1549 @@
+﻿@page
+@model ResponsiveEducationPortal.Pages.TVETTradesModel
+@{
+    ViewData["Title"] = "TVET Programs & Courses";
+}
+
+<!-- Header Section with Logo -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <!-- Logo -->
+                    <a href="/" class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-7 10 7-10 7-10-7v10a8 8 0 1016 0" />
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Accreditation</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden md:ml-8 md:flex space-x-6">
+                    <a href="/" class="text-primary-700 font-medium">Home</a>
+                    @* <a href="/about" class="text-gray-600 hover:text-primary-700 font-medium">About</a> *@
+                    @* <a href="/services" class="text-gray-600 hover:text-primary-700 font-medium">Services</a> *@
+                    @* <a href="/resources" class="text-gray-600 hover:text-primary-700 font-medium">Resources</a> *@
+                    @* <a href="/contact" class="text-gray-600 hover:text-primary-700 font-medium">Contact</a> *@
+                </nav>
+            </div>
+            <!-- Auth Buttons -->
+            <div class="flex items-center space-x-3">
+                <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
+                <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Modern Hero Section with Midnight Blue -->
+<div class="tvet-hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-white mb-4">Discover Your Path to Success</h1>
+                <p class="display fw-normal text-white-50 mb-5">Explore our comprehensive range of Technical and Vocational Education programs designed to equip you with in-demand skills for today's job market.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#programs" class="btn btn-btn-lightg px-4 py-2 d-inline-flex align-items-center">
+                        <i class="fas fa-search me-2"></i> Explore Programs
+                    </a>
+                    <a href="#categories" class="btn btn-outline-light btn-lg px-4 py-2 d-inline-flex align-items-center">
+                        <i class="fas fa-th-large me-2"></i> View Categories
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="tvet-hero-image">
+                    <img src="/images/tvet-trades.jpg" alt="TVET Programs" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Section -->
+<div class="tvet-stats py-4">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <div class="stat-label">Programs</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-item">
+                    <div class="stat-number">15k+</div>
+                    <div class="stat-label">Graduates</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-item">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">Employment Rate</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Industry Partners</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search and Filter Section with Card Design -->
+<section id="programs" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8">
+                <div class="search-card">
+                    <h3 class="search-title">Find Your Perfect Program</h3>
+                    <form method="get" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="searchKeyword" name="searchTerm" value="@Model.SearchTerm" placeholder="Search by keyword">
+                                    <label for="searchKeyword">Search by keyword</label>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-floating">
+                                    <select class="form-select" id="categoryFilter" name="category" asp-for="Category" asp-items="Model.Categories">
+                                        <option value="">All Categories</option>
+                                    </select>
+                                    <label for="categoryFilter">Category</label>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary h-100 w-100">
+                                    <i class="fas fa-search"></i> <span class="d-none d-md-inline ms-2">Search</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Filters Display -->
+        @if (Model.SearchTerm != null || Model.Category != null)
+        {
+            <div class="filter-tags mb-4">
+                <div class="d-flex align-items-center flex-wrap">
+                    <span class="filter-label me-2">Active filters:</span>
+                    @if (!string.IsNullOrEmpty(Model.SearchTerm))
+                    {
+                        <span class="filter-badge">
+                            <span>Keyword: @Model.SearchTerm</span>
+                            <a href="?category=@Model.Category" class="filter-remove" aria-label="Remove filter">×</a>
+                        </span>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Category))
+                    {
+                        <span class="filter-badge">
+                            <span>Category: @Model.Category</span>
+                            <a href="?searchTerm=@Model.SearchTerm" class="filter-remove" aria-label="Remove filter">×</a>
+                        </span>
+                    }
+                    <a href="/TVETTrades" class="filter-clear ms-auto">Clear all</a>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Categories Section with Modern Cards -->
+<section id="categories" class="categories-section py-5">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-subtitle">Explore Possibilities</span>
+            <h2 class="section-title">Program Categories</h2>
+            <p class="section-description mx-auto">Discover diverse fields of study to match your interests and career goals</p>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var category in Model.CategoryList)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="?category=@category.Key" class="category-card">
+                        <div class="category-icon">
+                            <i class="@category.Icon"></i>
+                        </div>
+                        <h3 class="category-title">@category.Key</h3>
+                        <p class="category-count">@category.Value programs</p>
+                        <div class="category-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Featured Programs Section -->
+<section class="featured-programs py-5">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-subtitle">Top Choices</span>
+            <h2 class="section-title">Featured Programs</h2>
+            <p class="section-description mx-auto">Our most popular and in-demand programs with excellent job prospects</p>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var program in Model.Programs.Take(3))
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card">
+                        <div class="program-header">
+                            <h3 class="program-title">@program.Name</h3>
+                            <span class="program-category">@program.Category</span>
+                        </div>
+                        <div class="program-details">
+                            <div class="program-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>@program.Duration</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>@program.Level</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>@program.Certification</span>
+                                </div>
+                            </div>
+                            <p class="program-description">@(program.Description.Length > 120 ? program.Description.Substring(0, 120) + "..." : program.Description)</p>
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#programModal-@program.Id">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-5">
+            <a href="#programsList" class="btn btn-primary btn-lg px-4">
+                View All Programs
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-subtitle">Success Stories</span>
+            <h2 class="section-title">What Our Graduates Say</h2>
+            <p class="section-description mx-auto">Hear from students who have transformed their careers through our TVET programs</p>
+        </div>
+        
+        <div class="testimonial-slider">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">The Web Development program provided me with practical skills that I was able to apply immediately. Within two months of graduation, I secured a position as a junior developer at a tech startup.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">Michael Johnson</h5>
+                                <p class="testimonial-program">Web Development Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">The hands-on training in the Electrical Installation program was exactly what I needed. The instructors have real industry experience and taught us practical skills that employers value.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">Sarah Williams</h5>
+                                <p class="testimonial-program">Electrical Installation Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">As a career changer, I was worried about entering a new field. The Nursing Assistant program provided a supportive environment and thorough training that gave me the confidence I needed.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h5 class="testimonial-name">David Thompson</h5>
+                                <p class="testimonial-program">Nursing Assistant Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All Programs List Section -->
+<section id="programsList" class="all-programs py-5">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-subtitle">Comprehensive Listing</span>
+            <h2 class="section-title">@(string.IsNullOrEmpty(Model.Category) ? "All Programs" : Model.Category + " Programs")</h2>
+            <p class="section-description mx-auto">Browse our complete catalog of technical and vocational programs</p>
+        </div>
+
+        <!-- Programs Table -->
+        <div class="table-responsive programs-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Program Name</th>
+                        <th>Category</th>
+                        <th>Duration</th>
+                        <th>Level</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var program in Model.Programs)
+                    {
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="program-icon me-3">
+                                        <i class="fas fa-bookmark"></i>
+                                    </div>
+                                    <div>
+                                        <strong>@program.Name</strong>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="category-pill">@program.Category</span></td>
+                            <td>@program.Duration</td>
+                            <td>@program.Level</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#programModal-@program.Id">
+                                    <i class="fas fa-info-circle me-1"></i> Details
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Empty State (when no programs are found) -->
+        @if (Model.Programs.Count == 0)
+        {
+            <div class="empty-state">
+                <div class="empty-state-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="empty-state-title">No Programs Found</h3>
+                <p class="empty-state-text">We couldn't find any programs matching your search criteria. Try adjusting your filters or search terms.</p>
+                <a href="/TVETTrades" class="btn btn-primary">View All Programs</a>
+            </div>
+        }
+
+        <!-- Pagination -->
+        @if (Model.TotalPages > 1)
+        {
+            <div class="pagination-wrapper mt-5">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item @(Model.CurrentPage == 1 ? "disabled" : "")">
+                            <a class="page-link" href="?page=@(Model.CurrentPage - 1)&category=@Model.Category&searchTerm=@Model.SearchTerm" aria-label="Previous">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="?page=@i&category=@Model.Category&searchTerm=@Model.SearchTerm">@i</a>
+                            </li>
+                        }
+                        <li class="page-item @(Model.CurrentPage == Model.TotalPages ? "disabled" : "")">
+                            <a class="page-link" href="?page=@(Model.CurrentPage + 1)&category=@Model.Category&searchTerm=@Model.SearchTerm" aria-label="Next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Industry Partners Section -->
+<section class="partners-section py-5">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <span class="section-subtitle">Trusted By Industry</span>
+            <h2 class="section-title">Our Industry Partners</h2>
+            <p class="section-description mx-auto">Leading companies that collaborate with us to provide industry-relevant training and job opportunities</p>
+        </div>
+        
+        <div class="partners-logos">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-building"></i>
+                        <span>TechCorp</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-hospital"></i>
+                        <span>HealthPlus</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-industry"></i>
+                        <span>BuildPro</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoMech</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>CuisineGroup</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="partner-logo">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>DevSphere</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="cta-card">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="cta-title">Ready to Start Your Career Journey?</h2>
+                    <p class="cta-text">Get personalized guidance from our career advisors to find the perfect program for your goals.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <a href="/Contact" class="btn btn-light btn-lg pulse-animation">Contact an Advisor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program Detail Modals -->
+@foreach (var program in Model.Programs)
+{
+    <div class="modal fade" id="programModal-@program.Id" tabindex="-1" aria-labelledby="programModalLabel-@program.Id" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="programModalLabel-@program.Id">@program.Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="program-modal-content">
+                        <div class="program-modal-header mb-4">
+                            <div class="badge program-category-badge mb-2">@program.Category</div>
+                            <div class="program-modal-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: @program.Duration</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Level: @program.Level</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Certification: @program.Certification</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="program-description-card">
+                                    <h6 class="card-subtitle"><i class="fas fa-info-circle me-2"></i>Program Description</h6>
+                                    <p>@program.Description</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="program-requirements-card">
+                                    <h6 class="card-subtitle"><i class="fas fa-list-check me-2"></i>Entry Requirements</h6>
+                                    <p>@program.EntryRequirements</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="program-careers-card">
+                                    <h6 class="card-subtitle"><i class="fas fa-briefcase me-2"></i>Career Opportunities</h6>
+                                    <ul class="career-list">
+                                        @foreach (var career in program.CareerOpportunities)
+                                        {
+                                            <li><i class="fas fa-check-circle me-2"></i>@career</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="/Assessment?trade=@program.Name" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Styles {
+    <style>
+        :root {
+            --midnight-blue: #191970;
+            --midnight-blue-light: #2a2a8a;
+            --midnight-blue-dark: #0c0c45;
+            --accent-gold: #ffd700;
+            --accent-gold-light: #ffe666;
+            --light-bg: #f8f9fa;
+            --light-gray: #e9ecef;
+            --medium-gray: #ced4da;
+            --dark-gray: #6c757d;
+            --white: #ffffff;
+            --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+            --shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            --shadow-lg: 0 1rem 3rem rgba(0,0,0,.175);
+            --border-radius: 0.5rem;
+            --border-radius-lg: 1rem;
+            --transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .tvet-hero {
+            background: rgb(0, 0, 0);
+            position: relative;
+            padding: 5rem 0;
+            color: var(--midnight-blue);
+            overflow: hidden;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 1.9);
+        }
+
+        .hero i {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: midnight-blue(255, 255, 255, 1.9);
+        }
+
+        .tvet-hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            background-image: url('/images/tvet-trades.jpg');
+            opacity: 0.2;
+        }
+
+        .tvet-hero .display-4 {
+            font-weight: 900;
+            position: relative;
+        }
+
+        .tvet-hero .display-4::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--midnight-blue-dark);
+            border-radius: 2px;
+        }
+
+        .tvet-hero-image {
+            position: relative;
+        }
+
+        .tvet-hero-image img {
+            max-height: 900px;
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Stats Section */
+        .tvet-stats {
+            background-color: var(--white);
+            margin-top: -30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-item {
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--midnight-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+
+        /* Search Card */
+        .search-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .search-title {
+            color: var(--midnight-blue);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .search-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            border-radius: 1.5px;
+        }
+
+        .form-floating > .form-control,
+        .form-floating > .form-select {
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+        }
+
+            .form-floating > .form-control:focus,
+            .form-floating > .form-select:focus {
+                border-color: var(--midnight-blue-light);
+                box-shadow: 0 0 0 0.25rem rgba(25, 25, 112, 0.25);
+            }
+
+        /* Filter Tags */
+        .filter-tags {
+            padding: 1rem 0;
+        }
+
+        .filter-label {
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+
+        .filter-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--light-gray);
+            color: var(--midnight-blue);
+            border-radius: 50px;
+            padding: 0.35rem 0.75rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .filter-remove {
+            margin-left: 0.5rem;
+            font-size: 1.25rem;
+            line-height: 0.7;
+            color: var(--dark-gray);
+            text-decoration: none;
+        }
+
+            .filter-remove:hover {
+                color: var(--midnight-blue);
+            }
+
+        .filter-clear {
+            color: var(--midnight-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .filter-clear:hover {
+                text-decoration: underline;
+            }
+
+        /* Section Headings */
+        .section-heading {
+            margin-bottom: 3rem;
+        }
+
+        .section-subtitle {
+            display: inline-block;
+            background-color: rgba(25, 25, 112, 0.1);
+            color: var(--midnight-blue);
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            color: var(--midnight-blue);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 3px;
+                background-color: var(--accent-gold);
+                border-radius: 1.5px;
+            }
+
+        .section-description {
+            color: var(--dark-gray);
+            max-width: 600px;
+        }
+
+        /* Category Cards */
+        .categories-section {
+            background-color: var(--light-bg);
+        }
+
+        .category-card {
+            display: block;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            border: 1px solid transparent;
+        }
+
+            .category-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow);
+                border-color: var(--midnight-blue-light);
+            }
+
+        .category-icon {
+            font-size: 2.5rem;
+            color: var(--midnight-blue);
+            margin-bottom: 1rem;
+        }
+
+        .category-title {
+            color: var(--midnight-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .category-count {
+            color: var(--dark-gray);
+            margin-bottom: 0;
+            font-size: 0.875rem;
+        }
+
+        .category-arrow {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            color: var(--midnight-blue-light);
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: var(--transition);
+        }
+
+        .category-card:hover .category-arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Program Cards */
+        .program-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid var(--light-gray);
+            position: relative;
+        }
+
+            .program-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow);
+                border-color: var(--midnight-blue-light);
+            }
+
+        .program-header {
+            background-color: var(--midnight-blue);
+            padding: 1.5rem;
+            color: var(--white);
+        }
+
+        .program-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .program-category {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+        }
+
+        .program-details {
+            padding: 1.5rem;
+        }
+
+        .program-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            color: var(--dark-gray);
+            font-size: 0.875rem;
+        }
+
+            .info-item i {
+                margin-right: 0.5rem;
+                color: var(--midnight-blue);
+            }
+
+        .program-description {
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        /* Programs Table */
+        .programs-table {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+            .programs-table .table {
+                margin-bottom: 0;
+            }
+
+            .programs-table th {
+                background-color: var(--midnight-blue);
+                color: var(--white);
+                font-weight: 600;
+                border-bottom: none;
+                padding: 1rem;
+            }
+
+            .programs-table td {
+                padding: 1rem;
+                vertical-align: middle;
+            }
+
+            .programs-table tbody tr {
+                transition: var(--transition);
+                border-bottom: 1px solid var(--light-gray);
+            }
+
+                .programs-table tbody tr:hover {
+                    background-color: rgba(25, 25, 112, 0.05);
+                }
+
+        .program-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(25, 25, 112, 0.1);
+            color: var(--midnight-blue);
+            border-radius: 50%;
+        }
+
+        .category-pill {
+            display: inline-block;
+            background-color: rgba(25, 25, 112, 0.1);
+            color: var(--midnight-blue);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+        }
+
+        /* Pagination */
+        .pagination-wrapper {
+            margin-top: 2rem;
+        }
+
+        .pagination .page-link {
+            color: var(--midnight-blue);
+            border: 1px solid var(--light-gray);
+            margin: 0 0.25rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: var(--midnight-blue);
+            border-color: var(--midnight-blue);
+            color: var(--white);
+        }
+
+        .pagination .page-link:hover {
+            background-color: rgba(25, 25, 112, 0.1);
+            border-color: var(--midnight-blue-light);
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: var(--medium-gray);
+        }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            height: 100%;
+            transition: var(--transition);
+            border-top: 3px solid var(--midnight-blue);
+        }
+
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-lg);
+            }
+
+        .testimonial-quote {
+            color: var(--midnight-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-bg);
+            border-radius: 50%;
+            color: var(--midnight-blue);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        .testimonial-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--midnight-blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-program {
+            font-size: 0.875rem;
+            color: var(--dark-gray);
+            margin-bottom: 0;
+        }
+
+        /* Partner Logos */
+        .partners-section {
+            background-color: var(--white);
+        }
+
+        .partner-logo {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+            .partner-logo i {
+                font-size: 2rem;
+                color: var(--midnight-blue);
+                margin-bottom: 0.5rem;
+            }
+
+            .partner-logo span {
+                font-weight: 600;
+                color: var(--dark-gray);
+                font-size: 0.875rem;
+            }
+
+            .partner-logo:hover {
+                transform: scale(1.05);
+                background-color: var(--white);
+                box-shadow: var(--shadow);
+            }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--light-bg);
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, var(--midnight-blue) 0%, var(--midnight-blue-light) 100%);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+            .cta-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url("/images/hero-bg.JPG");
+                opacity: 0.3;
+            }
+
+        .cta-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .cta-text {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-bottom: 0;
+        }
+
+        /* Modal Styling */
+        .modal-header {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            border-bottom: none;
+        }
+
+        .modal-title {
+            font-weight: 600;
+        }
+
+        .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        .program-modal-content {
+            padding: 1rem;
+        }
+
+        .program-category-badge {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            font-weight: 500;
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+        }
+
+        .program-modal-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+            .program-modal-meta .meta-item {
+                display: flex;
+                align-items: center;
+                color: var(--dark-gray);
+            }
+
+                .program-modal-meta .meta-item i {
+                    color: var(--midnight-blue);
+                    margin-right: 0.5rem;
+                }
+
+        .program-description-card,
+        .program-requirements-card,
+        .program-careers-card {
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .card-subtitle {
+            color: var(--midnight-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .career-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .career-list li {
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .career-list li i {
+                    color: var(--midnight-blue);
+                    margin-right: 0.5rem;
+                }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            color: var(--medium-gray);
+            margin-bottom: 1rem;
+        }
+
+        .empty-state-title {
+            font-size: 1.5rem;
+            color: var(--midnight-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .empty-state-text {
+            color: var(--dark-gray);
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Custom Button Styles */
+        .btn-primary {
+            background-color: var(--midnight-blue);
+            border-color: var(--midnight-blue);
+        }
+
+            .btn-primary:hover,
+            .btn-primary:focus {
+                background-color: var(--midnight-blue-light);
+                border-color: var(--midnight-blue-light);
+            }
+
+        .btn-outline-primary {
+            color: var(--midnight-blue);
+            border-color: var(--midnight-blue);
+        }
+
+            .btn-outline-primary:hover,
+            .btn-outline-primary:focus {
+                background-color: var(--midnight-blue);
+                border-color: var(--midnight-blue);
+                color: var(--white);
+            }
+
+        .btn-outline-light:hover,
+        .btn-outline-light:focus {
+            color: var(--midnight-blue);
+            background-color: var(--white);
+            border-color: var(--white);
+        }
+        /* Change these in your CSS */
+        @@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @@keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(25, 25, 112, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(25, 25, 112, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(25, 25, 112, 0);
+            }
+        }
+
+        @@keyframes shimmer {
+            0% {
+                transform: translate(-100%, -100%) rotate(30deg);
+            }
+
+            100% {
+                transform: translate(100%, 100%) rotate(30deg);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @@media (max-width: 991.98px) {
+            .tvet-hero {
+                padding: 4rem 0;
+            }
+
+                .tvet-hero .display-4 {
+                    font-size: 2.5rem;
+                }
+
+            .cta-card {
+                padding: 2rem;
+            }
+        }
+
+        @@media (max-width: 767.98px) {
+            .tvet-hero {
+                padding: 3rem 0;
+            }
+
+                .tvet-hero .display-4 {
+                    font-size: 2rem;
+                }
+
+            .tvet-stats {
+                margin-top: -20px;
+            }
+
+            .search-card {
+                padding: 1.5rem;
+            }
+            /* ... rest of your media query CSS ... */
+        }
+
+        @@media (max-width: 575.98px) {
+            .tvet-hero {
+                padding: 2.5rem 0;
+            }
+
+                .tvet-hero .display-4 {
+                    font-size: 1.75rem;
+                }
+
+        .stat-number {
+            font-size: 1.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+        .program-modal-meta {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate stats counter
+            animateStatCounters();
+
+            // Initialize tooltips
+            initTooltips();
+
+            // Add smooth scrolling for anchor links
+            initSmoothScrolling();
+
+            // Add animation for category cards
+            animateCategoryCards();
+
+            // Initialize filter tag functionality
+            initFilterTags();
+        });
+
+        // Function to animate stat counters
+        function animateStatCounters() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+
+            statNumbers.forEach(stat => {
+                const finalValue = parseInt(stat.textContent.replace(/\D/g, ''));
+                const suffix = stat.textContent.replace(/[0-9]/g, '');
+                const duration = 2000; // Animation duration in milliseconds
+                const frameDuration = 1000 / 60; // 60fps
+                const totalFrames = Math.round(duration / frameDuration);
+                let frame = 0;
+
+                // Reset the content to start from 0
+                stat.textContent = '0' + suffix;
+
+                // Use requestAnimationFrame for smooth animation
+                const animate = () => {
+                    frame++;
+                    const progress = frame / totalFrames;
+                    const currentCount = Math.round(finalValue * (progress < 1 ? progress : 1));
+
+                    stat.textContent = currentCount + suffix;
+
+                    if (frame < totalFrames) {
+                        requestAnimationFrame(animate);
+                    }
+                };
+
+                // Start the animation with a slight delay for each stat
+                setTimeout(() => {
+                    requestAnimationFrame(animate);
+                }, 200);
+            });
+        }
+
+        // Initialize Bootstrap tooltips
+        function initTooltips() {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        }
+
+        // Add smooth scrolling for anchor links
+        function initSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return; // Skip links with just "#"
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Smooth scroll to the element
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                        // Update URL but without scrolling (modern browsers only)
+                        history.pushState(null, null, targetId);
+                    }
+                });
+            });
+        }
+
+        // Add staggered animation for category cards
+        function animateCategoryCards() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add a staggered delay based on the index
+                        setTimeout(() => {
+                            entry.target.classList.add('fade-in-up');
+                        }, index * 100);
+
+                        // Stop observing after animation
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when at least 10% of the item is visible
+            });
+
+            // Observe all category cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Observe all program cards
+            document.querySelectorAll('.program-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // Initialize filter tag functionality
+        function initFilterTags() {
+            // Remove filter tags functionality
+            document.querySelectorAll('.filter-remove').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = this.getAttribute('href');
+                });
+            });
+
+            // Clear all filters
+            const clearButton = document.querySelector('.filter-clear');
+            if (clearButton) {
+                clearButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = this.getAttribute('href');
+                });
+            }
+        }
+
+        // Program modal functionality enhancements
+        document.querySelectorAll('[data-bs-toggle="modal"]').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetModal = document.querySelector(this.getAttribute('data-bs-target'));
+                if (targetModal) {
+                    // Add animation class when opening modal
+                    targetModal.addEventListener('shown.bs.modal', function() {
+                        this.querySelectorAll('.program-modal-content > *').forEach((element, index) => {
+                            setTimeout(() => {
+                                element.classList.add('fade-in');
+                            }, index * 100);
+                        });
+                    }, { once: true });
+                }
+            });
+        });
+
+        // Add accessibility improvements
+        function improveAccessibility() {
+            // Ensure all interactive elements have appropriate aria attributes
+            document.querySelectorAll('button').forEach(button => {
+                if (!button.getAttribute('aria-label') && !button.textContent.trim()) {
+                    const icon = button.querySelector('i');
+                    if (icon) {
+                        const iconClass = icon.className;
+                        let actionText = 'Button';
+
+                        if (iconClass.includes('search')) actionText = 'Search';
+                        else if (iconClass.includes('filter')) actionText = 'Filter';
+                        else if (iconClass.includes('close')) actionText = 'Close';
+                        else if (iconClass.includes('download')) actionText = 'Download';
+
+                        button.setAttribute('aria-label', actionText);
+                    }
+                }
+            });
+
+            // Ensure all images have alt text
+            document.querySelectorAll('img:not([alt])').forEach(img => {
+                img.setAttribute('alt', '');
+            });
+        }
+
+        // Call accessibility improvements
+        improveAccessibility();
+    </script>
+}

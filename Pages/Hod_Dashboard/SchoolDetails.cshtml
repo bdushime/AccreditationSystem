@@ -1,0 +1,164 @@
+﻿@page
+@model AccreditationSystem.Pages.Hod_Dashboard.SchoolDetailsModel
+@{
+    ViewData["Title"] = "School Details";
+}
+
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="mb-5 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-900">School Details</h1>
+        <a href="/Hod_Dashboard/HOD_Schools" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            Back to Schools
+        </a>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <span class="block sm:inline">@TempData["ErrorMessage"]</span>
+        </div>
+    }
+
+    @if (Model.School != null)
+    {
+        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6 bg-gray-50">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">@Model.School.school_name</h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">Established: @(Model.School.year_established ?? 0)</p>
+            </div>
+            <div class="border-t border-gray-200">
+                <dl>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">School Name</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.school_name</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Email</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.school_email</dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Phone</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.school_phone</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Website</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            @if (!string.IsNullOrEmpty(Model.School.school_website))
+                            {
+                                <a href="@Model.School.school_website" target="_blank" class="text-indigo-600 hover:text-indigo-900">@Model.School.school_website</a>
+                            }
+                            else
+                            {
+                                <span>Not provided</span>
+                            }
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">School Type</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.school_type</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Education Levels</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.education_levels</dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Address</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            @Model.School.address_line_1
+                            @if (!string.IsNullOrEmpty(Model.School.address_line_2))
+                            {
+                                <br />@Model.School.address_line_2
+                            }
+                            <br />@Model.School.city, @Model.School.state_province
+                        </dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Status</dt>
+                        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                  @(Model.School.status.ToLower() == "active" ? "bg-green-100 text-green-800" : 
+                                    Model.School.status.ToLower() == "pending" ? "bg-yellow-100 text-yellow-800" : 
+                                    Model.School.status.ToLower() == "inactive" ? "bg-red-100 text-red-800" : 
+                                    "bg-gray-100 text-gray-800")">
+                                @Model.School.status
+                            </span>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6 bg-gray-50">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Facility Information</h3>
+            </div>
+            <div class="border-t border-gray-200">
+                <dl>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Number of Classrooms</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.number_of_classrooms</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Average Classroom Size</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.average_classroom_size m²</dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Average Students per Classroom</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.average_students_per_classroom</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Classroom Equipment Level</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.classroom_equipment_level</dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Specialized Facilities</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.specialized_facilities</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6 bg-gray-50">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Population Information</h3>
+            </div>
+            <div class="border-t border-gray-200">
+                <dl>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Total Student Enrollment</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.total_student_enrollment</dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Number of Teaching Staff</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.School.number_of_teaching_staff</dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">Student-Teacher Ratio</dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            @if (Model.School.number_of_teaching_staff > 0)
+                            {
+                                <span>@Math.Round((double)Model.School.total_student_enrollment / Model.School.number_of_teaching_staff, 1):1</span>
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-end space-x-3">
+            <a href="/Hod_Dashboard/EditSchool?id=@Model.School.id" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Edit School
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">School not found.</span>
+        </div>
+    }
+</div>

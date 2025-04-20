@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AccreditationSystem
+build_property.RootNamespace = AccreditationSystem
+build_property.ProjectDir = C:\Users\kyrie\Desktop\dot-net\AccreditationSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\kyrie\Desktop\dot-net\AccreditationSystem
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/AccreditedSchool.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNjcmVkaXRlZFNjaG9vbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/DownloadCertificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRG93bmxvYWRDZXJ0aWZpY2F0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSG9tZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/NewSchoolRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTmV3U2Nob29sUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/TrackApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVHJhY2tBcHBsaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/TVETTrades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVFZFVFRyYWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Admin/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Auth/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Auth/VerifyEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxWZXJpZnlFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Customer/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Hod_Dashboard/HOD_Applications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfQXBwbGljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Hod_Dashboard/HOD_Claims.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfQ2xhaW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Hod_Dashboard/HOD_Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Hod_Dashboard/HOD_Inspections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfSW5zcGVjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Hod_Dashboard/HOD_Schools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfU2Nob29scy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Shared/_NavMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kyrie/Desktop/dot-net/AccreditationSystem/Pages/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-6gyhvtzx42

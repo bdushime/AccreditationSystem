@@ -1,0 +1,314 @@
+﻿@page
+@model ResponsiveEducationPortal.Pages.NewSchoolRegistrationModel
+@{
+    ViewData["Title"] = "New School Registration";
+
+    <!-- Alert Messages -->
+    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+    {
+        <div class="max-w-5xl mx-auto mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@TempData["SuccessMessage"]</span>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+    {
+        <div class="max-w-5xl mx-auto mb-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@TempData["ErrorMessage"]</span>
+        </div>
+    }
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+}
+<!-- Header Section with Logo -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <!-- Logo -->
+                    <a href="/" class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-7 10 7-10 7-10-7v10a8 8 0 1016 0" />
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Accreditation</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden md:ml-8 md:flex space-x-6">
+                    <a href="/" class="text-primary-700 font-medium">Home</a>
+                    @* <a href="/about" class="text-gray-600 hover:text-primary-700 font-medium">About</a> *@
+                    @* <a href="/services" class="text-gray-600 hover:text-primary-700 font-medium">Services</a> *@
+                    @* <a href="/resources" class="text-gray-600 hover:text-primary-700 font-medium">Resources</a> *@
+                    @* <a href="/contact" class="text-gray-600 hover:text-primary-700 font-medium">Contact</a> *@
+                </nav>
+            </div>
+            <!-- Auth Buttons -->
+            <div class="flex items-center space-x-3">
+                <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
+                <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mx-auto px-4 py-8">
+    <!-- Page Title -->
+    <div class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">New School Registration</h1>
+        <p class="text-gray-600">Complete the form below to register your educational institution</p>
+    </div>
+
+   
+    <form method="post" class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        @Html.AntiForgeryToken()
+        <!-- Form Header -->
+        <div class="bg-primary-700 px-6 py-4">
+            <h2 class="text-xl font-semibold text-white">School Information</h2>
+        </div>
+
+        <!-- Form Content -->
+        <div class="p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-800 mb-4">Basic Information</h3>
+
+                    <!-- School Name -->
+                    <div class="mb-4">
+                        <label for="schoolName" class="block text-sm font-medium text-gray-700 mb-1">School Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="schoolName" name="schoolName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter school name" required>
+                    </div>
+
+                    <!-- School Email -->
+                    <div class="mb-4">
+                        <label for="schoolEmail" class="block text-sm font-medium text-gray-700 mb-1">School Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="schoolEmail" name="schoolEmail" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter school email" required>
+                    </div>
+
+                    <!-- School Phone -->
+                    <div class="mb-4">
+                        <label for="schoolPhone" class="block text-sm font-medium text-gray-700 mb-1">School Phone <span class="text-red-500">*</span></label>
+                        <input type="tel" id="schoolPhone" name="schoolPhone" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter school phone number" required>
+                    </div>
+
+                    <!-- School Website -->
+                    <div class="mb-4">
+                        <label for="schoolWebsite" class="block text-sm font-medium text-gray-700 mb-1">School Website</label>
+                        <input type="url" id="schoolWebsite" name="schoolWebsite" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter school website (if available)">
+                    </div>
+
+                    <!-- Year Established -->
+                    <div class="mb-4">
+                        <label for="yearEstablished" class="block text-sm font-medium text-gray-700 mb-1">Year Established <span class="text-red-500">*</span></label>
+                        <input type="number" id="yearEstablished" name="yearEstablished" min="1800" max="2025" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="YYYY" required>
+                    </div>
+
+                    <!-- School Type -->
+                    <div class="mb-4">
+                        <label for="schoolType" class="block text-sm font-medium text-gray-700 mb-1">School Type <span class="text-red-500">*</span></label>
+                        <select id="schoolType" name="schoolType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                            <option value="" disabled selected>Select school type</option>
+                            <option value="public">Public</option>
+                            <option value="private">Private</option>
+                            <option value="charter">Charter</option>
+                            <option value="international">International</option>
+                            <option value="vocational">Vocational/Technical</option>
+                            <option value="special">Special Education</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Education Levels -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Education Levels Offered <span class="text-red-500">*</span></label>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="preschool" name="educationLevels[]" value="preschool" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="preschool" class="ml-2 text-sm text-gray-700">Preschool/Kindergarten</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="elementary" name="educationLevels[]" value="elementary" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="elementary" class="ml-2 text-sm text-gray-700">Elementary (Primary)</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="middle" name="educationLevels[]" value="middle" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="middle" class="ml-2 text-sm text-gray-700">Middle School</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="secondary" name="educationLevels[]" value="secondary" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="secondary" class="ml-2 text-sm text-gray-700">Secondary/High School</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="vocational" name="educationLevels[]" value="vocational" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="vocational" class="ml-2 text-sm text-gray-700">Vocational/Technical</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-800 mb-4">Facilities Information</h3>
+
+                    <!-- Number of Classrooms -->
+                    <div class="mb-4">
+                        <label for="classroomCount" class="block text-sm font-medium text-gray-700 mb-1">Number of Classrooms <span class="text-red-500">*</span></label>
+                        <input type="number" id="classroomCount" name="classroomCount" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter total number of classrooms" required>
+                    </div>
+
+                    <!-- Average Classroom Size -->
+                    <div class="mb-4">
+                        <label for="classroomSize" class="block text-sm font-medium text-gray-700 mb-1">Average Classroom Size (sq ft) <span class="text-red-500">*</span></label>
+                        <input type="number" id="classroomSize" name="classroomSize" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter average size" required>
+                    </div>
+
+                    <!-- Average Students per Classroom -->
+                    <div class="mb-4">
+                        <label for="studentsPerClass" class="block text-sm font-medium text-gray-700 mb-1">Average Students per Classroom <span class="text-red-500">*</span></label>
+                        <input type="number" id="studentsPerClass" name="studentsPerClass" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter average number" required>
+                    </div>
+
+                    <!-- Classroom Equipment Level -->
+                    <div class="mb-4">
+                        <label for="equipmentLevel" class="block text-sm font-medium text-gray-700 mb-1">Classroom Equipment Level <span class="text-red-500">*</span></label>
+                        <select id="equipmentLevel" name="equipmentLevel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                            <option value="" disabled selected>Select equipment level</option>
+                            <option value="basic">Basic (Blackboard/Whiteboard only)</option>
+                            <option value="standard">Standard (Basic + Projector/TV)</option>
+                            <option value="advanced">Advanced (Standard + Interactive Displays)</option>
+                            <option value="cutting-edge">Cutting-edge (Advanced + Individual Devices)</option>
+                        </select>
+                    </div>
+
+                    <!-- Specialized Facilities -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Specialized Facilities Available</label>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="scienceLab" name="specializedFacilities[]" value="scienceLab" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="scienceLab" class="ml-2 text-sm text-gray-700">Science Laboratory</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="computerLab" name="specializedFacilities[]" value="computerLab" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="computerLab" class="ml-2 text-sm text-gray-700">Computer Laboratory</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="library" name="specializedFacilities[]" value="library" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="library" class="ml-2 text-sm text-gray-700">Library</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="sportsFacilities" name="specializedFacilities[]" value="sportsFacilities" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="sportsFacilities" class="ml-2 text-sm text-gray-700">Sports Facilities</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="auditorium" name="specializedFacilities[]" value="auditorium" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="auditorium" class="ml-2 text-sm text-gray-700">Auditorium/Hall</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="specialEd" name="specializedFacilities[]" value="specialEd" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="specialEd" class="ml-2 text-sm text-gray-700">Special Education Facilities</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Enrollment -->
+                    <div class="mb-4">
+                        <label for="totalEnrollment" class="block text-sm font-medium text-gray-700 mb-1">Total Student Enrollment <span class="text-red-500">*</span></label>
+                        <input type="number" id="totalEnrollment" name="totalEnrollment" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter total enrollment" required>
+                    </div>
+
+                    <!-- Teaching Staff Count -->
+                    <div class="mb-4">
+                        <label for="teachingStaff" class="block text-sm font-medium text-gray-700 mb-1">Number of Teaching Staff <span class="text-red-500">*</span></label>
+                        <input type="number" id="teachingStaff" name="teachingStaff" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter number of teachers" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Address Section - Full Width -->
+            <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-800 mb-4">School Address</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="addressLine1" class="block text-sm font-medium text-gray-700 mb-1">Address Line 1 <span class="text-red-500">*</span></label>
+                        <input type="text" id="addressLine1" name="addressLine1" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Street address" required>
+                    </div>
+                    <div>
+                        <label for="addressLine2" class="block text-sm font-medium text-gray-700 mb-1">Address Line 2</label>
+                        <input type="text" id="addressLine2" name="addressLine2" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div>
+                        <label for="city" class="block text-sm font-medium text-gray-700 mb-1">City <span class="text-red-500">*</span></label>
+                        <input type="text" id="city" name="city" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="City" required>
+                    </div>
+                    <div>
+                        <label for="state" class="block text-sm font-medium text-gray-700 mb-1">State/Province <span class="text-red-500">*</span></label>
+                        <input type="text" id="state" name="state" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="State/Province" required>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-200 my-8"></div>
+
+            <!-- Terms and Privacy Policy -->
+            <div class="mb-6">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="terms" name="terms" type="checkbox" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded" required>
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="terms" class="font-medium text-gray-700">I agree to the <a href="#" class="text-primary-600 hover:text-primary-500">Terms of Service</a> and <a href="#" class="text-primary-600 hover:text-primary-500">Privacy Policy</a> <span class="text-red-500">*</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="flex justify-between">
+                <a href="/" class="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                    Cancel
+                </a>
+                <div class="flex space-x-3">
+                  
+                    <button type="submit" class="px-6 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

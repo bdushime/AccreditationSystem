@@ -91,11 +91,11 @@ namespace AccreditationSystem.Pages.Auth
                                 // Redirect based on role
                                 if (userRole.ToLower() == "admin")
                                 {
-                                    return RedirectToPage("/Admin/Dashboard");
+                                    return RedirectToPage("/Hod_Dashboard/HOD_Home");
                                 }
                                 else
                                 {
-                                    return RedirectToPage("/Customer/Dashboard");
+                                    return RedirectToPage("/Index");
                                 }
                             }
                             else

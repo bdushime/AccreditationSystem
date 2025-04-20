@@ -1,0 +1,873 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\schooldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\schooldetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_schools.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_schools.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_inspections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_inspections.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_claims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_claims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\claimdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\claimdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\accreditedschool.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\accreditedschool.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\accreditedschool.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\accreditedschool.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\generalcombination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\generalcombination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\confirmationmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\confirmationmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_home.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_applications.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_applications.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\submitclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\submitclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\claimdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\claimdetail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_claims.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_claims.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\trackapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\trackapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\trackapplication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\trackapplication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\schoolidentificationmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\schoolidentificationmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\assessment\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\assessment\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\tvettrades.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\tvettrades.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\newschoolregistration.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\newschoolregistration.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\submitclaim.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\submitclaim.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\confirmationmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\confirmationmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\generalcombination.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\generalcombination.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\newschoolregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\newschoolregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\schoolidentificationmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\schoolidentificationmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\assessment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\assessment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\tvettrades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\tvettrades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\schooldetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\schooldetails.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\hod_dashboard\\hod_schools.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\hod_dashboard\\hod_schools.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\models\\schools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:models\\schools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\models\\accreditationclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:models\\accreditationclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\schoolregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\schoolregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\admin\\downloadcertificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\admin\\downloadcertificate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\shared\\_navmenupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\shared\\_navmenupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\shared\\_layout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\.vs\\AccreditationSystem\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\AccreditationSystem\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|c:\\users\\kyrie\\desktop\\dot-net\\accreditationsystem\\pages\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADB1FF96-5016-4AAD-807D-BD2DCE63C91E}|AccreditationSystem.csproj|solutionrelative:pages\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HOD_Claims.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Claims.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Claims.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Claims.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Claims.cshtml",
+              "ViewState": "AgIAABMAAAAAMDMzMzMLwCsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:27:51.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HOD_Inspections.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Inspections.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Inspections.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Inspections.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Inspections.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:27:34.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HOD_Schools.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Schools.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Schools.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Schools.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Schools.cshtml",
+              "ViewState": "AgIAABYAAAAAMzMzMzMrwCsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:27:15.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SchoolDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\SchoolDetails.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\SchoolDetails.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\SchoolDetails.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\SchoolDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T03:53:37.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HOD_Applications.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Applications.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Applications.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Applications.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Applications.cshtml",
+              "ViewState": "AgIAABMAAAAAMzMzMzMrwCgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:26:49.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClaimDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\ClaimDetail.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\ClaimDetail.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\ClaimDetail.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\ClaimDetail.cshtml",
+              "ViewState": "AgIAABUAAACAZmZmZmYkwCsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T09:25:23.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HOD_Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Home.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Home.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Home.cshtml",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Home.cshtml",
+              "ViewState": "AgIAAAwAAACAZmZmZmYkwCEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:02:12.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccreditedSchool.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\AccreditedSchool.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\AccreditedSchool.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\AccreditedSchool.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\AccreditedSchool.cshtml.cs",
+              "ViewState": "AgIAAMkAAACAZ2ZmZmYwwNoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T10:34:50.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GeneralCombination.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\GeneralCombination.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\GeneralCombination.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\GeneralCombination.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\GeneralCombination.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T08:17:54.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:48:55.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccreditedSchool.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\AccreditedSchool.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\AccreditedSchool.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\AccreditedSchool.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\AccreditedSchool.cshtml",
+              "ViewState": "AgIAAGEBAAAAmZmZmZknwHMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:48:49.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfirmationModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\ConfirmationModel.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\ConfirmationModel.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\ConfirmationModel.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\ConfirmationModel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T19:50:07.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:39:50.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HOD_Home.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Home.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Home.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Home.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Home.cshtml.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAUwJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T10:04:13.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HOD_Applications.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Applications.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Applications.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Applications.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Applications.cshtml.cs",
+              "ViewState": "AgIAAB4AAAAAMzMzMzMtwDAAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:25:04.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SubmitClaim.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SubmitClaim.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\SubmitClaim.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SubmitClaim.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\SubmitClaim.cshtml",
+              "ViewState": "AgIAAEMAAAAABAAAAAAAwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T20:07:24.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HOD_Claims.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Claims.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Claims.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Claims.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Claims.cshtml.cs",
+              "ViewState": "AgIAAHUAAACgmZmZmZknwIsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T07:35:52.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClaimDetail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\ClaimDetail.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\ClaimDetail.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\ClaimDetail.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\ClaimDetail.cshtml.cs",
+              "ViewState": "AgIAAF8AAACAMTMzMzMXwM4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:27:02.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TrackApplication.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TrackApplication.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\TrackApplication.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TrackApplication.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\TrackApplication.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:49:14.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\HomePage.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\HomePage.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAB4vT8EAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T15:22:48.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TrackApplication.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TrackApplication.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\TrackApplication.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TrackApplication.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\TrackApplication.cshtml.cs",
+              "ViewState": "AgIAABsAAAAAODMzMzMvwEkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:01:56.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Assessment\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Assessment\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Assessment\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Assessment\\Index.cshtml.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAywMcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T20:29:56.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SchoolIdentificationModel.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolIdentificationModel.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\SchoolIdentificationModel.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolIdentificationModel.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\SchoolIdentificationModel.cshtml.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAUwMEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T08:31:34.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TVETTrades.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TVETTrades.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\TVETTrades.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TVETTrades.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\TVETTrades.cshtml.cs",
+              "ViewState": "AgIAAMcAAAAAlJmZmZkJwDAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T08:49:45.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NewSchoolRegistration.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\NewSchoolRegistration.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\NewSchoolRegistration.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\NewSchoolRegistration.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\NewSchoolRegistration.cshtml.cs",
+              "ViewState": "AgIAAE0AAAAAAgAAAAAAwJoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:33:08.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SubmitClaim.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SubmitClaim.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\SubmitClaim.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SubmitClaim.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\SubmitClaim.cshtml.cs",
+              "ViewState": "AgIAAFoAAAAAzMzMzMwQwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T20:13:50.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ConfirmationModel.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\ConfirmationModel.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\ConfirmationModel.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\ConfirmationModel.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\ConfirmationModel.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T09:06:54.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GeneralCombination.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\GeneralCombination.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\GeneralCombination.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\GeneralCombination.cshtml.cs",
+              "RelativeToolTip": "Pages\\Admin\\GeneralCombination.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T08:31:19.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NewSchoolRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\NewSchoolRegistration.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\NewSchoolRegistration.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\NewSchoolRegistration.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\NewSchoolRegistration.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T15:15:14.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Assessment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Assessment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Assessment\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Assessment\\Index.cshtml",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAUwBkBAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T20:25:53.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SchoolIdentificationModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolIdentificationModel.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\SchoolIdentificationModel.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolIdentificationModel.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\SchoolIdentificationModel.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAABgvZcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T08:21:29.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TVETTrades.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TVETTrades.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\TVETTrades.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\TVETTrades.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\TVETTrades.cshtml",
+              "ViewState": "AgIAABUCAACAmpmZmZkXwA4CAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:49:20.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Pages\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAOUAAACAZmZmZmYuwPgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T15:13:56.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Login.cshtml.cs",
+              "RelativeToolTip": "Pages\\Auth\\Login.cshtml.cs",
+              "ViewState": "AgIAAEwAAAAAzczMzMwswF0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:57:08.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAIUAAAAANDMzMzMLwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T15:36:41.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeToolTip": "Pages\\Auth\\Register.cshtml.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAywKYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:41:28.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SchoolDetails.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\SchoolDetails.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\SchoolDetails.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\SchoolDetails.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\SchoolDetails.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:54:03.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HOD_Schools.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Schools.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Hod_Dashboard\\HOD_Schools.cshtml.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Hod_Dashboard\\HOD_Schools.cshtml.cs",
+              "RelativeToolTip": "Pages\\Hod_Dashboard\\HOD_Schools.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:38:55.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\Application.cs",
+              "RelativeDocumentMoniker": "Models\\Application.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\Application.cs",
+              "RelativeToolTip": "Models\\Application.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAxwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:35:50.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Schools.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\Schools.cs",
+              "RelativeDocumentMoniker": "Models\\Schools.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\Schools.cs",
+              "RelativeToolTip": "Models\\Schools.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:40:02.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AccreditationClaim.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\AccreditationClaim.cs",
+              "RelativeDocumentMoniker": "Models\\AccreditationClaim.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Models\\AccreditationClaim.cs",
+              "RelativeToolTip": "Models\\AccreditationClaim.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T20:31:47.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-13T20:47:17.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SchoolRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolRegistration.cs",
+              "RelativeDocumentMoniker": "Pages\\Admin\\SchoolRegistration.cs",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\SchoolRegistration.cs",
+              "RelativeToolTip": "Pages\\Admin\\SchoolRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:00:47.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DownloadCertificate.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\DownloadCertificate.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Admin\\DownloadCertificate.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Admin\\DownloadCertificate.cshtml",
+              "RelativeToolTip": "Pages\\Admin\\DownloadCertificate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:49:00.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:45:03.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAABAZmZmZmYkwAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:42:24.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_Layout2.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_Layout2.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout2.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_Layout2.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout2.cshtml",
+              "ViewState": "AgIAACEAAABAMzMzMzMrwGUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T10:02:26.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_NavMenuPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_NavMenuPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_NavMenuPartial.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\Shared\\_NavMenuPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_NavMenuPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:45:04.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\Pages\\_Header.cshtml",
+              "RelativeToolTip": "Pages\\_Header.cshtml",
+              "ViewState": "AgIAAAYAAAAgZmZmZmYkwBEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T12:53:13.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "applicationhost.config",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\.vs\\AccreditationSystem\\config\\applicationhost.config",
+              "RelativeDocumentMoniker": ".vs\\AccreditationSystem\\config\\applicationhost.config",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\.vs\\AccreditationSystem\\config\\applicationhost.config",
+              "RelativeToolTip": ".vs\\AccreditationSystem\\config\\applicationhost.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-13T13:06:51.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\kyrie\\Desktop\\dot-net\\AccreditationSystem\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-04-13T13:12:46.364Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

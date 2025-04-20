@@ -1,0 +1,25 @@
+﻿/* Custom styles for certificate page */
+.certificate-preview {
+    border: 10px solid var(--primary-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Print-specific styles */
+@media print {
+    header, footer, .form-section:first-child, .btn, .alert {
+        display: none;
+    }
+
+    .certificate-preview {
+        border: 2px solid #000;
+        box-shadow: none;
+    }
+
+    body, .container, .row, .col-lg-8 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
