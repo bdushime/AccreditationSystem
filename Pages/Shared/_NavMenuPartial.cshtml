@@ -1,0 +1,48 @@
+﻿@using Microsoft.AspNetCore.Http
+@using System.IO
+
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link @(Context.Request.Path == "/" ? "active" : "")" href="/">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle @(Context.Request.Path.ToString().Contains("/TVETTrades") ? "active" : "")"
+           href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Programs
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+            <li><a class="dropdown-item" href="/TVETTrades">TVET Trades</a></li>
+            <li><a class="dropdown-item" href="/TVETTrades?category=Information Technology">IT Programs</a></li>
+            <li><a class="dropdown-item" href="/TVETTrades?category=Healthcare">Healthcare Programs</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/TVETTrades?category=Manufacturing">Industrial Programs</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle @(Context.Request.Path.ToString().Contains("/Schools") || Context.Request.Path.ToString().Contains("/AccreditedSchool") ? "active" : "")"
+           href="#" id="schoolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Schools
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="schoolsDropdown">
+            <li><a class="dropdown-item" href="/AccreditedSchool">Accredited Schools</a></li>
+            <li><a class="dropdown-item" href="/NewSchoolRegistration">Register New School</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/AccreditedSchool?schoolType=Private">Private Schools</a></li>
+            <li><a class="dropdown-item" href="/AccreditedSchool?schoolType=Public">Public Schools</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle @(Context.Request.Path.ToString().Contains("/Track") || Context.Request.Path.ToString().Contains("/SubmitClaim") || Context.Request.Path.ToString().Contains("/DownloadCertificate") ? "active" : "")"
+           href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="/TrackApplication">Track Application</a></li>
+            <li><a class="dropdown-item" href="/SubmitClaim">Submit Claim</a></li>
+            <li><a class="dropdown-item" href="/DownloadCertificate">Download Certificate</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Contact">Contact Us</a>
+    </li>
+</ul>

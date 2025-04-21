@@ -1,0 +1,295 @@
+﻿@page
+@model AccreditationSystem.Pages.Assessment.IndexModel
+
+@{
+   
+// Extract the trade parameter from the query string or route data
+    
+var
+ trade 
+=
+ Request
+.
+Query
+[
+"trade"
+]
+.
+ToString
+(
+)
+;   
+if(string.IsNullOrEmpty(trade)){trade =RouteData.Values["trade"]?.ToString()??"General";}
+    ViewData["Title"]=$"{trade} Accreditation Assessment";
+}
+
+
+<main class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h1 class="h3 mb-0">School Accreditation Assessment: @trade</h1>
+                </div>
+                <div class="card-body">
+                    <p class="lead mb-4">
+                        Please complete this assessment to determine your school's readiness for
+                        @trade accreditation. Your answers will help us understand your current
+                        capabilities and areas for improvement.
+                    </p>
+
+                    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"]?.ToString()))
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"]?.ToString()))
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form id="assessmentForm" method="post">
+                        <input type="hidden" name="Trade" value="@trade" />
+
+                        <!-- School Information -->
+                        <div class="mb-4">
+                            <h4 class="mb-3">School Information</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="Email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="Email" name="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="SchoolEmail" class="form-label">School Email</label>
+                                    <input type="email" class="form-control" id="SchoolEmail" name="SchoolEmail" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="InstitutionName" class="form-label">Institution Name</label>
+                                    <input type="text" class="form-control" id="InstitutionName" name="InstitutionName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ContactPerson" class="form-label">Contact Person</label>
+                                    <input type="text" class="form-control" id="ContactPerson" name="ContactPerson" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- Question 1 -->
+                        <div class="mb-4">
+                            <h5>1. How long has your institution been offering programs in @trade?</h5>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="Experience" id="exp1" value="1" required>
+                                <label class="form-check-label" for="exp1">Less than 1 year</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="exp2" value="2">
+                                <label class="form-check-label" for="exp2">1-3 years</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="exp3" value="3">
+                                <label class="form-check-label" for="exp3">4-6 years</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="exp4" value="4">
+                                <label class="form-check-label" for="exp4">7-10 years</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Experience" id="exp5" value="5">
+                                <label class="form-check-label" for="exp5">More than 10 years</label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="mb-4">
+                            <h5>2. What percentage of your instructors hold relevant industry certifications in @trade?</h5>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="Certification" id="cert1" value="1" required>
+                                <label class="form-check-label" for="cert1">0-20%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Certification" id="cert2" value="2">
+                                <label class="form-check-label" for="cert2">21-40%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Certification" id="cert3" value="3">
+                                <label class="form-check-label" for="cert3">41-60%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Certification" id="cert4" value="4">
+                                <label class="form-check-label" for="cert4">61-80%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Certification" id="cert5" value="5">
+                                <label class="form-check-label" for="cert5">81-100%</label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="mb-4">
+                            <h5>3. How frequently does your institution update its @trade curriculum based on industry standards?</h5>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="Curriculum" id="curr1" value="1" required>
+                                <label class="form-check-label" for="curr1">Rarely or never</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Curriculum" id="curr2" value="2">
+                                <label class="form-check-label" for="curr2">Every 3-5 years</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Curriculum" id="curr3" value="3">
+                                <label class="form-check-label" for="curr3">Every 2 years</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Curriculum" id="curr4" value="4">
+                                <label class="form-check-label" for="curr4">Annually</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Curriculum" id="curr5" value="5">
+                                <label class="form-check-label" for="curr5">Continuously throughout the year</label>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="mb-4">
+                            <h5>4. What level of practical training facilities do you have for @trade education?</h5>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="Facilities" id="fac1" value="1" required>
+                                <label class="form-check-label" for="fac1">Basic classroom only, minimal practical equipment</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Facilities" id="fac2" value="2">
+                                <label class="form-check-label" for="fac2">Some equipment but limited in quantity or outdated</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Facilities" id="fac3" value="3">
+                                <label class="form-check-label" for="fac3">Adequate facilities for basic training needs</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Facilities" id="fac4" value="4">
+                                <label class="form-check-label" for="fac4">Well-equipped modern facilities</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Facilities" id="fac5" value="5">
+                                <label class="form-check-label" for="fac5">State-of-the-art facilities that exceed industry standards</label>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="mb-4">
+                            <h5>5. What percentage of your @trade program graduates secure relevant employment within 6 months?</h5>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="Placement" id="plc1" value="1" required>
+                                <label class="form-check-label" for="plc1">Below 30%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Placement" id="plc2" value="2">
+                                <label class="form-check-label" for="plc2">30-50%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Placement" id="plc3" value="3">
+                                <label class="form-check-label" for="plc3">51-70%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Placement" id="plc4" value="4">
+                                <label class="form-check-label" for="plc4">71-85%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Placement" id="plc5" value="5">
+                                <label class="form-check-label" for="plc5">Above 85%</label>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Assessment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Results Modal -->
+<div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resultsModalLabel">Assessment Results</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <div class="display-4 fw-bold" id="totalScore">0</div>
+                    <p class="lead">out of 25 points</p>
+                </div>
+                <div class="progress mb-4" style="height: 25px;">
+                    <div id="scoreProgressBar" class="progress-bar" role="progressbar" style="width: 0%;"
+                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        0%
+                    </div>
+                </div>
+                <div id="feedbackMessage" class="alert alert-info">
+                    <!-- Feedback will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                @* <a id="applyButton" href="#" class="btn btn-success">Apply for Accreditation</a> *@
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // If there's a form submission success message, show the results modal
+            const successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage && '@Model.Result.TotalScore' > 0) {
+                const score = @Model.Result.TotalScore;
+                const percentage = @Model.Result.Percentage;
+                const feedback = '@Model.Result.Feedback';
+                const trade = '@trade';
+
+                // Update the modal with the score
+                document.getElementById('totalScore').textContent = score;
+
+                // Update progress bar
+                const progressBar = document.getElementById('scoreProgressBar');
+                progressBar.style.width = percentage + '%';
+                progressBar.textContent = Math.round(percentage) + '%';
+                progressBar.setAttribute('aria-valuenow', percentage);
+
+                // Update feedback
+                const feedbackElement = document.getElementById('feedbackMessage');
+                feedbackElement.textContent = feedback;
+
+                // Set appropriate color based on score
+                if (score <= 10) {
+                    feedbackElement.className = 'alert alert-danger';
+                } else if (score <= 15) {
+                    feedbackElement.className = 'alert alert-warning';
+                } else if (score <= 20) {
+                    feedbackElement.className = 'alert alert-info';
+                } else {
+                    feedbackElement.className = 'alert alert-success';
+                }
+
+                // Set apply button link
+                document.getElementById('applyButton').href = `/Accreditation/Apply?trade=${encodeURIComponent(trade)}&score=${score}`;
+
+                // Show the modal
+                const resultsModal = new bootstrap.Modal(document.getElementById('resultsModal'));
+                resultsModal.show();
+            }
+        });
+    </script>
+}

@@ -110,3 +110,4 @@ D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.pdb
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.genruntimeconfig.cache
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\ref\AccreditationSystem.dll
 D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\AccreditationSystem.sourcelink.json
+D:\C#projectsOthers\AccreditationSystem\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout2.cshtml.rz.scp.css

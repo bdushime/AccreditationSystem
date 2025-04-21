@@ -1,0 +1,89 @@
+﻿
+.bg-light-blue {
+    background-color: rgba(67, 62, 227, 0.05);
+    border: 1px solid rgba(67, 62, 227, 0.1);
+}
+
+.dashboard-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .dashboard-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+.status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.welcome-banner {
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 767.98px) {
+    .welcome-banner {
+        text-align: center;
+    }
+
+        .welcome-banner .badge {
+            margin-bottom: 1rem;
+        }
+
+    .dashboard-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Dashboard.js script included below as reference */
+/*
+document.addEventListener('DOMContentLoaded', function() {
+    // Sample code for adding a chart if needed
+    // This would go in the dashboard.js file referenced in the page
+    
+    // Example chart code:
+    // const ctx = document.getElementById('applicationsChart');
+    // if (ctx) {
+    //     new Chart(ctx, {
+    //         type: 'bar',
+    //         data: {
+    //             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    //             datasets: [
+    //                 {
+    //                     label: 'Applications',
+    //                     data: [65, 59, 80, 81, 56, 55, 40, 30, 45, 60, 70, 90],
+    //                     backgroundColor: '#433EE3',
+    //                 },
+    //                 {
+    //                     label: 'Approvals',
+    //                     data: [28, 35, 40, 45, 30, 25, 20, 15, 25, 30, 35, 45],
+    //                     backgroundColor: '#10B981',
+    //                 }
+    //             ]
+    //         },
+    //         options: {
+    //             responsive: true,
+    //             maintainAspectRatio: false,
+    //             scales: {
+    //                 y: {
+    //                     beginAtZero: true
+    //                 }
+    //             },
+    //             plugins: {
+    //                 legend: {
+    //                     position: 'bottom',
+    //                 }
+    //             }
+    //         }
+    //     });
+    // }
+});
+*/

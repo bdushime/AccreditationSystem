@@ -2,15 +2,135 @@
   "Files": [
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccreditationSystem.bundle.scp.css",
-      "PackagePath": "staticwebassets\\AccreditationSystem.1oaxpz6hzy.bundle.scp.css"
+      "PackagePath": "staticwebassets\\AccreditationSystem.b6128qpab7.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
+      "PackagePath": "staticwebassets\\css\\certificate-styles.css"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
+      "PackagePath": "staticwebassets\\css\\home page-style.css"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site1.css",
+      "PackagePath": "staticwebassets\\css\\site1.css"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\variable.css",
+      "PackagePath": "staticwebassets\\css\\variable.css"
+    },
+    {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
+      "PackagePath": "staticwebassets\\images\\DenverCharterAcademy.jpeg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
+      "PackagePath": "staticwebassets\\images\\DigitalArtsAcademy.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
+      "PackagePath": "staticwebassets\\images\\FaithCommunityAcademy.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
+      "PackagePath": "staticwebassets\\images\\GlobalEducationCharter.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
+      "PackagePath": "staticwebassets\\images\\HarmonyPublicSchool.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
+      "PackagePath": "staticwebassets\\images\\InternationalPrepSchool.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
+      "PackagePath": "staticwebassets\\images\\MontessoriChildrenHouse.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
+      "PackagePath": "staticwebassets\\images\\OakwoodPreparatoryAcademy.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
+      "PackagePath": "staticwebassets\\images\\SunshineAcademy.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
+      "PackagePath": "staticwebassets\\images\\TechInnovationInstitute.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
+      "PackagePath": "staticwebassets\\images\\VocationalTrainingCenter.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
+      "PackagePath": "staticwebassets\\images\\accredited-schools.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
+      "PackagePath": "staticwebassets\\images\\blue.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
+      "PackagePath": "staticwebassets\\images\\certificate-verification-.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
+      "PackagePath": "staticwebassets\\images\\hero-bg (2).jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
+      "PackagePath": "staticwebassets\\images\\hero-bg.avif"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero-bg.png"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
+      "PackagePath": "staticwebassets\\images\\new-school.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
+      "PackagePath": "staticwebassets\\images\\primary-level.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
+      "PackagePath": "staticwebassets\\images\\secondary-level.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
+      "PackagePath": "staticwebassets\\images\\submit-claim.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
+      "PackagePath": "staticwebassets\\images\\track-application.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
+      "PackagePath": "staticwebassets\\images\\tvet-trades.jpg"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
+      "PackagePath": "staticwebassets\\images\\westside.jpeg"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\js\\site.js",
@@ -243,6 +363,70 @@
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AccreditationSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

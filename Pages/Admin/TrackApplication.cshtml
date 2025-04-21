@@ -1,0 +1,279 @@
+﻿@page
+@model AccreditationSystem.Pages.Admin.TrackApplicationModel
+@{
+    ViewData["Title"] = "Track Application";
+}
+
+<!-- Header Section with Logo -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <!-- Logo -->
+                    <a href="/" class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-7 10 7-10 7-10-7v10a8 8 0 1016 0" />
+                        </svg>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Accreditation</span>
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden md:ml-8 md:flex space-x-6">
+                    <a href="/" class="text-primary-700 font-medium">Home</a>
+                    @* <a href="/about" class="text-gray-600 hover:text-primary-700 font-medium">About</a> *@
+                    @* <a href="/services" class="text-gray-600 hover:text-primary-700 font-medium">Services</a> *@
+                    @* <a href="/resources" class="text-gray-600 hover:text-primary-700 font-medium">Resources</a> *@
+                    @* <a href="/contact" class="text-gray-600 hover:text-primary-700 font-medium">Contact</a> *@
+                </nav>
+            </div>
+            <!-- Auth Buttons -->
+            <div class="flex items-center space-x-3">
+                <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
+                <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white py-3">
+                    <h3 class="m-0 font-weight-bold">Track Your Application</h3>
+                </div>
+                <div class="card-body p-4">
+                    <p class="text-muted mb-4">Enter your application ID to check the current status and details.</p>
+
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="alert alert-danger mb-4" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i> @Model.ErrorMessage
+                        </div>
+                    }
+
+                    <form method="post" class="mb-4">
+                        <div class="mb-3">
+                            <label for="applicationId" class="form-label">Application ID</label>
+                            <input type="text" class="form-control form-control-lg" id="applicationId" name="ApplicationId"
+                                   value="@Model.ApplicationId" placeholder="Enter your application ID" required>
+                            <span asp-validation-for="ApplicationId" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-search me-2"></i> Find Application
+                        </button>
+                    </form>
+
+                    <!-- Application Results -->
+                    @if (Model.ApplicationFound)
+                    {
+                        <hr class="my-4">
+                        <div class="application-details mt-4">
+                            <h4 class="card-title mb-4">Application Details</h4>
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Status</h5>
+                                <span class="badge bg-@Model.Application.StatusClass px-3 py-2">@Model.Application.Status</span>
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Application ID</h6>
+                                            <p class="card-text fw-bold">@Model.Application.Id</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Institution Name</h6>
+                                            <p class="card-text fw-bold">@Model.Application.InstitutionName</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Trade</h6>
+                                            <p class="card-text fw-bold">@Model.Application.Trade</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted">Application Date</h6>
+                                            <p class="card-text fw-bold">@Model.Application.ApplicationDate.ToShortDateString()</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3">Assessment Scores</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-subtitle mb-2 text-muted">Total Score</h6>
+                                            <p class="card-text display-6 fw-bold">@Model.Application.AssessmentScore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card bg-light h-100">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Experience</h6>
+                                                    <p class="card-text fw-bold h4">@Model.Application.ExperienceScore</p>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Certification</h6>
+                                                    <p class="card-text fw-bold h4">@Model.Application.CertificationScore</p>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Curriculum</h6>
+                                                    <p class="card-text fw-bold h4">@Model.Application.CurriculumScore</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Facilities</h6>
+                                                    <p class="card-text fw-bold h4">@Model.Application.FacilitiesScore</p>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Placement</h6>
+                                                    <p class="card-text fw-bold h4">@Model.Application.PlacementScore</p>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <h6 class="card-subtitle mb-1 text-muted small">Contact</h6>
+                                                    <p class="card-text small">@Model.Application.ContactPerson</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(Model.Application.Comments))
+                            {
+                                <div class="card bg-light mb-4">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-muted">Comments</h6>
+                                        <p class="card-text">@Model.Application.Comments</p>
+                                    </div>
+                                </div>
+                            }
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <a href="/Applications" class="btn btn-outline-secondary">
+                                    <i class="fas fa-list me-2"></i> View All Applications
+                                </a>
+                                <a href="/Dashboard" class="btn btn-primary">
+                                    <i class="fas fa-tachometer-alt me-2"></i> Go to Dashboard
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    else if (Request.Method == "POST" && string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <!-- Not Found State -->
+                        <div class="text-center p-4 mt-4">
+                            <div class="mb-4">
+                                <i class="fas fa-search fa-4x text-muted"></i>
+                            </div>
+                            <h3 class="mb-3">No Application Found</h3>
+                            <p class="text-muted mb-4">We couldn't find an application matching the provided ID. Please check your Application ID and try again.</p>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Troubleshooting Information -->
+            <div class="card mt-4">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Common Questions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+                                    I don't know my Application ID
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Your Application ID was provided in the confirmation email when you submitted your application.
+                                    If you can't find it, please contact support at support@example.com with your institution name
+                                    and the email used during application.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                                    I'm getting an error when tracking my application
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    If you're experiencing errors, please try these steps:
+                                    <ul class="mt-2">
+                                        <li>Make sure you're entering a numeric Application ID</li>
+                                        <li>Clear your browser cache and cookies</li>
+                                        <li>Try using a different browser</li>
+                                        <li>Contact technical support if the issue persists</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                                    How long does the application process take?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The typical application process takes 4-6 weeks from submission to final decision.
+                                    This time can vary depending on the completeness of your application and current volume of submissions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Form validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                const applicationId = document.getElementById('applicationId').value.trim();
+
+                if (!applicationId) {
+                    e.preventDefault();
+                    alert('Please enter an application ID');
+                    return false;
+                }
+
+                // Validate numeric format
+                if (!/^\d+$/.test(applicationId)) {
+                    e.preventDefault();
+                    alert('Please enter a valid numeric application ID');
+                    return false;
+                }
+
+                return true;
+            });
+        });
+    </script>
+}

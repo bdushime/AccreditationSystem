@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "x5XPkQcw3754a3dW/d3axdWpfuU1y16Rln96vCnalMQ=",
+  "Hash": "bhRWNYRxkc5Z8P0etGfpiwZerrvKbCpuIVGM3C6qq9c=",
   "Source": "AccreditationSystem",
   "BasePath": "_content/AccreditationSystem",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "1oaxpz6hzy",
-      "Integrity": "QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=",
+      "Fingerprint": "b6128qpab7",
+      "Integrity": "jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AccreditationSystem.styles.css"
@@ -52,11 +52,74 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "1oaxpz6hzy",
-      "Integrity": "QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=",
+      "Fingerprint": "b6128qpab7",
+      "Integrity": "jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccreditationSystem.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "css/certificate-styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ei51ovdtxn",
+      "Integrity": "2inwiFRDZ3yTTtDrXFJ2R9JlLH33RbuQyXRMTh7t5CE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\certificate-styles.css"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ytaw9iflrx",
+      "Integrity": "1l9pLutw6opDxBu2B3Nho+aUavXnPlAe2cJ+EJsBcCI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "css/home page-style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l6f0gzaihz",
+      "Integrity": "3ejyNZEkTKIGxuHoqmBQh7tQkCNxwacHKZZfJcyd/Fg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home page-style.css"
     },
     {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site.css",
@@ -73,11 +136,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "fosamezn9b",
+      "Integrity": "r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site1.css",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "css/site1#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4gruatz3nc",
+      "Integrity": "dLRbdrNGaRUqK1MOix35rEsYxo4rvWd9UxLn2nRmt7o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site1.css"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\variable.css",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "css/variable#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1i1cuyeok",
+      "Integrity": "ZopMuYM98pPEca40GVcVl9dke6BGm2tH4jSZywa/ATU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\variable.css"
     },
     {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\favicon.ico",
@@ -99,6 +204,531 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/accredited-schools#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7apmf8no6c",
+      "Integrity": "fygs3WOeDOh2+wUSjMDROvporBKuhMf/qUvvPjtSIf8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\accredited-schools.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/blue#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "34fuu5m8ko",
+      "Integrity": "AxptXWcI6EkxcvNLOVSWMrBMm+OlBwQgIjthemZnltY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\blue.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/certificate-verification-#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iu9ucyff83",
+      "Integrity": "pm6hvgkJphf93jjazoQ7Y6YKSi+L1e2u4Z11ckAisDE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\certificate-verification-.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/DenverCharterAcademy#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dx6b2iehlb",
+      "Integrity": "0eFwl0RN6rBjEX7clnSXYLUKGiRNMynm9z6FdYnfjt4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\DenverCharterAcademy.jpeg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/DigitalArtsAcademy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7gg8d76khe",
+      "Integrity": "ufGRHYVzAq6AeZg6IrmrShzOoTFQ9J7q+1rb/O30AXo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\DigitalArtsAcademy.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/FaithCommunityAcademy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sxi3do4j3z",
+      "Integrity": "oA+ZzSoF43ZFafrPbSV00DRdqThyXhIE50ErresE+z0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\FaithCommunityAcademy.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/GlobalEducationCharter#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7br4r93g47",
+      "Integrity": "va3noIKyMZnJvuSAhjrMGImc2tDLxQOeqoIkEsgCn1M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\GlobalEducationCharter.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/HarmonyPublicSchool#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bhate9p0ei",
+      "Integrity": "sQM2UlQD0bb8TgfS4mbkezS0oaDPtbZioHJ3dPq6Upg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HarmonyPublicSchool.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/hero-bg (2)#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4oypprmyt",
+      "Integrity": "oZv5ES5MiAxKPhBsLzFzy9S3301WCA0cevlguVU97Sw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero-bg (2).jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/hero-bg#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jh1qddxbwb",
+      "Integrity": "+SS8eETE+FOooQAQ3pcv2n/FWzJlIxK1eQHJTTYHTUo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero-bg.avif"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/hero-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8c4741yrt5",
+      "Integrity": "uBmYgIGW6vtvj+Q1TYsML89CYXNCzdxxLMEO2lEjpQg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero-bg.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/hero-bg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jt9p0d07i4",
+      "Integrity": "9xHCPAYrgrRRgFAVeyTjsOBNMWaKFGB3aBQqYfzoS6s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero-bg.png"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/InternationalPrepSchool#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "syupfm25kd",
+      "Integrity": "BFC6dfwNSmx569sRbxzBGIagme1c21og2SOI86BAFo4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\InternationalPrepSchool.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/MontessoriChildrenHouse#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oygun74cdc",
+      "Integrity": "oBueOBWOQUyjQCqTpXqgFFPLPCkg4urhx7UZNNGD2Nc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\MontessoriChildrenHouse.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/new-school#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dg5ndn01a9",
+      "Integrity": "o1thrPsWLG6LZbMqwBZW/gGwfz4ugEYHyI4RTqh2SyM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\new-school.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/OakwoodPreparatoryAcademy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w55ingl58a",
+      "Integrity": "XM5Xl3JIlRHIIUrmk3/u/MdLK+AlhfxKlDNRMKSmI/8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\OakwoodPreparatoryAcademy.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/primary-level#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r6kw7jlw57",
+      "Integrity": "MxGaPVgq7FERMe5ZOOL15Z4vI9Lb8HcCjar13NbjT8U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\primary-level.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/secondary-level#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k3gout69pw",
+      "Integrity": "gHk6Dk+A6ul4x5C70j0KRZx18rmjw7wb/+vC+UMGsBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\secondary-level.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/submit-claim#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y19hbo45tb",
+      "Integrity": "6uw9t29xdUacVKpQFfsueLBYr6QrhHSncsJNxgnHXUM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\submit-claim.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/SunshineAcademy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i6s51h6pru",
+      "Integrity": "Fr0L+9A3sivKeUDShgCW/R4ZKHZ7AU5oQExDoBAwlr8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\SunshineAcademy.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/TechInnovationInstitute#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j75w5i5s9c",
+      "Integrity": "X9+54UNfZRYF9na0rqRNhM9Kd5lN8GmWDMciH0abpzY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\TechInnovationInstitute.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/track-application#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "35k65wdme2",
+      "Integrity": "iV/j1wO6jmydacTC2t5o5NHnb2lKuMhYNtI8xDAeUFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\track-application.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/tvet-trades#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4m6ntu6z7",
+      "Integrity": "bd8wqW8ZLJ3fAYPno9YpNjV0mRFnMneZwfBZJavKhe4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tvet-trades.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/VocationalTrainingCenter#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mo6ho7fc1p",
+      "Integrity": "FsBPbP6uHXFT7ytJDBa1YlabYXLTkjTYw1ZvLoTZwwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\VocationalTrainingCenter.jpg"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "images/westside#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nrze4zz0i8",
+      "Integrity": "k8zWM2wBid4BHtuipMvt27MJw0PhKkaqwsaE339DbeA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\westside.jpeg"
     },
     {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\js\\site.js",
@@ -1317,11 +1947,347 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/additional-12fc37ea-9503-473a-86e3-259fd598b12c#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/additional-d3e977df-3edd-46bf-bcdf-2af20c92babe#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/curriculum-20041d91-c578-4f4c-8a02-9d307def2519#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/curriculum-3d9fd762-7e4c-4485-8204-69b33588727b#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/faculty-27d1be12-341d-4e02-a78e-0f3019f787dc#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/faculty-9ccfac05-0657-487b-8cc4-7414440204ef#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/faculty-e0655e74-0c65-4579-8f86-b969e8068ae8#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/self-assessment-d07f928c-1574-4546-b875-9070b4b21482#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7rn8uta7r",
+      "Integrity": "foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf"
     }
   ],
   "Endpoints": [
     {
-      "Route": "AccreditationSystem.1oaxpz6hzy.bundle.scp.css",
+      "Route": "AccreditationSystem.b6128qpab7.bundle.scp.css",
       "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccreditationSystem.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1331,7 +2297,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "2275"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +2305,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=\""
+          "Value": "\"jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:29:35 GMT"
+          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,7 +2319,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1oaxpz6hzy"
+          "Value": "b6128qpab7"
         },
         {
           "Name": "label",
@@ -1361,12 +2327,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk="
+          "Value": "sha256-jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8="
         }
       ]
     },
     {
-      "Route": "AccreditationSystem.1oaxpz6hzy.styles.css",
+      "Route": "AccreditationSystem.b6128qpab7.styles.css",
       "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AccreditationSystem.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1376,7 +2342,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "2275"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +2350,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=\""
+          "Value": "\"jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:29:35 GMT"
+          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +2364,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1oaxpz6hzy"
+          "Value": "b6128qpab7"
         },
         {
           "Name": "label",
@@ -1406,7 +2372,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk="
+          "Value": "sha256-jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8="
         }
       ]
     },
@@ -1421,7 +2387,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "2275"
         },
         {
           "Name": "Content-Type",
@@ -1429,11 +2395,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=\""
+          "Value": "\"jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:29:35 GMT"
+          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1443,7 +2409,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk="
+          "Value": "sha256-jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8="
         }
       ]
     },
@@ -1458,7 +2424,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1137"
+          "Value": "2275"
         },
         {
           "Name": "Content-Type",
@@ -1466,11 +2432,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk=\""
+          "Value": "\"jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:29:35 GMT"
+          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1480,13 +2446,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QXmE9eObO+0OMvBHr3DMpvzrKEspXFvXhjFDFUtXSDk="
+          "Value": "sha256-jc2unw4Jp3SRy75wHV43gHeb9LtmhX6S8EXUC0bndl8="
         }
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site.css",
+      "Route": "css/certificate-styles.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1495,7 +2461,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "622"
         },
         {
           "Name": "Content-Type",
@@ -1503,11 +2469,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"2inwiFRDZ3yTTtDrXFJ2R9JlLH33RbuQyXRMTh7t5CE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:12:04 GMT"
+          "Value": "Sat, 12 Apr 2025 19:45:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2inwiFRDZ3yTTtDrXFJ2R9JlLH33RbuQyXRMTh7t5CE="
+        }
+      ]
+    },
+    {
+      "Route": "css/certificate-styles.ei51ovdtxn.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2inwiFRDZ3yTTtDrXFJ2R9JlLH33RbuQyXRMTh7t5CE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 19:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1517,15 +2520,179 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "ei51ovdtxn"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/certificate-styles.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-2inwiFRDZ3yTTtDrXFJ2R9JlLH33RbuQyXRMTh7t5CE="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1l9pLutw6opDxBu2B3Nho+aUavXnPlAe2cJ+EJsBcCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 08:14:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1l9pLutw6opDxBu2B3Nho+aUavXnPlAe2cJ+EJsBcCI="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.ytaw9iflrx.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1l9pLutw6opDxBu2B3Nho+aUavXnPlAe2cJ+EJsBcCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 08:14:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ytaw9iflrx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1l9pLutw6opDxBu2B3Nho+aUavXnPlAe2cJ+EJsBcCI="
+        }
+      ]
+    },
+    {
+      "Route": "css/home page-style.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ejyNZEkTKIGxuHoqmBQh7tQkCNxwacHKZZfJcyd/Fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 06:19:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3ejyNZEkTKIGxuHoqmBQh7tQkCNxwacHKZZfJcyd/Fg="
+        }
+      ]
+    },
+    {
+      "Route": "css/home page-style.l6f0gzaihz.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ejyNZEkTKIGxuHoqmBQh7tQkCNxwacHKZZfJcyd/Fg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 06:19:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l6f0gzaihz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home page-style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3ejyNZEkTKIGxuHoqmBQh7tQkCNxwacHKZZfJcyd/Fg="
         }
       ]
     },
@@ -1540,7 +2707,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "341"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +2715,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 15:12:04 GMT"
+          "Value": "Sun, 13 Apr 2025 07:28:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +2729,216 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.fosamezn9b.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 07:28:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fosamezn9b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site1.4gruatz3nc.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site1.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dLRbdrNGaRUqK1MOix35rEsYxo4rvWd9UxLn2nRmt7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 18:52:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4gruatz3nc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site1.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dLRbdrNGaRUqK1MOix35rEsYxo4rvWd9UxLn2nRmt7o="
+        }
+      ]
+    },
+    {
+      "Route": "css/site1.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site1.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14334"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dLRbdrNGaRUqK1MOix35rEsYxo4rvWd9UxLn2nRmt7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 18:52:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dLRbdrNGaRUqK1MOix35rEsYxo4rvWd9UxLn2nRmt7o="
+        }
+      ]
+    },
+    {
+      "Route": "css/variable.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\variable.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZopMuYM98pPEca40GVcVl9dke6BGm2tH4jSZywa/ATU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 20:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZopMuYM98pPEca40GVcVl9dke6BGm2tH4jSZywa/ATU="
+        }
+      ]
+    },
+    {
+      "Route": "css/variable.m1i1cuyeok.css",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\variable.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZopMuYM98pPEca40GVcVl9dke6BGm2tH4jSZywa/ATU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Apr 2025 20:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1i1cuyeok"
+        },
+        {
+          "Name": "label",
+          "Value": "css/variable.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZopMuYM98pPEca40GVcVl9dke6BGm2tH4jSZywa/ATU="
         }
       ]
     },
@@ -1645,6 +3021,2056 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/accredited-schools.7apmf8no6c.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "438470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fygs3WOeDOh2+wUSjMDROvporBKuhMf/qUvvPjtSIf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:45:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7apmf8no6c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/accredited-schools.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fygs3WOeDOh2+wUSjMDROvporBKuhMf/qUvvPjtSIf8="
+        }
+      ]
+    },
+    {
+      "Route": "images/accredited-schools.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "438470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fygs3WOeDOh2+wUSjMDROvporBKuhMf/qUvvPjtSIf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:45:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fygs3WOeDOh2+wUSjMDROvporBKuhMf/qUvvPjtSIf8="
+        }
+      ]
+    },
+    {
+      "Route": "images/blue.34fuu5m8ko.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxptXWcI6EkxcvNLOVSWMrBMm+OlBwQgIjthemZnltY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:59:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "34fuu5m8ko"
+        },
+        {
+          "Name": "label",
+          "Value": "images/blue.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AxptXWcI6EkxcvNLOVSWMrBMm+OlBwQgIjthemZnltY="
+        }
+      ]
+    },
+    {
+      "Route": "images/blue.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6339"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxptXWcI6EkxcvNLOVSWMrBMm+OlBwQgIjthemZnltY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 11:59:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AxptXWcI6EkxcvNLOVSWMrBMm+OlBwQgIjthemZnltY="
+        }
+      ]
+    },
+    {
+      "Route": "images/certificate-verification-.iu9ucyff83.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pm6hvgkJphf93jjazoQ7Y6YKSi+L1e2u4Z11ckAisDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:39:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iu9ucyff83"
+        },
+        {
+          "Name": "label",
+          "Value": "images/certificate-verification-.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pm6hvgkJphf93jjazoQ7Y6YKSi+L1e2u4Z11ckAisDE="
+        }
+      ]
+    },
+    {
+      "Route": "images/certificate-verification-.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pm6hvgkJphf93jjazoQ7Y6YKSi+L1e2u4Z11ckAisDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:39:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pm6hvgkJphf93jjazoQ7Y6YKSi+L1e2u4Z11ckAisDE="
+        }
+      ]
+    },
+    {
+      "Route": "images/DenverCharterAcademy.dx6b2iehlb.jpeg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1695327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0eFwl0RN6rBjEX7clnSXYLUKGiRNMynm9z6FdYnfjt4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:10:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dx6b2iehlb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/DenverCharterAcademy.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0eFwl0RN6rBjEX7clnSXYLUKGiRNMynm9z6FdYnfjt4="
+        }
+      ]
+    },
+    {
+      "Route": "images/DenverCharterAcademy.jpeg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1695327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0eFwl0RN6rBjEX7clnSXYLUKGiRNMynm9z6FdYnfjt4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:10:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0eFwl0RN6rBjEX7clnSXYLUKGiRNMynm9z6FdYnfjt4="
+        }
+      ]
+    },
+    {
+      "Route": "images/DigitalArtsAcademy.7gg8d76khe.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ufGRHYVzAq6AeZg6IrmrShzOoTFQ9J7q+1rb/O30AXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7gg8d76khe"
+        },
+        {
+          "Name": "label",
+          "Value": "images/DigitalArtsAcademy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ufGRHYVzAq6AeZg6IrmrShzOoTFQ9J7q+1rb/O30AXo="
+        }
+      ]
+    },
+    {
+      "Route": "images/DigitalArtsAcademy.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ufGRHYVzAq6AeZg6IrmrShzOoTFQ9J7q+1rb/O30AXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ufGRHYVzAq6AeZg6IrmrShzOoTFQ9J7q+1rb/O30AXo="
+        }
+      ]
+    },
+    {
+      "Route": "images/FaithCommunityAcademy.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153886"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA+ZzSoF43ZFafrPbSV00DRdqThyXhIE50ErresE+z0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:17:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oA+ZzSoF43ZFafrPbSV00DRdqThyXhIE50ErresE+z0="
+        }
+      ]
+    },
+    {
+      "Route": "images/FaithCommunityAcademy.sxi3do4j3z.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153886"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oA+ZzSoF43ZFafrPbSV00DRdqThyXhIE50ErresE+z0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:17:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sxi3do4j3z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/FaithCommunityAcademy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oA+ZzSoF43ZFafrPbSV00DRdqThyXhIE50ErresE+z0="
+        }
+      ]
+    },
+    {
+      "Route": "images/GlobalEducationCharter.7br4r93g47.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"va3noIKyMZnJvuSAhjrMGImc2tDLxQOeqoIkEsgCn1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:06:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7br4r93g47"
+        },
+        {
+          "Name": "label",
+          "Value": "images/GlobalEducationCharter.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-va3noIKyMZnJvuSAhjrMGImc2tDLxQOeqoIkEsgCn1M="
+        }
+      ]
+    },
+    {
+      "Route": "images/GlobalEducationCharter.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"va3noIKyMZnJvuSAhjrMGImc2tDLxQOeqoIkEsgCn1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:06:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-va3noIKyMZnJvuSAhjrMGImc2tDLxQOeqoIkEsgCn1M="
+        }
+      ]
+    },
+    {
+      "Route": "images/HarmonyPublicSchool.bhate9p0ei.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sQM2UlQD0bb8TgfS4mbkezS0oaDPtbZioHJ3dPq6Upg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bhate9p0ei"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HarmonyPublicSchool.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sQM2UlQD0bb8TgfS4mbkezS0oaDPtbZioHJ3dPq6Upg="
+        }
+      ]
+    },
+    {
+      "Route": "images/HarmonyPublicSchool.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sQM2UlQD0bb8TgfS4mbkezS0oaDPtbZioHJ3dPq6Upg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:13:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sQM2UlQD0bb8TgfS4mbkezS0oaDPtbZioHJ3dPq6Upg="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg (2).h4oypprmyt.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2365668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZv5ES5MiAxKPhBsLzFzy9S3301WCA0cevlguVU97Sw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4oypprmyt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hero-bg (2).jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZv5ES5MiAxKPhBsLzFzy9S3301WCA0cevlguVU97Sw="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg (2).jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2365668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZv5ES5MiAxKPhBsLzFzy9S3301WCA0cevlguVU97Sw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZv5ES5MiAxKPhBsLzFzy9S3301WCA0cevlguVU97Sw="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.8c4741yrt5.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uBmYgIGW6vtvj+Q1TYsML89CYXNCzdxxLMEO2lEjpQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 19:40:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8c4741yrt5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hero-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uBmYgIGW6vtvj+Q1TYsML89CYXNCzdxxLMEO2lEjpQg="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.avif",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+SS8eETE+FOooQAQ3pcv2n/FWzJlIxK1eQHJTTYHTUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:02:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+SS8eETE+FOooQAQ3pcv2n/FWzJlIxK1eQHJTTYHTUo="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.jh1qddxbwb.avif",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+SS8eETE+FOooQAQ3pcv2n/FWzJlIxK1eQHJTTYHTUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:02:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jh1qddxbwb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hero-bg.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+SS8eETE+FOooQAQ3pcv2n/FWzJlIxK1eQHJTTYHTUo="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uBmYgIGW6vtvj+Q1TYsML89CYXNCzdxxLMEO2lEjpQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 19:40:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uBmYgIGW6vtvj+Q1TYsML89CYXNCzdxxLMEO2lEjpQg="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.jt9p0d07i4.png",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559873"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9xHCPAYrgrRRgFAVeyTjsOBNMWaKFGB3aBQqYfzoS6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:49:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jt9p0d07i4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hero-bg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9xHCPAYrgrRRgFAVeyTjsOBNMWaKFGB3aBQqYfzoS6s="
+        }
+      ]
+    },
+    {
+      "Route": "images/hero-bg.png",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "559873"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9xHCPAYrgrRRgFAVeyTjsOBNMWaKFGB3aBQqYfzoS6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:49:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9xHCPAYrgrRRgFAVeyTjsOBNMWaKFGB3aBQqYfzoS6s="
+        }
+      ]
+    },
+    {
+      "Route": "images/InternationalPrepSchool.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFC6dfwNSmx569sRbxzBGIagme1c21og2SOI86BAFo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:16:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFC6dfwNSmx569sRbxzBGIagme1c21og2SOI86BAFo4="
+        }
+      ]
+    },
+    {
+      "Route": "images/InternationalPrepSchool.syupfm25kd.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BFC6dfwNSmx569sRbxzBGIagme1c21og2SOI86BAFo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:16:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "syupfm25kd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/InternationalPrepSchool.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BFC6dfwNSmx569sRbxzBGIagme1c21og2SOI86BAFo4="
+        }
+      ]
+    },
+    {
+      "Route": "images/MontessoriChildrenHouse.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oBueOBWOQUyjQCqTpXqgFFPLPCkg4urhx7UZNNGD2Nc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:11:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oBueOBWOQUyjQCqTpXqgFFPLPCkg4urhx7UZNNGD2Nc="
+        }
+      ]
+    },
+    {
+      "Route": "images/MontessoriChildrenHouse.oygun74cdc.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oBueOBWOQUyjQCqTpXqgFFPLPCkg4urhx7UZNNGD2Nc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:11:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oygun74cdc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/MontessoriChildrenHouse.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oBueOBWOQUyjQCqTpXqgFFPLPCkg4urhx7UZNNGD2Nc="
+        }
+      ]
+    },
+    {
+      "Route": "images/new-school.dg5ndn01a9.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1thrPsWLG6LZbMqwBZW/gGwfz4ugEYHyI4RTqh2SyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:06:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dg5ndn01a9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/new-school.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1thrPsWLG6LZbMqwBZW/gGwfz4ugEYHyI4RTqh2SyM="
+        }
+      ]
+    },
+    {
+      "Route": "images/new-school.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1thrPsWLG6LZbMqwBZW/gGwfz4ugEYHyI4RTqh2SyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 18:06:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1thrPsWLG6LZbMqwBZW/gGwfz4ugEYHyI4RTqh2SyM="
+        }
+      ]
+    },
+    {
+      "Route": "images/OakwoodPreparatoryAcademy.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "359862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XM5Xl3JIlRHIIUrmk3/u/MdLK+AlhfxKlDNRMKSmI/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:08:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XM5Xl3JIlRHIIUrmk3/u/MdLK+AlhfxKlDNRMKSmI/8="
+        }
+      ]
+    },
+    {
+      "Route": "images/OakwoodPreparatoryAcademy.w55ingl58a.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "359862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XM5Xl3JIlRHIIUrmk3/u/MdLK+AlhfxKlDNRMKSmI/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:08:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w55ingl58a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/OakwoodPreparatoryAcademy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XM5Xl3JIlRHIIUrmk3/u/MdLK+AlhfxKlDNRMKSmI/8="
+        }
+      ]
+    },
+    {
+      "Route": "images/primary-level.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MxGaPVgq7FERMe5ZOOL15Z4vI9Lb8HcCjar13NbjT8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:37:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MxGaPVgq7FERMe5ZOOL15Z4vI9Lb8HcCjar13NbjT8U="
+        }
+      ]
+    },
+    {
+      "Route": "images/primary-level.r6kw7jlw57.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MxGaPVgq7FERMe5ZOOL15Z4vI9Lb8HcCjar13NbjT8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:37:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6kw7jlw57"
+        },
+        {
+          "Name": "label",
+          "Value": "images/primary-level.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MxGaPVgq7FERMe5ZOOL15Z4vI9Lb8HcCjar13NbjT8U="
+        }
+      ]
+    },
+    {
+      "Route": "images/secondary-level.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1095701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gHk6Dk+A6ul4x5C70j0KRZx18rmjw7wb/+vC+UMGsBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:34:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gHk6Dk+A6ul4x5C70j0KRZx18rmjw7wb/+vC+UMGsBE="
+        }
+      ]
+    },
+    {
+      "Route": "images/secondary-level.k3gout69pw.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1095701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gHk6Dk+A6ul4x5C70j0KRZx18rmjw7wb/+vC+UMGsBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:34:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k3gout69pw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/secondary-level.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gHk6Dk+A6ul4x5C70j0KRZx18rmjw7wb/+vC+UMGsBE="
+        }
+      ]
+    },
+    {
+      "Route": "images/submit-claim.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6uw9t29xdUacVKpQFfsueLBYr6QrhHSncsJNxgnHXUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6uw9t29xdUacVKpQFfsueLBYr6QrhHSncsJNxgnHXUM="
+        }
+      ]
+    },
+    {
+      "Route": "images/submit-claim.y19hbo45tb.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6uw9t29xdUacVKpQFfsueLBYr6QrhHSncsJNxgnHXUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y19hbo45tb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/submit-claim.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6uw9t29xdUacVKpQFfsueLBYr6QrhHSncsJNxgnHXUM="
+        }
+      ]
+    },
+    {
+      "Route": "images/SunshineAcademy.i6s51h6pru.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "230312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr0L+9A3sivKeUDShgCW/R4ZKHZ7AU5oQExDoBAwlr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i6s51h6pru"
+        },
+        {
+          "Name": "label",
+          "Value": "images/SunshineAcademy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr0L+9A3sivKeUDShgCW/R4ZKHZ7AU5oQExDoBAwlr8="
+        }
+      ]
+    },
+    {
+      "Route": "images/SunshineAcademy.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "230312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fr0L+9A3sivKeUDShgCW/R4ZKHZ7AU5oQExDoBAwlr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fr0L+9A3sivKeUDShgCW/R4ZKHZ7AU5oQExDoBAwlr8="
+        }
+      ]
+    },
+    {
+      "Route": "images/TechInnovationInstitute.j75w5i5s9c.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9+54UNfZRYF9na0rqRNhM9Kd5lN8GmWDMciH0abpzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:05:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j75w5i5s9c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/TechInnovationInstitute.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X9+54UNfZRYF9na0rqRNhM9Kd5lN8GmWDMciH0abpzY="
+        }
+      ]
+    },
+    {
+      "Route": "images/TechInnovationInstitute.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X9+54UNfZRYF9na0rqRNhM9Kd5lN8GmWDMciH0abpzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:05:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X9+54UNfZRYF9na0rqRNhM9Kd5lN8GmWDMciH0abpzY="
+        }
+      ]
+    },
+    {
+      "Route": "images/track-application.35k65wdme2.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iV/j1wO6jmydacTC2t5o5NHnb2lKuMhYNtI8xDAeUFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "35k65wdme2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/track-application.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iV/j1wO6jmydacTC2t5o5NHnb2lKuMhYNtI8xDAeUFU="
+        }
+      ]
+    },
+    {
+      "Route": "images/track-application.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iV/j1wO6jmydacTC2t5o5NHnb2lKuMhYNtI8xDAeUFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iV/j1wO6jmydacTC2t5o5NHnb2lKuMhYNtI8xDAeUFU="
+        }
+      ]
+    },
+    {
+      "Route": "images/tvet-trades.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bd8wqW8ZLJ3fAYPno9YpNjV0mRFnMneZwfBZJavKhe4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:32:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bd8wqW8ZLJ3fAYPno9YpNjV0mRFnMneZwfBZJavKhe4="
+        }
+      ]
+    },
+    {
+      "Route": "images/tvet-trades.z4m6ntu6z7.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bd8wqW8ZLJ3fAYPno9YpNjV0mRFnMneZwfBZJavKhe4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 17:32:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4m6ntu6z7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tvet-trades.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bd8wqW8ZLJ3fAYPno9YpNjV0mRFnMneZwfBZJavKhe4="
+        }
+      ]
+    },
+    {
+      "Route": "images/VocationalTrainingCenter.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490767"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FsBPbP6uHXFT7ytJDBa1YlabYXLTkjTYw1ZvLoTZwwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:14:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FsBPbP6uHXFT7ytJDBa1YlabYXLTkjTYw1ZvLoTZwwg="
+        }
+      ]
+    },
+    {
+      "Route": "images/VocationalTrainingCenter.mo6ho7fc1p.jpg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490767"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FsBPbP6uHXFT7ytJDBa1YlabYXLTkjTYw1ZvLoTZwwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:14:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mo6ho7fc1p"
+        },
+        {
+          "Name": "label",
+          "Value": "images/VocationalTrainingCenter.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FsBPbP6uHXFT7ytJDBa1YlabYXLTkjTYw1ZvLoTZwwg="
+        }
+      ]
+    },
+    {
+      "Route": "images/westside.jpeg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k8zWM2wBid4BHtuipMvt27MJw0PhKkaqwsaE339DbeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:02:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k8zWM2wBid4BHtuipMvt27MJw0PhKkaqwsaE339DbeA="
+        }
+      ]
+    },
+    {
+      "Route": "images/westside.nrze4zz0i8.jpeg",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k8zWM2wBid4BHtuipMvt27MJw0PhKkaqwsaE339DbeA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 13:02:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nrze4zz0i8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/westside.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k8zWM2wBid4BHtuipMvt27MJw0PhKkaqwsaE339DbeA="
         }
       ]
     },
@@ -6401,6 +9827,1318 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-12fc37ea-9503-473a-86e3-259fd598b12c.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-20041d91-c578-4f4c-8a02-9d307def2519.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-9ccfac05-0657-487b-8cc4-7414440204ef.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:45:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-d07f928c-1574-4546-b875-9070b4b21482.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.m7rn8uta7r.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7rn8uta7r"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:48:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
         }
       ]
     }
