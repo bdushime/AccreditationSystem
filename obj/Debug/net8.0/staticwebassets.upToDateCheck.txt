@@ -93,14 +93,17 @@ wwwroot\uploads\accreditation-claims\additional-37d34a6f-a0de-41c9-8b9c-c067d6b1
 wwwroot\uploads\accreditation-claims\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf
 wwwroot\uploads\accreditation-claims\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf
 wwwroot\uploads\accreditation-claims\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf
+wwwroot\uploads\accreditation-claims\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf
 wwwroot\uploads\accreditation-claims\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf
 wwwroot\uploads\accreditation-claims\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf
 wwwroot\uploads\accreditation-claims\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf
 wwwroot\uploads\accreditation-claims\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf
+wwwroot\uploads\accreditation-claims\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf
 wwwroot\uploads\accreditation-claims\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf
 wwwroot\uploads\accreditation-claims\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf
 wwwroot\uploads\accreditation-claims\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf
 wwwroot\uploads\accreditation-claims\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf
 wwwroot\uploads\accreditation-claims\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf
+wwwroot\uploads\accreditation-claims\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf
 wwwroot\uploads\accreditation-claims\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf
 wwwroot\uploads\accreditation-claims\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf

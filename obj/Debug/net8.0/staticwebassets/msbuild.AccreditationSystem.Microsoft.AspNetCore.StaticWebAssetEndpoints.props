@@ -1152,6 +1152,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18413"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 20:46:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.e3j8282gsf.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e3j8282gsf"},{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="},{"Name":"label","Value":"_content/AccreditationSystem/uploads/accreditation-claims/curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/curriculum-20041d91-c578-4f4c-8a02-9d307def2519.m7rn8uta7r.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1199,6 +1211,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18413"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 20:45:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.e3j8282gsf.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e3j8282gsf"},{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="},{"Name":"label","Value":"_content/AccreditationSystem/uploads/accreditation-claims/faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/faculty-9ccfac05-0657-487b-8cc4-7414440204ef.m7rn8uta7r.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf'))</AssetFile>
@@ -1259,6 +1283,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"18413"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Apr 2025 20:45:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.e3j8282gsf.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e3j8282gsf"},{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="},{"Name":"label","Value":"_content/AccreditationSystem/uploads/accreditation-claims/self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29412"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022qpTI9\u002B/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 18:18:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AccreditationSystem/uploads/accreditation-claims/self-assessment-d07f928c-1574-4546-b875-9070b4b21482.m7rn8uta7r.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf'))</AssetFile>

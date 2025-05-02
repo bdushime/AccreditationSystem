@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
+using System.Text.Json;
 
 namespace AccreditationSystem.Pages.Admin
 {
@@ -140,52 +141,62 @@ namespace AccreditationSystem.Pages.Admin
                         }
                     }
                 }
-                string additionalDocumentationPath = string.Join(";", additionalDocPaths);
 
-                // 2. Save to database
+                // Format additional info as JSON to store in AdditionalInfo field
+                var additionalInfo = new
+                {
+                    Email = Email,
+                    AccreditationType = AccreditationType,
+                    AccreditationLevel = AccreditationLevel,
+                    PreviousStatus = PreviousStatus,
+                    StartDate = StartDate,
+                    EndDate = EndDate,
+                    SelfAssessmentReportPath = selfAssessmentPath,
+                    CurriculumDocumentationPath = curriculumPath,
+                    FacultyCredentialsPath = facultyCredentialsPath,
+                    AdditionalDocumentationPath = string.Join(";", additionalDocPaths),
+                    AcademicStandards = AcademicStandards,
+                    FacultyStandards = FacultyStandards,
+                    FacilityStandards = FacilityStandards,
+                    StudentServices = StudentServices,
+                    ContactName = ContactName,
+                    ContactPosition = ContactPosition,
+                    ContactEmail = ContactEmail,
+                    ContactPhone = ContactPhone,
+                    AdditionalComments = AdditionalComments
+                };
+
+                string additionalInfoJson = System.Text.Json.JsonSerializer.Serialize(additionalInfo);
+
+                // 2. Save to database using the simple Claims table structure
                 using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
                 {
                     await connection.OpenAsync();
 
                     string sql = @"
-                        INSERT INTO AccreditationClaims (
-                            SchoolEmail, AccreditationType, AccreditationLevel, PreviousStatus, 
-                            StartDate, EndDate, SelfAssessmentReportPath, CurriculumDocumentationPath, 
-                            FacultyCredentialsPath, AdditionalDocumentationPath, AcademicStandards, 
-                            FacultyStandards, FacilityStandards, StudentServices, ContactName, 
-                            ContactPosition, ContactEmail, ContactPhone, AdditionalComments, Status
+                        INSERT INTO dbo.Claims (
+                            ApplicationId, 
+                            ClaimReason, 
+                            AdditionalInformation, 
+                            SubmissionDate, 
+                            Status
                         ) VALUES (
-                            @SchoolEmail, @AccreditationType, @AccreditationLevel, @PreviousStatus, 
-                            @StartDate, @EndDate, @SelfAssessmentReportPath, @CurriculumDocumentationPath, 
-                            @FacultyCredentialsPath, @AdditionalDocumentationPath, @AcademicStandards, 
-                            @FacultyStandards, @FacilityStandards, @StudentServices, @ContactName, 
-                            @ContactPosition, @ContactEmail, @ContactPhone, @AdditionalComments, 'Submitted'
+                            @ApplicationId, 
+                            @ClaimReason, 
+                            @AdditionalInfo, 
+                            @SubmissionDate, 
+                            @Status
                         );
                         SELECT SCOPE_IDENTITY();";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         // Add parameters to prevent SQL injection
-                        command.Parameters.AddWithValue("@SchoolEmail", Email);
-                        command.Parameters.AddWithValue("@AccreditationType", AccreditationType);
-                        command.Parameters.AddWithValue("@AccreditationLevel", AccreditationLevel);
-                        command.Parameters.AddWithValue("@PreviousStatus", (object)PreviousStatus ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@StartDate", StartDate);
-                        command.Parameters.AddWithValue("@EndDate", EndDate);
-                        command.Parameters.AddWithValue("@SelfAssessmentReportPath", selfAssessmentPath);
-                        command.Parameters.AddWithValue("@CurriculumDocumentationPath", curriculumPath);
-                        command.Parameters.AddWithValue("@FacultyCredentialsPath", facultyCredentialsPath);
-                        command.Parameters.AddWithValue("@AdditionalDocumentationPath", (object)additionalDocumentationPath ?? DBNull.Value);
-                        command.Parameters.AddWithValue("@AcademicStandards", AcademicStandards);
-                        command.Parameters.AddWithValue("@FacultyStandards", FacultyStandards);
-                        command.Parameters.AddWithValue("@FacilityStandards", FacilityStandards);
-                        command.Parameters.AddWithValue("@StudentServices", StudentServices);
-                        command.Parameters.AddWithValue("@ContactName", ContactName);
-                        command.Parameters.AddWithValue("@ContactPosition", ContactPosition);
-                        command.Parameters.AddWithValue("@ContactEmail", ContactEmail);
-                        command.Parameters.AddWithValue("@ContactPhone", ContactPhone);
-                        command.Parameters.AddWithValue("@AdditionalComments", (object)AdditionalComments ?? DBNull.Value);
-
+                        command.Parameters.AddWithValue("@ApplicationId", DBNull.Value); // You may need to provide a real ApplicationId if applicable
+                        command.Parameters.AddWithValue("@ClaimReason", AccreditationType); // Using AccreditationType as ClaimReason
+                        command.Parameters.AddWithValue("@AdditionalInfo", additionalInfoJson);
+                        command.Parameters.AddWithValue("@SubmissionDate", DateTime.Now);
+                        command.Parameters.AddWithValue("@Status", "Submitted");
 
                         // Execute the query and get the new claim ID
                         var result = await command.ExecuteScalarAsync();
