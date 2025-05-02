@@ -17,6 +17,9 @@ namespace AccreditationSystem.Pages.Admin
         }
 
         [BindProperty]
+        public int ApplicationId { get; set; }
+
+        [BindProperty]
         public string Email { get; set; }
 
         [BindProperty]
@@ -71,7 +74,7 @@ namespace AccreditationSystem.Pages.Admin
         public string ContactPhone { get; set; }
 
         [BindProperty]
-        public string AdditionalComments { get; set; }
+        public string? AdditionalComments { get; set; }
 
         [BindProperty]
         public bool Certify { get; set; }
@@ -82,10 +85,15 @@ namespace AccreditationSystem.Pages.Admin
         public void OnGet()
         {
             // Initialize any needed data for the form
+            // Hardcode ApplicationId for testing
+            ApplicationId = 1;
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
+            // Hardcode ApplicationId for testing
+            ApplicationId = 1;
+
             // Track validation errors
             List<string> validationErrors = new List<string>();
 
@@ -142,7 +150,7 @@ namespace AccreditationSystem.Pages.Admin
                     }
                 }
 
-                // Format additional info as JSON to store in AdditionalInfo field
+                // Format additional info as JSON to store in AdditionalInformation field
                 var additionalInfo = new
                 {
                     Email = Email,
@@ -163,7 +171,7 @@ namespace AccreditationSystem.Pages.Admin
                     ContactPosition = ContactPosition,
                     ContactEmail = ContactEmail,
                     ContactPhone = ContactPhone,
-                    AdditionalComments = AdditionalComments
+                    AdditionalComments = AdditionalComments ?? string.Empty,
                 };
 
                 string additionalInfoJson = System.Text.Json.JsonSerializer.Serialize(additionalInfo);
@@ -183,7 +191,7 @@ namespace AccreditationSystem.Pages.Admin
                         ) VALUES (
                             @ApplicationId, 
                             @ClaimReason, 
-                            @AdditionalInfo, 
+                            @AdditionalInformation, 
                             @SubmissionDate, 
                             @Status
                         );
@@ -192,9 +200,9 @@ namespace AccreditationSystem.Pages.Admin
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         // Add parameters to prevent SQL injection
-                        command.Parameters.AddWithValue("@ApplicationId", DBNull.Value); // You may need to provide a real ApplicationId if applicable
+                        command.Parameters.AddWithValue("@ApplicationId", ApplicationId);
                         command.Parameters.AddWithValue("@ClaimReason", AccreditationType); // Using AccreditationType as ClaimReason
-                        command.Parameters.AddWithValue("@AdditionalInfo", additionalInfoJson);
+                        command.Parameters.AddWithValue("@AdditionalInformation", additionalInfoJson);
                         command.Parameters.AddWithValue("@SubmissionDate", DateTime.Now);
                         command.Parameters.AddWithValue("@Status", "Submitted");
 

@@ -365,8 +365,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-04041f6c-105b-4fb3-a0b4-875ab32f7e56.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-04041f6c-105b-4fb3-a0b4-875ab32f7e56.pdf"
+    },
+    {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-1983b7df-3e6a-44ea-808b-21d395434f74.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-1983b7df-3e6a-44ea-808b-21d395434f74.pdf"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
@@ -377,8 +385,16 @@
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf"
     },
     {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-df0fa5ab-ff98-43f9-a9b3-262b2a63f88a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-df0fa5ab-ff98-43f9-a9b3-262b2a63f88a.pdf"
+    },
+    {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-015f760f-059f-4515-92ab-4e81d6168b17.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-015f760f-059f-4515-92ab-4e81d6168b17.pdf"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
@@ -397,8 +413,24 @@
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf"
     },
     {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-475bb5e1-1d27-46e5-94f7-4602940469c3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-475bb5e1-1d27-46e5-94f7-4602940469c3.pdf"
+    },
+    {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-2638a40e-06dd-4f37-887f-1ea7777c75db.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-2638a40e-06dd-4f37-887f-1ea7777c75db.pdf"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
@@ -407,6 +439,10 @@
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-5a6b9030-dfe5-4ea3-afb3-877aff85539b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-5a6b9030-dfe5-4ea3-afb3-877aff85539b.pdf"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
@@ -421,6 +457,10 @@
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
     },
     {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf"
+    },
+    {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf"
     },
@@ -431,6 +471,14 @@
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b18e4cf5-c2b8-4715-a169-d46d5b191b9b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-b18e4cf5-c2b8-4715-a169-d46d5b191b9b.pdf"
+    },
+    {
+      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b8d72e1c-a237-41fc-a8cf-b00527e4cdc6.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-b8d72e1c-a237-41fc-a8cf-b00527e4cdc6.pdf"
     },
     {
       "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
