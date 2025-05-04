@@ -127,7 +127,7 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                         command.Parameters.AddWithValue("@ClaimID", id);
                         command.Parameters.AddWithValue("@ApprovalDate", DateTime.Now);
                         command.Parameters.AddWithValue("@LastUpdatedDate", DateTime.Now);
-                        command.Parameters.AddWithValue("@ReviewerID", "HOD"); // You might want to get this from user session
+                        command.Parameters.AddWithValue("@ReviewerID", 1); // Using a numeric ID instead of string 'HOD'
 
                         int rowsAffected = await command.ExecuteNonQueryAsync();
 
@@ -142,12 +142,12 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                     }
                 }
 
-                return RedirectToPage("/Hod_Dashboard/ClaimDetails", new { id });
+                return RedirectToPage("/Hod_Dashboard/ClaimDetail", new { id });
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error approving claim: {ex.Message}";
-                return RedirectToPage("/Hod_Dashboard/ClaimDetails", new { id });
+                return RedirectToPage("/Hod_Dashboard/ClaimDetail", new { id });
             }
         }
 
@@ -173,7 +173,7 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                         command.Parameters.AddWithValue("@ClaimID", id);
                         command.Parameters.AddWithValue("@ReviewDate", DateTime.Now);
                         command.Parameters.AddWithValue("@LastUpdatedDate", DateTime.Now);
-                        command.Parameters.AddWithValue("@ReviewerID", "HOD"); // You might want to get this from user session
+                        command.Parameters.AddWithValue("@ReviewerID", 1); // Using a numeric ID instead of string 'HOD'
 
                         int rowsAffected = await command.ExecuteNonQueryAsync();
 
@@ -188,12 +188,12 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                     }
                 }
 
-                return RedirectToPage("/Hod_Dashboard/ClaimDetails", new { id });
+                return RedirectToPage("/Hod_Dashboard/ClaimDetail", new { id });
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error rejecting claim: {ex.Message}";
-                return RedirectToPage("/Hod_Dashboard/ClaimDetails", new { id });
+                return RedirectToPage("/Hod_Dashboard/ClaimDetail", new { id });
             }
         }
     }
