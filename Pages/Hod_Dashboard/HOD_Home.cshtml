@@ -18,7 +18,7 @@
                 <nav class="hidden md:flex space-x-8 items-center">
                     <a asp-area="" asp-page="/Hod_Dashboard/HOD_HOME" class="text-indigo-600 border-b-2 border-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
                     <a asp-area="" asp-page="/Hod_Dashboard/HOD_Applications" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Applications</a>
-                    <a  asp-area="" asp-page="/Hod_Dashboard/HOD_Schools" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Schools</a>
+                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_Schools" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Schools</a>
                     <a asp-area="" asp-page="/Hod_Dashboard/HOD_Inspections" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Inspections</a>
                     <a asp-area="" asp-page="/Hod_Dashboard/HOD_Claims" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Claims</a>
                 </nav>
@@ -39,7 +39,7 @@
 
     <!-- Main Content -->
     <main class="w-full mx-auto py-6 sm:px-6 lg:px-8">
-        <!-- Welcome Section -->
+        <!-- Welcome Section - Updated to use dynamic user name -->
         <div class="bg-violet-400/30 overflow-hidden shadow-sm rounded-lg mb-6">
             <div class="px-4 py-2 sm:p-4">
                 <div class="flex items-center">
@@ -50,7 +50,7 @@
                         <span class="text-sm text-gray-500">23rd March 2025</span>
                     </div>
                 </div>
-                <h1 class="mt-2 text-xl font-semibold text-gray-900">Hi Joshua</h1>
+                <h1 class="mt-2 text-xl font-semibold text-gray-900">Hi @Model.UserFirstName</h1>
                 <p class="text-sm text-gray-500">We're glad you're back, check all the recent activities</p>
             </div>
         </div>
@@ -74,13 +74,13 @@
                                 </span>
                             </div>
                             <div class="flex justify-between items-center mt-3 border-t border-slate-100">
-                                <p class="text-3xl font-bold text-indigo-600">50</p>
-                            <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                View
-                                <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                                <p class="text-3xl font-bold text-indigo-600">@Model.RequestsThisMonth</p>
+                                <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                    View
+                                    <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -99,13 +99,13 @@
                                 </span>
                             </div>
                             <div class="flex justify-between items-center mt-3 border-t border-slate-100">
-                                <p class="text-3xl font-bold text-indigo-600">50</p>
-                            <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                View
-                                <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                                <p class="text-3xl font-bold text-indigo-600">@Model.TotalAnalystSpecialists</p>
+                                <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                    View
+                                    <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -124,13 +124,13 @@
                                 </span>
                             </div>
                             <div class="flex justify-between items-center mt-3 border-t border-slate-100">
-                                <p class="text-3xl font-bold text-indigo-600">24</p>
-                            <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                View
-                                <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                                <p class="text-3xl font-bold text-indigo-600">@Model.ScheduledInspections</p>
+                                <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                    View
+                                    <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -149,13 +149,13 @@
                                 </span>
                             </div>
                             <div class="flex justify-between items-center mt-3 border-t border-slate-100">
-                                <p class="text-3xl font-bold text-indigo-600">120</p>
-                            <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                View
-                                <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                                <p class="text-3xl font-bold text-indigo-600">@Model.TotalSchools</p>
+                                <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                    View
+                                    <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -174,13 +174,13 @@
                                 </span>
                             </div>
                             <div class="flex justify-between items-center mt-3 border-t border-slate-100">
-                                <p class="text-3xl font-bold text-indigo-600">12</p>
-                            <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                                View
-                                <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                                <p class="text-3xl font-bold text-indigo-600">@Model.TotalClaims</p>
+                                <button class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                    View
+                                    <svg class="ml-0.5 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -190,188 +190,184 @@
 
         <!-- Applications Management Section -->
         <div class="mt-6">
-
-            <!-- Applications Management Section -->
-            <div class="mt-6">
-                <div class="sm:flex sm:items-center">
-                    <div class="sm:flex-auto">
-                        <h3 class="text-xl font-semibold text-gray-900">Manage Applications</h3>
-                        @if (TempData["ErrorMessage"] != null)
-                        {
-                            <div class="mt-2 p-2 bg-red-100 text-red-700 rounded">
-                                @TempData["ErrorMessage"]
-                            </div>
-                        }
+            <div class="sm:flex sm:items-center">
+                <div class="sm:flex-auto">
+                    <h3 class="text-xl font-semibold text-gray-900">Manage Applications</h3>
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="mt-2 p-2 bg-red-100 text-red-700 rounded">
+                            @TempData["ErrorMessage"]
+                        </div>
+                    }
+                </div>
+                <div class="mt-4 sm:mt-0 sm:flex sm:items-center">
+                    <!-- Search Bar -->
+                    <div class="relative w-full md:w-64">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" name="search" id="search" placeholder="Search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                     </div>
-                    <div class="mt-4 sm:mt-0 sm:flex sm:items-center">
-                        <!-- Search Bar -->
-                        <div class="relative w-full md:w-64">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <input type="text" name="search" id="search" placeholder="Search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                        </div>
-                        <div>
-                            <select id="tradeFilter" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                                <option value="">Choose service</option>
-                                @{
-                                    var uniqueTrades = Model.Applications
-                                    .Select(a => a.Trade)
-                                    .Distinct()
-                                    .OrderBy(t => t);
+                    <div>
+                        <select id="tradeFilter" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                            <option value="">Choose service</option>
+                            @{
+                                var uniqueTrades = Model.Applications
+                                .Select(a => a.Trade)
+                                .Distinct()
+                                .OrderBy(t => t);
 
-                                    foreach (var trade in uniqueTrades)
-                                    {
-                                        <option value="@trade">@trade</option>
-                                    }
+                                foreach (var trade in uniqueTrades)
+                                {
+                                    <option value="@trade">@trade</option>
                                 }
-                            </select>
-                        </div>
+                            }
+                        </select>
                     </div>
                 </div>
+            </div>
 
-                <!-- Table -->
-                <div class="mt-3 flex flex-col">
-                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                                <table class="min-w-full divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
-                                        <tr>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Profile
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Service
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Email
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Phone
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Status
-                                            </th>
-                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Actions
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-white divide-y divide-gray-200">
-                                        @foreach (var app in Model.Applications)
-                                        {
-                                            <tr class="application-row" data-trade="@app.Trade">
-                                                <td class="px-6 py-2 whitespace-nowrap">
-                                                    <div class="flex items-center">
-                                                        <div class="flex-shrink-0 h-8 w-8">
-                                                            <div class="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center">
-                                                                <span class="text-sm font-medium text-gray-700">
-                                                                    @(string.IsNullOrEmpty(app.InstitutionName) ? "?" : app.InstitutionName.Substring(0, 1))
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ml-4">
-                                                            <div class="text-sm font-medium text-gray-900">@app.Email</div>
+            <!-- Table -->
+            <div class="mt-3 flex flex-col">
+                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Profile
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Service
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Email
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Phone
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Status
+                                        </th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    @foreach (var app in Model.Applications)
+                                    {
+                                        <tr class="application-row" data-trade="@app.Trade">
+                                            <td class="px-6 py-2 whitespace-nowrap">
+                                                <div class="flex items-center">
+                                                    <div class="flex-shrink-0 h-8 w-8">
+                                                        <div class="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center">
+                                                            <span class="text-sm font-medium text-gray-700">
+                                                                @(string.IsNullOrEmpty(app.InstitutionName) ? "?" : app.InstitutionName.Substring(0, 1))
+                                                            </span>
                                                         </div>
                                                     </div>
-                                                </td>
-                                                <td class="px-6 py-2 whitespace-nowrap">
-                                                    <div class="text-sm text-gray-900">@app.Trade</div>
-                                                </td>
-                                                <td class="px-6 py-2 whitespace-nowrap">
-                                                    <div class="text-sm text-gray-900">@app.Email</div>
-                                                </td>
-                                                <td class="px-6 py-2 whitespace-nowrap">
-                                                    <div class="text-sm text-gray-900">@(string.IsNullOrEmpty(app.ContactPerson) ? "N/A" : app.ContactPerson)</div>
-                                                </td>
-                                                <td class="px-6 py-2 whitespace-nowrap">
-                                                    @{
-                                                        var statusClasses = new Dictionary<string, string>
-                                                {
-                                                { "Pending", "bg-blue-100 text-blue-800" },
-                                                { "Approved", "bg-green-100 text-green-800" },
-                                                { "Rejected", "bg-red-100 text-red-800" },
-                                                { "Draft", "bg-gray-100 text-gray-800" },
-                                                { "In Progress", "bg-yellow-100 text-yellow-800" }
-                                                };
+                                                    <div class="ml-4">
+                                                        <div class="text-sm font-medium text-gray-900">@app.Email</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-2 whitespace-nowrap">
+                                                <div class="text-sm text-gray-900">@app.Trade</div>
+                                            </td>
+                                            <td class="px-6 py-2 whitespace-nowrap">
+                                                <div class="text-sm text-gray-900">@app.Email</div>
+                                            </td>
+                                            <td class="px-6 py-2 whitespace-nowrap">
+                                                <div class="text-sm text-gray-900">@(string.IsNullOrEmpty(app.ContactPerson) ? "N/A" : app.ContactPerson)</div>
+                                            </td>
+                                            <td class="px-6 py-2 whitespace-nowrap">
+                                                @{
+                                                    var statusClasses = new Dictionary<string, string>
+                                                    {
+                                            { "Pending", "bg-blue-100 text-blue-800" },
+                                            { "Approved", "bg-green-100 text-green-800" },
+                                            { "Rejected", "bg-red-100 text-red-800" },
+                                            { "Draft", "bg-gray-100 text-gray-800" },
+                                            { "In Progress", "bg-yellow-100 text-yellow-800" }
+                                            };
 
-                                                        string statusClass = statusClasses.ContainsKey(app.Status)
-                                                        ? statusClasses[app.Status]
-                                                        : "bg-gray-100 text-gray-800";
-                                                    }
-                                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full @statusClass">
-                                                        @app.Status
-                                                    </span>
-                                                </td>
-                                                <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-500">
-                                                    <a asp-page="/Hod_Dashboard/HOD_Applications" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                </td>
-                                            </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
+                                                    string statusClass = statusClasses.ContainsKey(app.Status)
+                                                    ? statusClasses[app.Status]
+                                                    : "bg-gray-100 text-gray-800";
+                                                }
+                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full @statusClass">
+                                                    @app.Status
+                                                </span>
+                                            </td>
+                                            <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-500">
+                                                <a asp-page="/Hod_Dashboard/HOD_Applications" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Pagination -->
-                <div class="mt-5 flex items-center justify-between">
-                    <div class="flex-1 flex justify-between sm:hidden">
-                        @if (Model.CurrentPage > 1)
-                        {
-                            <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage - 1)" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                                Previous
-                            </a>
-                        }
-                        @if (Model.CurrentPage < Model.TotalPages)
-                        {
-                            <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage + 1)" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                                Next
-                            </a>
-                        }
+            <!-- Pagination -->
+            <div class="mt-5 flex items-center justify-between">
+                <div class="flex-1 flex justify-between sm:hidden">
+                    @if (Model.CurrentPage > 1)
+                    {
+                        <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage - 1)" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Previous
+                        </a>
+                    }
+                    @if (Model.CurrentPage < Model.TotalPages)
+                    {
+                        <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage + 1)" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Next
+                        </a>
+                    }
+                </div>
+                <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            Showing <span class="font-medium">@(((Model.CurrentPage - 1) * Model.PageSize) + 1)</span> to <span class="font-medium">@Math.Min(Model.CurrentPage * Model.PageSize, Model.TotalRecords)</span> of <span class="font-medium">@Model.TotalRecords</span> results
+                        </p>
                     </div>
-                    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-                        <div>
-                            <p class="text-sm text-gray-700">
-                                Showing <span class="font-medium">@(((Model.CurrentPage - 1) * Model.PageSize) + 1)</span> to <span class="font-medium">@Math.Min(Model.CurrentPage * Model.PageSize, Model.TotalRecords)</span> of <span class="font-medium">@Model.TotalRecords</span> results
-                            </p>
-                        </div>
-                        <div>
-                            <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                                @if (Model.CurrentPage > 1)
-                                {
-                                    <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage - 1)" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                                        <span class="sr-only">Previous</span>
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                        </svg>
-                                        Prev
-                                    </a>
-                                }
+                    <div>
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            @if (Model.CurrentPage > 1)
+                            {
+                                <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage - 1)" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Previous</span>
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    Prev
+                                </a>
+                            }
 
-                                @for (int i = 1; i <= Model.TotalPages; i++)
-                                {
-                                    <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@i" class="relative inline-flex items-center px-4 py-2 border @(i == Model.CurrentPage ? "border-indigo-500 bg-indigo-50 text-indigo-600" : "border-gray-300 bg-white text-gray-700") text-sm font-medium hover:bg-gray-50">
-                                        @i
-                                    </a>
-                                }
+                            @for (int i = 1; i <= Model.TotalPages; i++)
+                            {
+                                <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@i" class="relative inline-flex items-center px-4 py-2 border @(i == Model.CurrentPage ? "border-indigo-500 bg-indigo-50 text-indigo-600" : "border-gray-300 bg-white text-gray-700") text-sm font-medium hover:bg-gray-50">
+                                    @i
+                                </a>
+                            }
 
-                                @if (Model.CurrentPage < Model.TotalPages)
-                                {
-                                    <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage + 1)" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
-                                        <span class="sr-only">Next</span>
-                                        Next
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                }
-                            </nav>
-                        </div>
+                            @if (Model.CurrentPage < Model.TotalPages)
+                            {
+                                <a asp-page="/Hod_Dashboard/HOD_HOME" asp-route-currentPage="@(Model.CurrentPage + 1)" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Next</span>
+                                    Next
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            }
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -381,6 +377,39 @@
 
 @section Scripts {
     <script>
-        // Add any client-side JavaScript if needed here
+        // Client-side filtering for the trade dropdown
+        document.addEventListener('DOMContentLoaded', function() {
+            const tradeFilter = document.getElementById('tradeFilter');
+            const searchInput = document.getElementById('search');
+            const rows = document.querySelectorAll('.application-row');
+
+            // Trade filter
+            tradeFilter.addEventListener('change', function() {
+                const selectedTrade = this.value;
+
+                rows.forEach(row => {
+                    const rowTrade = row.getAttribute('data-trade');
+                    if (!selectedTrade || rowTrade === selectedTrade) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+
+            // Search filter
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
     </script>
 }

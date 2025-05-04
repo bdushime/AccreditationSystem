@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
+using System.Security.Claims;
 
 namespace AccreditationSystem.Pages.Hod_Dashboard
 {
     public class HOD_HomeModel : PageModel
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogger<HOD_HomeModel> _logger;
 
         [BindProperty(SupportsGet = true)]
         public int CurrentPage { get; set; } = 1;
@@ -17,9 +19,18 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
 
         public List<Application> Applications { get; set; }
 
-        public HOD_HomeModel(IConfiguration configuration)
+        // Add properties for dashboard metrics
+        public int RequestsThisMonth { get; private set; }
+        public int TotalAnalystSpecialists { get; private set; }
+        public int ScheduledInspections { get; private set; }
+        public int TotalSchools { get; private set; }
+        public int TotalClaims { get; private set; }
+        public string UserFirstName { get; private set; } = "User"; // Default value
+
+        public HOD_HomeModel(IConfiguration configuration, ILogger<HOD_HomeModel> logger)
         {
             _configuration = configuration;
+            _logger = logger;
             Applications = new List<Application>();
         }
 
@@ -30,15 +41,77 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                 CurrentPage = 1;
             }
 
+            // Get the current user's email (assuming you're using authentication)
+            string userEmail = User.Identity.IsAuthenticated
+                ? User.FindFirstValue(ClaimTypes.Email)
+                : "admin@example.com"; // Fallback for testing
+
+            // Load data
+            await GetUserName(userEmail);
             await LoadApplicationsAsync();
             await GetDashboardMetricsAsync();
+        }
+
+        private async Task GetUserName(string email)
+        {
+            try
+            {
+                string connectionString = _configuration.GetConnectionString("DefaultConnection");
+                _logger.LogInformation($"Connection string: {connectionString}");
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    await connection.OpenAsync();
+
+                    // Try to get the user's first name
+                    string query = "SELECT FirstName FROM Users WHERE Email = @Email";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        var result = await command.ExecuteScalarAsync();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            UserFirstName = result.ToString();
+                            _logger.LogInformation($"Found user: {UserFirstName}");
+                        }
+                        else
+                        {
+                            // If no user is found, try to get default HOD
+                            query = "SELECT TOP 1 FirstName FROM users WHERE Role = 'Client'";
+                            command.CommandText = query;
+                            command.Parameters.Clear();
+
+                            result = await command.ExecuteScalarAsync();
+                            if (result != null && result != DBNull.Value)
+                            {
+                                UserFirstName = result.ToString();
+                                _logger.LogInformation($"Using default HOD: {UserFirstName}");
+                            }
+                            else
+                            {
+                                UserFirstName = "Joshua"; // Hardcoded fallback
+                                _logger.LogWarning("No user found, using fallback name");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving user name");
+                UserFirstName = "Joshua"; // Fallback in case of error
+            }
         }
 
         private async Task LoadApplicationsAsync()
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+                string connectionString = _configuration.GetConnectionString("DefaultConnection");
+                _logger.LogInformation($"Loading applications using connection: {connectionString}");
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     await connection.OpenAsync();
 
@@ -47,6 +120,7 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                     using (SqlCommand countCommand = new SqlCommand(countQuery, connection))
                     {
                         TotalRecords = (int)await countCommand.ExecuteScalarAsync();
+                        _logger.LogInformation($"Total applications: {TotalRecords}");
                     }
 
                     // Get paginated data
@@ -80,12 +154,13 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
                                 });
                             }
                         }
+                        _logger.LogInformation($"Loaded {Applications.Count} applications for page {CurrentPage}");
                     }
                 }
             }
             catch (Exception ex)
             {
-                // Log the exception or display an error message
+                _logger.LogError(ex, "Error retrieving applications");
                 TempData["ErrorMessage"] = $"Error retrieving applications: {ex.Message}";
             }
         }
@@ -94,37 +169,114 @@ namespace AccreditationSystem.Pages.Hod_Dashboard
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+                string connectionString = _configuration.GetConnectionString("DefaultConnection");
+                _logger.LogInformation($"Loading metrics using connection: {connectionString}");
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     await connection.OpenAsync();
 
-                    // Get current month's requests count
-                    string requestsQuery = @"SELECT COUNT(*) FROM Applications 
-                                            WHERE MONTH(ApplicationDate) = MONTH(GETDATE()) 
-                                            AND YEAR(ApplicationDate) = YEAR(GETDATE())";
-                    using (SqlCommand command = new SqlCommand(requestsQuery, connection))
+                    try
                     {
-                        RequestsThisMonth = (int)await command.ExecuteScalarAsync();
+                        // Get current month's requests count
+                        string requestsQuery = @"SELECT COUNT(*) FROM Applications 
+                                                WHERE MONTH(ApplicationDate) = MONTH(GETDATE()) 
+                                                AND YEAR(ApplicationDate) = YEAR(GETDATE())";
+
+                        using (SqlCommand command = new SqlCommand(requestsQuery, connection))
+                        {
+                            var result = await command.ExecuteScalarAsync();
+                            RequestsThisMonth = Convert.ToInt32(result);
+                            _logger.LogInformation($"Requests this month: {RequestsThisMonth}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error getting requests count");
+                        RequestsThisMonth = 0;
                     }
 
-                    // Get total claims count
-                    string claimsQuery = "SELECT COUNT(*) FROM Applications WHERE Status = 'Approved'";
-                    using (SqlCommand command = new SqlCommand(claimsQuery, connection))
+                    try
                     {
-                        TotalClaims = (int)await command.ExecuteScalarAsync();
+                        // Get total schools count - using the school table you mentioned
+                        string schoolsQuery = "SELECT COUNT(*) FROM school";
+                        using (SqlCommand command = new SqlCommand(schoolsQuery, connection))
+                        {
+                            var result = await command.ExecuteScalarAsync();
+                            TotalSchools = Convert.ToInt32(result);
+                            _logger.LogInformation($"Total schools: {TotalSchools}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error getting schools count");
+                        TotalSchools = 0;
+                    }
+
+                    try
+                    {
+                        // Get total claims count - using the AccreditationClaims table
+                        string claimsQuery = "SELECT COUNT(*) FROM AccreditationClaims";
+                        using (SqlCommand command = new SqlCommand(claimsQuery, connection))
+                        {
+                            var result = await command.ExecuteScalarAsync();
+                            TotalClaims = Convert.ToInt32(result);
+                            _logger.LogInformation($"Total claims: {TotalClaims}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error getting claims count");
+                        TotalClaims = 0;
+                    }
+
+                    try
+                    {
+                        // Get scheduled inspections count
+                        string inspectionsQuery = "SELECT COUNT(*) FROM Inspections WHERE Status = 'Scheduled'";
+                        using (SqlCommand command = new SqlCommand(inspectionsQuery, connection))
+                        {
+                            var result = await command.ExecuteScalarAsync();
+                            ScheduledInspections = Convert.ToInt32(result);
+                            _logger.LogInformation($"Scheduled inspections: {ScheduledInspections}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error getting inspections count - table may not exist");
+                        ScheduledInspections = 0;
+                    }
+
+                    try
+                    {
+                        // Get total analyst specialists count
+                        string specialistsQuery = "SELECT COUNT(*) FROM Users WHERE Role = 'Analyst'";
+                        using (SqlCommand command = new SqlCommand(specialistsQuery, connection))
+                        {
+                            var result = await command.ExecuteScalarAsync();
+                            TotalAnalystSpecialists = Convert.ToInt32(result);
+                            _logger.LogInformation($"Total analyst specialists: {TotalAnalystSpecialists}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error getting analyst count - table may not exist");
+                        TotalAnalystSpecialists = 0;
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Error retrieving dashboard metrics");
+
                 // Fallback to default values if query fails
                 RequestsThisMonth = 0;
+                TotalSchools = 0;
                 TotalClaims = 0;
+                ScheduledInspections = 0;
+                TotalAnalystSpecialists = 0;
             }
         }
-
-        public int RequestsThisMonth { get; private set; }
-        public int TotalClaims { get; private set; }
 
         public class Application
         {

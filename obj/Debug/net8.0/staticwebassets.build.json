@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eLMSjG7PV5MwdfVrKn3Azr1N3ffXt6OApdEd2XZzoXQ=",
+  "Hash": "Y0BscrDXUxzNSRqgHbMOERJe/2zwjgI7uA+/wa8uzvI=",
   "Source": "AccreditationSystem",
   "BasePath": "_content/AccreditationSystem",
   "Mode": "Default",
@@ -2054,6 +2054,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-3e92f7cc-fed6-4fd5-90c3-db082ac9e629.pdf"
     },
     {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/additional-83831fa4-cd10-4a46-8994-016312f86fdf#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e3j8282gsf",
+      "Integrity": "qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf"
+    },
+    {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
       "SourceId": "AccreditationSystem",
       "SourceType": "Discovered",
@@ -2220,6 +2241,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-216f5c06-dd94-4101-902e-9ed1b6e77c5d.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ttnf95rdp6",
+      "Integrity": "nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf"
     },
     {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
@@ -2474,6 +2516,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf"
     },
     {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/faculty-d40df313-c26f-4311-802b-e69872d7e04a#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e3j8282gsf",
+      "Integrity": "qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf"
+    },
+    {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
       "SourceId": "AccreditationSystem",
       "SourceType": "Discovered",
@@ -2493,6 +2556,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
+    },
+    {
+      "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
+      "SourceId": "AccreditationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\",
+      "BasePath": "_content/AccreditationSystem",
+      "RelativePath": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e3j8282gsf",
+      "Integrity": "qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf"
     },
     {
       "Identity": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf",
@@ -10640,6 +10724,88 @@
       ]
     },
     {
+      "Route": "uploads/accreditation-claims/additional-83831fa4-cd10-4a46-8994-016312f86fdf.e3j8282gsf.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3j8282gsf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
       "Route": "uploads/accreditation-claims/additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.m7rn8uta7r.pdf",
       "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
       "Selectors": [],
@@ -11292,6 +11458,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16553014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.ttnf95rdp6.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16553014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ttnf95rdp6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4="
         }
       ]
     },
@@ -12280,6 +12528,88 @@
       ]
     },
     {
+      "Route": "uploads/accreditation-claims/faculty-d40df313-c26f-4311-802b-e69872d7e04a.e3j8282gsf.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3j8282gsf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
       "Route": "uploads/accreditation-claims/faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.m7rn8uta7r.pdf",
       "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
       "Selectors": [],
@@ -12358,6 +12688,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-foZM7hHMtl7JcX3/p6SynzGp7VErFh8ZjRAMvQc9MkU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.e3j8282gsf.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3j8282gsf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
+      "AssetFile": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 18:05:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
         }
       ]
     },
