@@ -80,11 +80,12 @@ namespace AccreditationSystem.Pages.Admin
 
             try
             {
-                string connectionString = "Data Source=DB7beni\\SQLEXPRESS;Initial Catalog=bestshop;Integrated Security=True;TrustServerCertificate=True";
+                string connectionString = "Data Source=DB7beni\\SQLEXPRESS;Initial Catalog=AccreditationFinal;Integrated Security=True;TrustServerCertificate=True";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     await connection.OpenAsync();
+
 
                     string sql = @"INSERT INTO school 
                 (school_name, school_email, school_phone, school_website, year_established, 

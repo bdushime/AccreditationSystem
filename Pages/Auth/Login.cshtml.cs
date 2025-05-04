@@ -95,7 +95,7 @@ namespace AccreditationSystem.Pages.Auth
                                 }
                                 else
                                 {
-                                    return RedirectToPage("/Customer/Dashboard");
+                                    return RedirectToPage("/Hod_Dashboard/HOD_Home");
                                 }
                             }
                             else
