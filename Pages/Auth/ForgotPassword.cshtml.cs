@@ -81,28 +81,30 @@ namespace AccreditationSystem.Pages.Auth
                         await insertTokenCommand.ExecuteNonQueryAsync();
                     }
 
-                    // Generate reset password link
-                    string resetLink = Url.Page(
+                    // Generate reset password link - make sure this is an absolute URL
+                    string baseUrl = $"{Request.Scheme}://{Request.Host}";
+                    string resetPath = Url.Page(
                         "/Auth/ResetPassword",
                         pageHandler: null,
-                        values: new { email = Email, token = resetToken },
-                        protocol: Request.Scheme);
+                        values: new { email = Email, token = resetToken });
 
-                    // Prepare email body
+                    string resetLink = $"{baseUrl}{resetPath}";
 
-
+                    // Prepare email body with explicit styling and visible URL
                     string emailBody = $@"
                         <h2>Password Reset Request</h2>
                         <p>You requested to reset your password for your Accredu account. Please click the link below to set a new password:</p>
-                        <p><a href='{resetLink}'>Reset Your Password</a></p>
+                        <p><a href='{resetLink}' style='display: inline-block; padding: 10px 20px; background-color: #0284c7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;'>Reset Your Password</a></p>
+                        <p>Or copy and paste this URL into your browser:</p>
+                        <p><a href='{resetLink}'>{resetLink}</a></p>
                         <p>This link will expire in 24 hours.</p>
                         <p>If you didn't request this password reset, please ignore this email or contact support if you have concerns.</p>
-                        <p>Best regards,<br>The BestShop Team</p>";
+                        <p>Best regards,<br>The Accredu Team</p>";
 
                     // Send reset password email
                     await _emailService.SendEmailAsync(
                         Email,
-                        "BestShop - Password Reset Request",
+                        "Accredu - Password Reset Request",
                         emailBody);
                 }
 
