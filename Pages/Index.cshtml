@@ -5,43 +5,43 @@
 }
 
 @section Styles {
-        <!-- Import Jakarta Sans font -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+    <!-- Import Jakarta Sans font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
 
-        <!-- Import Heroicons (for better icons) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.16/outline.min.css">
+    <!-- Import Heroicons (for better icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.16/outline.min.css">
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
                         },
-                        colors: {
-                            primary: {
-                                50: '#f0f9ff',
-                                100: '#e0f2fe',
-                                200: '#bae6fd',
-                                300: '#7dd3fc',
-                                400: '#38bdf8',
-                                500: '#0ea5e9',
-                                600: '#0284c7',
-                                700: '#0369a1',
-                                800: '#075985',
-                                900: '#0c4a6e',
-                            },
-                        }
                     }
                 }
             }
-        </script>
-        <style>
-            body {
-                font-family: 'Plus Jakarta Sans', sans-serif;
-            }
-        </style>
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
 }
 
 <!-- Header Section with Logo -->
@@ -69,8 +69,25 @@
             </div>
             <!-- Auth Buttons -->
             <div class="flex items-center space-x-3">
-                <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
-                <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
+                @if (HttpContext.Session.GetInt32("UserId") != null)
+                {
+                    <span class="text-gray-700 mr-2">Hello, @HttpContext.Session.GetString("UserName")</span>
+                    <a href="/Auth/Logout" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Logout</a>
+
+                    @if (HttpContext.Session.GetString("UserRole")?.ToLower() == "admin")
+                    {
+                        <a href="/Admin/Dashboard" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Dashboard</a>
+                    }
+                    else
+                    {
+                        <a href="/Hod_Dashboard/HOD_Home" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Dashboard</a>
+                    }
+                }
+                else
+                {
+                    <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
+                    <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
+                }
             </div>
         </div>
     </div>
@@ -83,8 +100,22 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-4 font-jakarta">Accreditation School System</h1>
             <p class="text-xl md:text-2xl mb-10 font-light">Empowering Excellence: Accredited Education for a Brighter Future</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="/Auth/Login" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Get Started</a>
-                </div>
+                @if (HttpContext.Session.GetInt32("UserId") != null)
+                {
+                    @if (HttpContext.Session.GetString("UserRole")?.ToLower() == "admin")
+                    {
+                        <a href="/Admin/Dashboard" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Go to Dashboard</a>
+                    }
+                    else
+                    {
+                        <a href="/Hod_Dashboard/HOD_Home" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Go to Dashboard</a>
+                    }
+                }
+                else
+                {
+                    <a href="/Auth/Login" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Get Started</a>
+                }
+            </div>
         </div>
     </div>
 </div>
@@ -111,7 +142,7 @@
                         Monitor your application status in real-time. Our transparent tracking system keeps you informed throughout the accreditation process.
                     </p>
                     <div class="text-center">
-                        <a href="/Admin/TrackApplication" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                        <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/TrackApplication")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                             Track Status
                         </a>
                     </div>
@@ -131,7 +162,7 @@
                         Explore our comprehensive directory of accredited institutions. Search by location, program type, or accreditation level.
                     </p>
                     <div class="text-center">
-                        <a href="/Admin/AccreditedSchool" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                        <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/AccreditedSchool")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                             View Directory
                         </a>
                     </div>
@@ -163,7 +194,7 @@
                     Begin your educational journey by registering your new institution. Receive comprehensive guidance on requirements and quality standards.
                 </p>
                 <div class="text-center">
-                    <a href="/Admin/NewSchoolRegistration" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/NewSchoolRegistration")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                         Register New School
                     </a>
                 </div>
@@ -183,7 +214,7 @@
                     File your accreditation claim and provide necessary documentation to support your institution's qualifications and standards compliance.
                 </p>
                 <div class="text-center">
-                    <a href="/Admin/SubmitClaim" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/SubmitClaim")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                         Submit Claim
                     </a>
                 </div>
@@ -204,7 +235,7 @@
                     Register for Technical and Vocational Education and Training accreditation to ensure your programs meet industry-specific standards.
                 </p>
                 <div class="text-center">
-                    <a href="/Admin/TVETTrades" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/TVETTrades")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                         Request TVET Program
                     </a>
                 </div>
@@ -227,58 +258,34 @@
                     Access combined accreditation solutions for institutions offering multiple program types and educational pathways.
                 </p>
                 <div class="text-center">
-                    <a href="/Admin/GeneralCombination" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/GeneralCombination")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
                         Apply combination
                     </a>
                 </div>
             </div>
         </div>
 
-        @*     <!-- Card 5 --> *@
-        @*     <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"> *@
-        @*         <div class="p-6"> *@
-        @*             <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-primary-100 text-primary-700 rounded-full"> *@
-        @*                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> *@
-        @*                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /> *@
-        @*                 </svg> *@
-        @*             </div> *@
-        @*             <h3 class="text-xl font-bold text-center mb-4">Primary Level</h3> *@
-        @*             <p class="text-gray-600 mb-6 text-center"> *@
-        @*                 Specialized accreditation services designed for primary education institutions with focus on foundational learning standards. *@
-        @*             </p> *@
-        @*             <div class="text-center"> *@
-        @*                 <a href="/Apply/Primary" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300"> *@
-        @*                     Apply *@
-        @*                 </a> *@
-        @*             </div> *@
-        @*         </div> *@
-        @*     </div> *@
-
-        @*     <!-- Card 6 --> *@
-        @*     <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"> *@
-        @*         <div class="p-6"> *@
-        @*             <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-primary-100 text-primary-700 rounded-full"> *@
-        @*                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> *@
-        @*                     <path d="M12 14l9-5-9-5-9 5 9 5z" /> *@
-        @*                     <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /> *@
-        @*                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /> *@
-        @*                 </svg> *@
-        @*             </div> *@
-        @*             <h3 class="text-xl font-bold text-center mb-4">Secondary Level</h3> *@
-        @*             <p class="text-gray-600 mb-6 text-center"> *@
-        @*                 Comprehensive accreditation framework for secondary schools focusing on academic excellence and college preparedness. *@
-        @*             </p> *@
-        @*             <div class="text-center"> *@
-        @*                 <a href="/Apply/Secondary" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300"> *@
-        @*                     Apply *@
-        @*                 </a> *@
-        @*             </div> *@
-        @*         </div> *@
-        @*     </div> *@
+        <!-- Card 5 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div class="p-6">
+                <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-primary-100 text-primary-700 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">Schools Management</h3>
+                <p class="text-gray-600 mb-6 text-center">
+                    Manage your school listings, view accredited institutions, and update school information in our system.
+                </p>
+                <div class="text-center">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/Schools")" class="inline-block px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">
+                        Manage Schools
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-
 
 <!-- Features Section -->
 <div class="bg-white py-16">
@@ -338,11 +345,12 @@
         <h2 class="text-3xl font-bold mb-6">Ready to Begin Your Accreditation Journey?</h2>
         <p class="text-xl mb-8 max-w-3xl mx-auto">Join thousands of educational institutions that have elevated their standards and gained recognition through our comprehensive accreditation system.</p>
         <div class="flex justify-center space-x-4">
-            <a href="/register" class="px-8 py-4 bg-white text-primary-700 font-bold rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Get Started Today</a>
-            <a href="/contact" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-md hover:bg-white/10 transition duration-300">Contact Us</a>
+            <a href="/Auth/Login" class="px-8 py-4 bg-white text-primary-700 font-bold rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Get Started Today</a>
+            <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Contact")" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-md hover:bg-white/10 transition duration-300">Contact Us</a>
         </div>
     </div>
 </div>
+
 
 <!-- Footer -->
 <footer class="bg-primary-800 text-white py-12">
@@ -372,3 +380,62 @@
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <nav class="flex flex-col space-y-2">
+                    <a href="/" class="text-white hover:text-primary-300 transition">Home</a>
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/About")" class="text-white hover:text-primary-300 transition">About Us</a>
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/Schools")" class="text-white hover:text-primary-300 transition">Schools</a>
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Admin/TrackApplication")" class="text-white hover:text-primary-300 transition">Track Application</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Resources</h3>
+                <nav class="flex flex-col space-y-2">
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Resources/Standards")" class="text-white hover:text-primary-300 transition">Accreditation Standards</a>
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/Resources/Guidelines")" class="text-white hover:text-primary-300 transition">Guidelines</a>
+                    <a href="/Auth/Login?ReturnUrl=@System.Net.WebUtility.UrlEncode("/FAQ")" class="text-white hover:text-primary-300 transition">FAQs</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <address class="not-italic text-gray-300">
+                    <p class="mb-2">Kigali, Rwanda</p>
+                    <p class="mb-2">info@accreditation.rw</p>
+                    <p>+250 788 123 456</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-primary-700 text-center text-sm text-gray-400">
+            <p>&copy; 2025 Accreditation School System. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Login Redirect Script -->
+<script>
+    // JavaScript to handle login redirect links
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all protected links
+        const protectedLinks = document.querySelectorAll('a[href^="/Auth/Login?ReturnUrl="]');
+
+        // Check if user is logged in
+        const isLoggedIn = @(HttpContext.Session.GetInt32("UserId") != null ? "true" : "false");
+
+        if (isLoggedIn) {
+            // If logged in, modify links to go directly to their destinations
+            protectedLinks.forEach(link => {
+                const returnUrl = decodeURIComponent(
+                    link.href.split('ReturnUrl=')[1]
+                );
+                link.href = returnUrl;
+            });
+        }
+    });
+</script>

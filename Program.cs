@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using AccreditationSystem.Pages.Services; // Make sure namespace matches your project
+using AccreditationSystem.Middleware; // Add this for the AuthRedirectMiddleware
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,17 +24,14 @@ builder.Services.Configure<EmailSettings>(options =>
 {
     // Load base configuration from appsettings.json
     builder.Configuration.GetSection("EmailSettings").Bind(options);
-
     // Load credentials from environment variables or user secrets
     // This prioritizes secrets over appsettings values
     var smtpUsername = builder.Configuration["EmailSettings:SmtpUsername"];
     var smtpPassword = builder.Configuration["EmailSettings:SmtpPassword"];
-
     if (!string.IsNullOrEmpty(smtpUsername))
     {
         options.SmtpUsername = smtpUsername;
     }
-
     if (!string.IsNullOrEmpty(smtpPassword))
     {
         options.SmtpPassword = smtpPassword;
@@ -67,6 +65,9 @@ app.UseAuthorization();
 
 // Add session middleware - this must be before MapRazorPages
 app.UseSession();
+
+// Add auth redirect middleware to protect pages
+app.UseAuthRedirectMiddleware();
 
 app.MapRazorPages();
 

@@ -27,9 +27,14 @@ namespace AccreditationSystem.Pages.Auth
 
         public string ErrorMessage { get; set; } = "";
 
-        public void OnGet()
+        // Add ReturnUrl property to handle redirects
+        [BindProperty(SupportsGet = true)]
+        public string ReturnUrl { get; set; } = "/";
+
+        public void OnGet(string returnUrl = "/")
         {
-            // Just display the login form
+            // Store the return URL for post-login redirect
+            ReturnUrl = returnUrl;
         }
 
         public IActionResult OnPost()
@@ -88,14 +93,22 @@ namespace AccreditationSystem.Pages.Auth
                                 HttpContext.Session.SetString("UserEmail", Email);
                                 HttpContext.Session.SetString("UserRole", userRole);
 
-                                // Redirect based on role
-                                if (userRole.ToLower() == "admin")
+                                // Handle return URL logic
+                                if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
                                 {
-                                    return RedirectToPage("/Admin/Dashboard");
+                                    return Redirect(ReturnUrl);
                                 }
                                 else
                                 {
-                                    return RedirectToPage("/Hod_Dashboard/HOD_Home");
+                                    // Redirect based on role if no return URL
+                                    if (userRole.ToLower() == "admin")
+                                    {
+                                        return RedirectToPage("/Admin/Dashboard");
+                                    }
+                                    else
+                                    {
+                                        return RedirectToPage("/Hod_Dashboard/HOD_Home");
+                                    }
                                 }
                             }
                             else
