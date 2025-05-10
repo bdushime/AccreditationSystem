@@ -1,40 +1,1073 @@
 ﻿@page
 @model AccreditationSystem.Pages.Admin.DashboardModel
 @{
-    ViewData["Title"] = "Admin Dashboard";
+    
 }
 
-<div class="container mt-4">
-    <h1>Admin Dashboard</h1>
-    <p>Welcome, @HttpContext.Session.GetString("UserName")!</p>
+<div class="w-full min-h-screen bg-gray-50">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0">
+                    <a href="#" class="text-indigo-600 font-bold text-xl">Accreditation</a>
+                </div>
 
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Manage Products</h5>
-                    <p class="card-text">Add, edit, or remove products from the catalog.</p>
-                    <a href="#" class="btn btn-primary">Go to Products</a>
+                <!-- Center Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a asp-area="" asp-page="/Admin/Dashboard" class="text-indigo-600 border-b-2 border-indigo-600 px-3 py-2 text-sm font-medium">Dashboard</a>
+                    <a asp-area="" asp-page="/Admin/Users" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Users</a>
+                    <a asp-area="" asp-page="/Admin/Permissions" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Permissions</a>
+                    <a asp-area="" asp-page="/Admin/AuditLogs" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Audit Logs</a>
+                    <a asp-area="" asp-page="/Admin/Settings" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Settings</a>
+                </nav>
+
+                <!-- User menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-gray-200 text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-sm font-medium">AD</span>
+                        <span class="text-gray-700 font-medium">Admin</span>
+                    </div>
+                    <button class="bg-red-500 hover:bg-red-300 text-black font-semibold py-2 text-white px-4 border border-gray-300 rounded shadow-sm text-sm">
+                        <a href="/Auth/Logout">Sign out</a>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Manage Users</h5>
-                    <p class="card-text">View and manage registered users.</p>
-                    <a href="#" class="btn btn-primary">Go to Users</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full mx-auto py-6 sm:px-6 lg:px-8">
+        <!-- Welcome Section -->
+        <div class="bg-violet-400/30 overflow-hidden shadow-sm rounded-lg mb-6">
+            <div class="px-4 py-2 sm:p-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="h-3 w-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="ml-3">
+                        <span class="text-sm text-gray-500">@DateTime.Now.ToString("dd MMMM yyyy")</span>
+                    </div>
+                </div>
+                <h1 class="mt-2 text-xl font-semibold text-gray-900">Admin Dashboard</h1>
+                <p class="text-sm text-gray-500">Manage users, permissions, and system settings</p>
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+        {
+            <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6 rounded shadow-sm" role="alert">
+                <p>@Model.SuccessMessage</p>
+            </div>
+        }
+        
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6 rounded shadow-sm" role="alert">
+                <p>@Model.ErrorMessage</p>
+            </div>
+        }
+
+        <!-- Statistics Cards -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+            <!-- Total Users Card -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 truncate">Total Users</dt>
+                        <dd class="mt-1 text-3xl font-semibold text-indigo-600">@Model.Users.Count</dd>
+                    </dl>
+                </div>
+                <div class="bg-gray-50 px-4 py-3">
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">View all users</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Users Card -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 truncate">Active Users</dt>
+                        <dd class="mt-1 text-3xl font-semibold text-indigo-600">@Model.Users.Count(u => u.IsActive)</dd>
+                    </dl>
+                </div>
+                <div class="bg-gray-50 px-4 py-3">
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Active accounts</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Roles Card -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 truncate">User Roles</dt>
+                        <dd class="mt-1 text-3xl font-semibold text-indigo-600">@Model.UserRoleDistribution.Count</dd>
+                    </dl>
+                </div>
+                <div class="bg-gray-50 px-4 py-3">
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">View roles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Permissions Card -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <dl>
+                        <dt class="text-sm font-medium text-gray-500 truncate">Permissions</dt>
+                        <dd class="mt-1 text-3xl font-semibold text-indigo-600">@Model.AvailablePermissions.Count</dd>
+                    </dl>
+                </div>
+                <div class="bg-gray-50 px-4 py-3">
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">View permissions</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">View Orders</h5>
-                    <p class="card-text">Check and process customer orders.</p>
-                    <a href="#" class="btn btn-primary">Go to Orders</a>
+
+        <!-- Analytics Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-6">
+            <!-- User Role Distribution -->
+            <div class="bg-white overflow-hidden shadow rounded-lg col-span-1">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900">User Role Distribution</h3>
+                    <div class="mt-2 h-64">
+                        <canvas id="roleDistributionChart"></canvas>
+                    </div>
                 </div>
+            </div>
+
+            <!-- System Activity -->
+            <div class="bg-white overflow-hidden shadow rounded-lg col-span-2">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900">System Activity (Last 7 Days)</h3>
+                    <div class="mt-2 h-64">
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="bg-white shadow rounded-lg mb-6">
+            <div class="px-4 sm:px-6 lg:px-8">
+                <div class="border-b border-gray-200">
+                    <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                        <button id="tab-users" class="tab-button border-indigo-500 text-indigo-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                            User Management
+                        </button>
+                        <button id="tab-permissions" class="tab-button border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                            Permissions Management
+                        </button>
+                        <button id="tab-audit" class="tab-button border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                            Audit Logs
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- User Management Tab -->
+            <div id="tab-users-content" class="tab-content">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="sm:flex sm:items-center">
+                        <div class="sm:flex-auto">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">User Management</h3>
+                            <p class="mt-1 text-sm text-gray-500">A list of all users in your account including their name, email, role and permissions.</p>
+                        </div>
+                        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                            <button type="button" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="showModal('addUserModal')">
+                                Add user
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="mt-4 relative w-full md:w-64">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input id="user-search" type="text" placeholder="Search users..." class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+
+                    <!-- Users Table -->
+                    <div class="mt-6 flex flex-col">
+                        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gray-50">
+                                            <tr>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Permissions</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Login</th>
+                                                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="users-table-body" class="bg-white divide-y divide-gray-200">
+                                            @foreach (var user in Model.Users)
+                                            {
+                                                <tr class="user-row">
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <div class="flex items-center">
+                                                            <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-800">
+                                                                @user.FirstName.Substring(0, 1)@user.LastName.Substring(0, 1)
+                                                            </div>
+                                                            <div class="ml-4">
+                                                                <div class="text-sm font-medium text-gray-900">@user.FullName</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <div class="text-sm text-gray-900">@user.Email</div>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <div class="text-sm text-gray-900">@user.Role</div>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        @if (user.IsActive)
+                                                        {
+                                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                                                Active
+                                                            </span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                                                Inactive
+                                                            </span>
+                                                        }
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        @if (!string.IsNullOrEmpty(user.Permissions))
+                                                        {
+                                                            <span class="text-xs text-gray-500 truncate max-w-xs inline-block" title="@user.Permissions">
+                                                                @user.Permissions
+                                                            </span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="text-gray-400">No permissions</span>
+                                                        }
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        @if (user.LastLogin.HasValue)
+                                                        {
+                                                            @user.LastLogin.Value.ToString("MMM dd, yyyy HH:mm")
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="text-gray-400">Never</span>
+                                                        }
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <div class="flex justify-end space-x-2">
+                                                            <button 
+                                                                class="text-indigo-600 hover:text-indigo-900 edit-permissions-btn" 
+                                                                data-user-id="@user.Id" 
+                                                                data-user-name="@user.FullName">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </button>
+                                                            <form method="post" asp-page-handler="UpdateUserStatus" class="inline">
+                                                                <input type="hidden" name="userId" value="@user.Id" />
+                                                                <input type="hidden" name="isActive" value="@(!user.IsActive)" />
+                                                                <button type="submit" class="text-@(user.IsActive ? "red" : "green")-600 hover:text-@(user.IsActive ? "red" : "green")-900">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                                        @if (user.IsActive)
+                                                                        {
+                                                                            <path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd" />
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                                        }
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                            <button 
+                                                                class="text-blue-600 hover:text-blue-900 view-user-btn" 
+                                                                data-user-id="@user.Id">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Permissions Management Tab -->
+            <div id="tab-permissions-content" class="tab-content hidden">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="sm:flex sm:items-center">
+                        <div class="sm:flex-auto">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Permission Management</h3>
+                            <p class="mt-1 text-sm text-gray-500">A list of all permissions in the system with their descriptions and categories.</p>
+                        </div>
+                        <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
+                            <button type="button" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="showModal('addPermissionModal')">
+                                Add permission
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Permissions Table -->
+                    <div class="mt-6 flex flex-col">
+                        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gray-50">
+                                            <tr>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Permission Name</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                                                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white divide-y divide-gray-200">
+                                            @foreach (var permission in Model.AvailablePermissions)
+                                            {
+                                                <tr>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <div class="text-sm font-medium text-gray-900">@permission.Name</div>
+                                                    </td>
+                                                    <td class="px-6 py-4">
+                                                        <div class="text-sm text-gray-500">@permission.Description</div>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">
+                                                            @permission.Category
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <button 
+                                                            class="text-indigo-600 hover:text-indigo-900 edit-permission-btn" 
+                                                            data-permission-id="@permission.Id"
+                                                            data-permission-name="@permission.Name"
+                                                            data-permission-description="@permission.Description"
+                                                            data-permission-category="@permission.Category">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audit Logs Tab -->
+            <div id="tab-audit-content" class="tab-content hidden">
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="sm:flex sm:items-center">
+                        <div class="sm:flex-auto">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Recent Activity</h3>
+                            <p class="mt-1 text-sm text-gray-500">A log of the most recent actions performed by users in the system.</p>
+                        </div>
+                    </div>
+
+                    <!-- Audit Logs List -->
+                    <div class="mt-6 bg-white shadow overflow-hidden sm:rounded-md">
+                        <ul role="list" class="divide-y divide-gray-200">
+                            @foreach (var log in Model.RecentAuditLogs)
+                            {
+                                <li>
+                                    <div class="px-4 py-4 sm:px-6">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <p class="text-sm font-medium text-indigo-600 truncate">@log.UserName</p>
+                                                <div class="ml-2 flex-shrink-0 flex">
+                                                    <p class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                                        @log.ActionType
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="ml-2 flex-shrink-0 flex">
+                                                <p class="text-sm text-gray-500">
+                                                    @log.Timestamp.ToString("MMM dd, yyyy HH:mm:ss")
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 sm:flex sm:justify-between">
+                                            <div class="sm:flex">
+                                                <p class="flex items-center text-sm text-gray-500">
+                                                    <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    @log.ActionDetails
+                                                </p>
+                                            </div>
+                                            <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v14h14v-4h1a1 1 0 110 2h-1a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm17-2a1 1 0 00-1 1v8a1 1 0 001 2h1a1 1 0 001-1V4a1 1 0 00-1-1h-1z" clip-rule="evenodd" />
+                                                </svg>
+                                                @log.IpAddress
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Most Active Users Section -->
+        <div class="bg-white shadow rounded-lg overflow-hidden mb-6">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Most Active Users</h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">Top active users in the last 30 days.</p>
+            </div>
+            <div class="px-4 py-5 sm:p-6">
+                <div class="h-64">
+                    <canvas id="activeUsersChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Modals -->
+<!-- Add User Modal -->
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="addUserModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal panel -->
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <form method="post" asp-page="/Auth/Register">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                Add New User
+                            </h3>
+                            <div class="mt-4 space-y-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+                                        <input type="text" name="FirstName" id="firstName" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    </div>
+                                    <div>
+                                        <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                        <input type="text" name="LastName" id="lastName" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                    <input type="email" name="Email" id="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                    <input type="text" name="Phone" id="phone" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div>
+                                    <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                                    <input type="text" name="Address" id="address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                                        <input type="password" name="Password" id="password" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    </div>
+                                    <div>
+                                        <label for="comfirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                                        <input type="password" name="ComfirmPassword" id="comfirmPassword" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
+                                    <select name="Role" id="role" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        <option value="admin">Admin</option>
+                                        <option value="hod">HOD</option>
+                                        <option value="client" selected>Client</option>
+                                        <option value="analyst">Analyst</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        Add User
+                    </button>
+                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('addUserModal')">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Permissions Modal -->
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="editPermissionsModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal panel -->
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full">
+            <form method="post" asp-page-handler="UpdateUserPermissions">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="permissionsModalTitle">
+                                Edit User Permissions
+                            </h3>
+                            <input type="hidden" id="editUserId" name="userId" value="">
+                            <div class="mt-4 max-h-96 overflow-y-auto">
+                                <div id="permissionsList">
+                                    @foreach (var category in Model.AvailablePermissions.GroupBy(p => p.Category))
+                                    {
+                                        <h4 class="text-md font-medium text-gray-900 mt-4 mb-2">@category.Key</h4>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            @foreach (var permission in category)
+                                            {
+                                                <div class="flex items-start">
+                                                    <div class="flex items-center h-5">
+                                                        <input type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded permission-checkbox" name="permissionIds" value="@permission.Id" id="permission-@permission.Id">
+                                                    </div>
+                                                    <div class="ml-3 text-sm">
+                                                        <label for="permission-@permission.Id" class="font-medium text-gray-700">@permission.Name</label>
+                                                        <p class="text-gray-500">@permission.Description</p>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        Save Changes
+                    </button>
+                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('editPermissionsModal')">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- View User Modal -->
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="viewUserModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal panel -->
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                            User Details
+                        </h3>
+                        <div class="mt-4">
+                            <div class="border-t border-gray-200 py-3">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">User ID</h4>
+                                        <p id="viewUserId" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">Name</h4>
+                                        <p id="viewUserName" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 py-3">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                                        <p id="viewUserEmail" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">Role</h4>
+                                        <p id="viewUserRole" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 py-3">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">Status</h4>
+                                        <p id="viewUserStatus" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-500">Last Login</h4>
+                                        <p id="viewUserLastLogin" class="mt-1 text-sm text-gray-900">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 py-3">
+                                <h4 class="text-sm font-medium text-gray-500">Permissions</h4>
+                                <p id="viewUserPermissions" class="mt-1 text-sm text-gray-900">-</p>
+                            </div>
+                            <div class="border-t border-gray-200 py-3">
+                                <h4 class="text-sm font-medium text-gray-500">Recent Activity</h4>
+                                <div id="userActivityLogs" class="mt-1 text-sm text-gray-900 max-h-40 overflow-y-auto">
+                                    <!-- User activity logs will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button type="button" class="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('viewUserModal')">
+                    Close
+                </button>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Add Permission Modal -->
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="addPermissionModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal panel -->
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <form method="post" asp-page-handler="AddPermission">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                Add New Permission
+                            </h3>
+                            <div class="mt-4 space-y-4">
+                                <div>
+                                    <label for="permissionName" class="block text-sm font-medium text-gray-700">Permission Name</label>
+                                    <input type="text" name="name" id="permissionName" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    <p class="mt-1 text-sm text-gray-500">Use format: entity.action (e.g., users.create)</p>
+                                </div>
+
+                                <div>
+                                    <label for="permissionDescription" class="block text-sm font-medium text-gray-700">Description</label>
+                                    <input type="text" name="description" id="permissionDescription" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+
+                                <div>
+                                    <label for="permissionCategory" class="block text-sm font-medium text-gray-700">Category</label>
+                                    <input type="text" name="category" id="permissionCategory" list="categoryList" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    <datalist id="categoryList">
+                                        @foreach (var category in Model.AvailablePermissions.Select(p => p.Category).Distinct())
+                                        {
+                                            <option value="@category"></option>
+                                        }
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        Add Permission
+                    </button>
+                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('addPermissionModal')">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Permission Modal -->
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="editPermissionModal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal panel -->
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <form method="post" asp-page-handler="EditPermission">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                Edit Permission
+                            </h3>
+                            <div class="mt-4 space-y-4">
+                                <input type="hidden" id="editPermissionId" name="id">
+                                <div>
+                                    <label for="editPermissionName" class="block text-sm font-medium text-gray-700">Permission Name</label>
+                                    <input type="text" name="name" id="editPermissionName" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+
+                                <div>
+                                    <label for="editPermissionDescription" class="block text-sm font-medium text-gray-700">Description</label>
+                                    <input type="text" name="description" id="editPermissionDescription" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+
+                                <div>
+                                    <label for="editPermissionCategory" class="block text-sm font-medium text-gray-700">Category</label>
+                                    <input type="text" name="category" id="editPermissionCategory" list="categoryList" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        Save Changes
+                    </button>
+                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeModal('editPermissionModal')">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Initialize page when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Setup charts
+            initializeCharts();
+            
+            // Setup tabs
+            setupTabs();
+            
+            // Setup search filter
+            setupSearch();
+            
+            // Setup modal functionality
+            setupModals();
+        });
+        
+        function initializeCharts() {
+            // Role Distribution Chart
+            const roleDistributionCtx = document.getElementById('roleDistributionChart').getContext('2d');
+            const roleData = @Html.Raw(Json.Serialize(Model.UserRoleDistribution));
+            const roleLabels = Object.keys(roleData);
+            const roleValues = Object.values(roleData);
+            
+            new Chart(roleDistributionCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: roleLabels,
+                    datasets: [{
+                        data: roleValues,
+                        backgroundColor: [
+                            'rgba(79, 70, 229, 0.8)',  // indigo
+                            'rgba(16, 185, 129, 0.8)', // green
+                            'rgba(245, 158, 11, 0.8)', // amber
+                            'rgba(239, 68, 68, 0.8)',  // red
+                            'rgba(14, 165, 233, 0.8)'  // sky
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        }
+                    }
+                }
+            });
+            
+            // System Activity Chart
+            const activityCtx = document.getElementById('activityChart').getContext('2d');
+            const activityData = @Html.Raw(Json.Serialize(Model.SystemActivityByDay));
+            const activityLabels = Object.keys(activityData);
+            const activityValues = Object.values(activityData);
+            
+            new Chart(activityCtx, {
+                type: 'line',
+                data: {
+                    labels: activityLabels,
+                    datasets: [{
+                        label: 'Activity',
+                        data: activityValues,
+                        backgroundColor: 'rgba(79, 70, 229, 0.2)',
+                        borderColor: 'rgba(79, 70, 229, 1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            
+            // Most Active Users Chart
+            const activeUsersCtx = document.getElementById('activeUsersChart').getContext('2d');
+            const activeUsersData = @Html.Raw(Json.Serialize(Model.MostActiveUsers));
+            const activeUsersLabels = Object.keys(activeUsersData);
+            const activeUsersValues = Object.values(activeUsersData);
+            
+            new Chart(activeUsersCtx, {
+                type: 'bar',
+                data: {
+                    labels: activeUsersLabels,
+                    datasets: [{
+                        label: 'Actions',
+                        data: activeUsersValues,
+                        backgroundColor: 'rgba(79, 70, 229, 0.8)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+        
+        function setupTabs() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('border-indigo-500', 'text-indigo-600');
+                        btn.classList.add('border-transparent', 'text-gray-500');
+                    });
+                    
+                    // Add active class to current tab
+                    button.classList.remove('border-transparent', 'text-gray-500');
+                   button.classList.add('border-indigo-500', 'text-indigo-600');
+
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+
+                    // Show current tab content
+                    const tabId = button.id.replace('tab-', 'tab-') + '-content';
+                    document.getElementById(tabId).classList.remove('hidden');
+                });
+            });
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('user-search');
+            const userRows = document.querySelectorAll('.user-row');
+
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.toLowerCase();
+
+                userRows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        function setupModals() {
+            // Edit Permissions Button
+            document.querySelectorAll('.edit-permissions-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const userId = button.getAttribute('data-user-id');
+                    const userName = button.getAttribute('data-user-name');
+
+                    // Reset checkboxes
+                    document.querySelectorAll('.permission-checkbox').forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+
+                    // Set user ID and update title
+                    document.getElementById('editUserId').value = userId;
+                    document.getElementById('permissionsModalTitle').innerText = `Edit Permissions for ${userName}`;
+
+                    // Show modal
+                    showModal('editPermissionsModal');
+
+                    // Load user's permissions via AJAX
+                    fetch(`/api/users/${userId}/permissions`)
+                        .then(response => response.json())
+                        .then(permissions => {
+                            permissions.forEach(permissionId => {
+                                const checkbox = document.getElementById(`permission-${permissionId}`);
+                                if (checkbox) {
+                                    checkbox.checked = true;
+                                }
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Error loading permissions:', error);
+                            alert('Failed to load user permissions. Please try again.');
+                        });
+                });
+            });
+
+            // View User Button
+            document.querySelectorAll('.view-user-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const userId = button.getAttribute('data-user-id');
+
+                    // Show modal
+                    showModal('viewUserModal');
+
+                    // Load user details via AJAX
+                    fetch(`/api/users/${userId}`)
+                        .then(response => response.json())
+                        .then(user => {
+                            document.getElementById('viewUserId').innerText = user.id;
+                            document.getElementById('viewUserName').innerText = `${user.firstName} ${user.lastName}`;
+                            document.getElementById('viewUserEmail').innerText = user.email;
+                            document.getElementById('viewUserRole').innerText = user.role;
+
+                            if (user.isActive) {
+                                document.getElementById('viewUserStatus').innerHTML = `
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Active
+                                    </span>
+                                `;
+                            } else {
+                                document.getElementById('viewUserStatus').innerHTML = `
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                        Inactive
+                                    </span>
+                                `;
+                            }
+
+                            document.getElementById('viewUserLastLogin').innerText = user.lastLogin
+                                ? new Date(user.lastLogin).toLocaleString()
+                                : 'Never';
+                            document.getElementById('viewUserPermissions').innerText = user.permissions || 'No permissions';
+                        })
+                        .catch(error => {
+                            console.error('Error loading user details:', error);
+                            alert('Failed to load user details. Please try again.');
+                        });
+
+                    // Load user activity logs
+                    fetch(`/api/users/${userId}/activity`)
+                        .then(response => response.json())
+                        .then(logs => {
+                            const logsContainer = document.getElementById('userActivityLogs');
+                            logsContainer.innerHTML = '';
+
+                            if (logs.length === 0) {
+                                logsContainer.innerHTML = '<p class="text-gray-500">No activity recorded for this user.</p>';
+                                return;
+                            }
+
+                            logs.forEach(log => {
+                                const logTime = new Date(log.timestamp).toLocaleString();
+                                logsContainer.innerHTML += `
+                                    <div class="py-2 border-b border-gray-100">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-indigo-600 font-medium">${log.actionType}</span>
+                                            <span class="text-gray-500 text-xs">${logTime}</span>
+                                        </div>
+                                        <p class="mt-1">${log.actionDetails}</p>
+                                    </div>
+                                `;
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Error loading user activity:', error);
+                            document.getElementById('userActivityLogs').innerHTML = '<p class="text-red-500">Failed to load activity logs.</p>';
+                        });
+                });
+            });
+
+            // Edit Permission Button
+            document.querySelectorAll('.edit-permission-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const permissionId = button.getAttribute('data-permission-id');
+                    const permissionName = button.getAttribute('data-permission-name');
+                    const permissionDescription = button.getAttribute('data-permission-description');
+                    const permissionCategory = button.getAttribute('data-permission-category');
+
+                    document.getElementById('editPermissionId').value = permissionId;
+                    document.getElementById('editPermissionName').value = permissionName;
+                    document.getElementById('editPermissionDescription').value = permissionDescription;
+                    document.getElementById('editPermissionCategory').value = permissionCategory;
+
+                    showModal('editPermissionModal');
+                });
+            });
+        }
+
+        // Modal functions
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            const modals = document.querySelectorAll('.fixed.inset-0.z-10');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+}

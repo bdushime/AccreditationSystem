@@ -2,13 +2,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using AccreditationSystem.Pages.Services; // Make sure namespace matches your project
-using AccreditationSystem.Middleware; // Add this for the AuthRedirectMiddleware
+using AccreditationSystem.Pages.Services;
+using AccreditationSystem.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers(); // Add this for API controllers
 
 // Add session support
 builder.Services.AddDistributedMemoryCache();
@@ -18,6 +19,9 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+// Register HttpContextAccessor (needed for PermissionService)
+builder.Services.AddHttpContextAccessor();
 
 // Register email service with secure credential management
 builder.Services.Configure<EmailSettings>(options =>
@@ -38,7 +42,10 @@ builder.Services.Configure<EmailSettings>(options =>
     }
 });
 
+// Register our services
 builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddScoped<IAuditLogService, AuditLogService>();
+builder.Services.AddScoped<IPermissionService, PermissionService>();
 
 // Add logging service
 builder.Services.AddLogging();
@@ -66,9 +73,13 @@ app.UseAuthorization();
 // Add session middleware - this must be before MapRazorPages
 app.UseSession();
 
-// Add auth redirect middleware to protect pages
+// Add auth redirect middleware to protect pages (your existing middleware)
 app.UseAuthRedirectMiddleware();
 
+// Add our new permission authorization middleware
+app.UsePermissionAuthorization();
+
 app.MapRazorPages();
+app.MapControllers(); // Map the API controllers
 
 app.Run();
