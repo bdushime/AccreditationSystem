@@ -101,13 +101,17 @@ namespace AccreditationSystem.Pages.Auth
                                 else
                                 {
                                     // Redirect based on role if no return URL
-                                    if (userRole.ToLower() == "admin")
+                                    switch (userRole.ToLower())
                                     {
-                                        return RedirectToPage("/Admin/Dashboard");
-                                    }
-                                    else
-                                    {
-                                        return RedirectToPage("/Hod_Dashboard/HOD_Home");
+                                        case "admin":
+                                            return RedirectToPage("/Admin/Dashboard");
+                                        case "hod":
+                                            return RedirectToPage("/Hod_Dashboard/HOD_Home");
+                                        case "client":
+                                            return RedirectToPage("/Pages/index");
+                                        default:
+                                            // Fallback to a default page if role is unrecognized
+                                            return RedirectToPage("/");
                                     }
                                 }
                             }

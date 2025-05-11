@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/C\#projectsOthers/AccreditationSystem/Pages/Admin/DocumentVerification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRG9jdW1lbnRWZXJpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/C\#projectsOthers/AccreditationSystem/Pages/Admin/DownloadCertificate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRG93bmxvYWRDZXJ0aWZpY2F0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,8 +112,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#projectsOthers/AccreditationSystem/Pages/Customer/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGFzaGJvYXJkLmNzaHRtbA==
+[D:/C\#projectsOthers/AccreditationSystem/Pages/Client/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#projectsOthers/AccreditationSystem/Pages/DebugSession.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVidWdTZXNzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#projectsOthers/AccreditationSystem/Pages/Error.cshtml]
@@ -118,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/C\#projectsOthers/AccreditationSystem/Pages/Hod_Dashboard/ClaimDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxDbGFpbURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#projectsOthers/AccreditationSystem/Pages/Hod_Dashboard/DownloadDocument.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxEb3dubG9hZERvY3VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/C\#projectsOthers/AccreditationSystem/Pages/Hod_Dashboard/HOD_Analysts.cshtml]

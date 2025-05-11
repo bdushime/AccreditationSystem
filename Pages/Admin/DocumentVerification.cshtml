@@ -1,0 +1,176 @@
+﻿@page
+@model AccreditationSystem.Pages.Admin.DocumentVerificationModel
+
+@{
+    ViewData["Title"] = "Document Verification";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+}
+
+<div class="container mx-auto px-4 py-8">
+    <!-- Page Title -->
+    <div class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">Document Verification</h1>
+        <p class="text-gray-600">Verify document integrity using stored hashes</p>
+    </div>
+
+    <!-- Alert Messages -->
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class="max-w-3xl mx-auto mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@Model.SuccessMessage</span>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="max-w-3xl mx-auto mb-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@Model.ErrorMessage</span>
+        </div>
+    }
+
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Form Header -->
+        <div class="bg-primary-700 px-6 py-4">
+            <h2 class="text-xl font-semibold text-white">Verify Documents</h2>
+        </div>
+
+        <!-- Form Content -->
+        <div class="p-6">
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-800 mb-4">Verify by Document ID</h3>
+                <form method="post" enctype="multipart/form-data" asp-page-handler="VerifyById">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="documentId" class="block text-sm font-medium text-gray-700 mb-1">Document ID <span class="text-red-500">*</span></label>
+                            <input type="number" id="documentId" name="documentId" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter document ID" required>
+                        </div>
+                        <div>
+                            <label for="documentFile" class="block text-sm font-medium text-gray-700 mb-1">Document File <span class="text-red-500">*</span></label>
+                            <input type="file" id="documentFile" name="documentFile" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                            Verify Document
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="border-t border-gray-200 my-8"></div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-medium text-gray-800 mb-4">Verify Document from Accreditation Claim</h3>
+                <form method="post" enctype="multipart/form-data" asp-page-handler="VerifyClaim">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="claimId" class="block text-sm font-medium text-gray-700 mb-1">Claim ID <span class="text-red-500">*</span></label>
+                            <input type="number" id="claimId" name="claimId" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter claim ID" required>
+                        </div>
+                        <div>
+                            <label for="documentType" class="block text-sm font-medium text-gray-700 mb-1">Document Type <span class="text-red-500">*</span></label>
+                            <select id="documentType" name="documentType" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                                <option value="" disabled selected>Select document type</option>
+                                <option value="self-assessment">Self-Assessment Report</option>
+                                <option value="curriculum">Curriculum Documentation</option>
+                                <option value="faculty">Faculty Credentials</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="claimFile" class="block text-sm font-medium text-gray-700 mb-1">Document File <span class="text-red-500">*</span></label>
+                            <input type="file" id="claimFile" name="claimFile" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                            Verify Claim Document
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="border-t border-gray-200 my-8"></div>
+
+            <div>
+                <h3 class="text-lg font-medium text-gray-800 mb-4">Generate Hash for Document</h3>
+                <form method="post" enctype="multipart/form-data" asp-page-handler="GenerateHash">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div>
+                            <label for="hashFile" class="block text-sm font-medium text-gray-700 mb-1">Document File <span class="text-red-500">*</span></label>
+                            <input type="file" id="hashFile" name="hashFile" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                            Generate Hash
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.GeneratedHash))
+            {
+                <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                    <h4 class="text-md font-medium text-gray-800 mb-2">Generated Hash:</h4>
+                    <div class="bg-white p-3 border border-gray-300 rounded overflow-x-auto">
+                        <code class="text-sm break-all">@Model.GeneratedHash</code>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-600">This hash can be used to verify the integrity of the document in the future.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Add any JavaScript needed for the page here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example: Enable form validation
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                });
+            });
+        });
+    </script>
+}

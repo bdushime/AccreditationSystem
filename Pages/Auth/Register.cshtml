@@ -106,9 +106,9 @@
             text-decoration: none;
         }
 
-        .link-primary:hover {
-            text-decoration: underline;
-        }
+            .link-primary:hover {
+                text-decoration: underline;
+            }
 
         .nav-buttons {
             display: flex;
@@ -116,9 +116,9 @@
             margin-bottom: 2rem;
         }
 
-        .nav-buttons .btn {
-            width: auto;
-        }
+            .nav-buttons .btn {
+                width: auto;
+            }
 
         @@media (max-width: 992px) {
             .split-screen {
@@ -158,17 +158,17 @@
 
                 @if (Model.errorMessage.Length > 0)
                 {
-                        <div class="alert alert-warning alert-dismissible fade show" role='alert'>
-                            <strong>@Model.errorMessage</strong>
-                            <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>
+                    <div class="alert alert-warning alert-dismissible fade show" role='alert'>
+                        <strong>@Model.errorMessage</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
                 }
                 else if (Model.successMessage.Length > 0)
                 {
-                        <div class="alert alert-success alert-dismissible fade show" role='alert'>
-                            <strong>@Model.successMessage</strong>
-                            <button type="button" class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>
+                    <div class="alert alert-success alert-dismissible fade show" role='alert'>
+                        <strong>@Model.successMessage</strong>
+                        <button type="button" class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                    </div>
                 }
 
                 <form method="post">
@@ -219,6 +219,7 @@
                         <select class="form-select form-control" asp-for="Role">
                             <option value="client">Client</option>
                             <option value="admin">Admin</option>
+                            <option value="hod">HOD</option>
                         </select>
                         <span asp-validation-for="Role" class="text-danger"></span>
                     </div>

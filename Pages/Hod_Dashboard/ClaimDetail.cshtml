@@ -2,366 +2,418 @@
 @model AccreditationSystem.Pages.Hod_Dashboard.ClaimDetailModel
 
 @{
-    ViewData["Title"] = "Claim Details - Accreditation System";
+    ViewData["Title"] = "Accreditation Claim Details";
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-
-    <!-- Include Tailwind CSS via CDN -->
+@section Styles {
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
-    <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <!-- Logo -->
-                <div class="flex items-center flex-shrink-0">
-                    <a href="#" class="text-indigo-600 font-bold text-xl">Accreditation</a>
-                </div>
-
-                <!-- Center Navigation -->
-                <nav class="hidden md:flex space-x-8 items-center">
-                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_HOME" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
-                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_Applications" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Applications</a>
-                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_Schools" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Schools</a>
-                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_Inspections" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Inspections</a>
-                    <a asp-area="" asp-page="/Hod_Dashboard/HOD_Claims" class="text-indigo-600 border-b-2 border-indigo-600 px-3 py-2 text-sm font-medium">Claims</a>
-                </nav>
-
-                <!-- User menu -->
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-2">
-                        <span class="bg-gray-200 text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-sm font-medium">JK</span>
-                        <span class="text-gray-700 font-medium">HOD</span>
-                    </div>
-                    <button class="bg-red-500 hover:bg-red-300 text-black font-semibold py-2 text-white px-4 border border-gray-300 rounded shadow-sm text-sm">
-                        <a href="/">Sign out</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <!-- Back Button -->
-        <div class="mb-6">
-            <a href="/Hod_Dashboard/HOD_Claims" class="inline-flex items-center text-indigo-600 hover:text-indigo-900">
-                <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-                </svg>
-                Back to Claims
-            </a>
-        </div>
-
-        <!-- Error Message Display -->
-        @if (TempData["ErrorMessage"] != null)
-        {
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4" role="alert">
-                <span class="block sm:inline">@TempData["ErrorMessage"]</span>
-            </div>
-        }
-
-        <!-- Claim Not Found -->
-        @if (Model.Claim == null)
-        {
-            <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded mb-4" role="alert">
-                <span class="block sm:inline">Claim not found or has been deleted.</span>
-            </div>
-        }
-        else
-        {
-            <!-- Claim Header -->
-            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
-                <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
-                    <div>
-                        <h1 class="text-2xl font-bold text-gray-900">Claim Details</h1>
-                        <p class="mt-1 max-w-2xl text-sm text-gray-500">Claim ID: #@Model.Claim.ClaimID</p>
-                    </div>
-
-                    <div>
-                        @{
-                            string statusColorClass = "bg-blue-100 text-blue-800";
-                            if (Model.Claim.Status == "Approved")
-                            {
-                                statusColorClass = "bg-green-100 text-green-800";
-                            }
-                            else if (Model.Claim.Status == "Rejected")
-                            {
-                                statusColorClass = "bg-red-100 text-red-800";
-                            }
-                            else if (Model.Claim.Status == "Submitted")
-                            {
-                                statusColorClass = "bg-yellow-100 text-yellow-800";
-                            }
-                        }
-                        <span class="px-3 py-1 inline-flex text-sm leading-5 font-semibold rounded-full @statusColorClass">
-                            @Model.Claim.Status
-                        </span>
-                    </div>
-                </div>
-
-                <!-- School Information Section -->
-                <div class="border-t border-gray-200">
-                    <dl>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">School Email</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.Claim.SchoolEmail</dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Accreditation Type</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.Claim.AccreditationType</dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Accreditation Level</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@Model.Claim.AccreditationLevel</dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Previous Status</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.PreviousStatus) ? "N/A" : Model.Claim.PreviousStatus)
-                            </dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Accreditation Period</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @Model.Claim.StartDate.ToString("MMM dd, yyyy") - @Model.Claim.EndDate.ToString("MMM dd, yyyy")
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Submission Date</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @Model.Claim.SubmissionDate.ToString("MMM dd, yyyy HH:mm")
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
-                <div class="px-4 py-5 sm:px-6">
-                    <h2 class="text-lg font-medium text-gray-900">Contact Information</h2>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">School contact details for this claim</p>
-                </div>
-
-                <div class="border-t border-gray-200">
-                    <dl>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Contact Name</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.ContactName) ? "N/A" : Model.Claim.ContactName)
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Position</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.ContactPosition) ? "N/A" : Model.Claim.ContactPosition)
-                            </dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Email</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.ContactEmail) ? "N/A" : Model.Claim.ContactEmail)
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Phone</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.ContactPhone) ? "N/A" : Model.Claim.ContactPhone)
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Academic Standards and Comments -->
-            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
-                <div class="px-4 py-5 sm:px-6">
-                    <h2 class="text-lg font-medium text-gray-900">Accreditation Standards</h2>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">Self-reported standards and assessments</p>
-                </div>
-
-                <div class="border-t border-gray-200">
-                    <dl>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Academic Standards</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.AcademicStandards) ? "Not specified" : Model.Claim.AcademicStandards)
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Faculty Standards</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.FacultyStandards) ? "Not specified" : Model.Claim.FacultyStandards)
-                            </dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Facility Standards</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.FacilityStandards) ? "Not specified" : Model.Claim.FacilityStandards)
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Student Services</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.StudentServices) ? "Not specified" : Model.Claim.StudentServices)
-                            </dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Additional Comments</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @(string.IsNullOrEmpty(Model.Claim.AdditionalComments) ? "No additional comments" : Model.Claim.AdditionalComments)
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Documentation Section -->
-            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
-                <div class="px-4 py-5 sm:px-6">
-                    <h2 class="text-lg font-medium text-gray-900">Attached Documentation</h2>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">Supporting documents submitted with this claim</p>
-                </div>
-
-                <div class="border-t border-gray-200">
-                    <dl>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Self-Assessment Report</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @if (!string.IsNullOrEmpty(Model.Claim.SelfAssessmentReportPath))
-                                {
-                                    <a href="@Model.Claim.SelfAssessmentReportPath" target="_blank" class="text-indigo-600 hover:text-indigo-900">
-                                        View Document
-                                        <svg class="inline-block ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <span>No document attached</span>
-                                }
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Curriculum Documentation</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @if (!string.IsNullOrEmpty(Model.Claim.CurriculumDocumentationPath))
-                                {
-                                    <a href="@Model.Claim.CurriculumDocumentationPath" target="_blank" class="text-indigo-600 hover:text-indigo-900">
-                                        View Document
-                                        <svg class="inline-block ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <span>No document attached</span>
-                                }
-                            </dd>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Faculty Credentials</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @if (!string.IsNullOrEmpty(Model.Claim.FacultyCredentialsPath))
-                                {
-                                    <a href="@Model.Claim.FacultyCredentialsPath" target="_blank" class="text-indigo-600 hover:text-indigo-900">
-                                        View Document
-                                        <svg class="inline-block ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <span>No document attached</span>
-                                }
-                            </dd>
-                        </div>
-                        <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-500">Additional Documentation</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                @if (!string.IsNullOrEmpty(Model.Claim.AdditionalDocumentationPath))
-                                {
-                                    <a href="@Model.Claim.AdditionalDocumentationPath" target="_blank" class="text-indigo-600 hover:text-indigo-900">
-                                        View Document
-                                        <svg class="inline-block ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                }
-                                else
-                                {
-                                    <span>No document attached</span>
-                                }
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-
-            <!-- Review Information (if reviewed) -->
-            @if (!string.IsNullOrEmpty(Model.Claim.ReviewerID) || !string.IsNullOrEmpty(Model.Claim.ReviewNotes))
-            {
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
-                    <div class="px-4 py-5 sm:px-6">
-                        <h2 class="text-lg font-medium text-gray-900">Review Information</h2>
-                        <p class="mt-1 max-w-2xl text-sm text-gray-500">Review details and notes</p>
-                    </div>
-
-                    <div class="border-t border-gray-200">
-                        <dl>
-                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt class="text-sm font-medium text-gray-500">Reviewer ID</dt>
-                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    @(string.IsNullOrEmpty(Model.Claim.ReviewerID) ? "Not yet reviewed" : Model.Claim.ReviewerID)
-                                </dd>
-                            </div>
-                            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt class="text-sm font-medium text-gray-500">Review Date</dt>
-                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    @(Model.Claim.ReviewDate.HasValue ? Model.Claim.ReviewDate.Value.ToString("MMM dd, yyyy") : "Not yet reviewed")
-                                </dd>
-                            </div>
-                            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt class="text-sm font-medium text-gray-500">Review Notes</dt>
-                                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                    @(string.IsNullOrEmpty(Model.Claim.ReviewNotes) ? "No review notes provided" : Model.Claim.ReviewNotes)
-                                </dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-            }
-
-            <!-- Action Buttons -->
-            <div class="flex justify-end space-x-4 mt-6">
-                <a href="/Hod_Dashboard/ClaimEdit?id=@Model.Claim.ClaimID" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Edit Claim
-                </a>
-                @if (Model.Claim.Status == "Submitted")
-                {
-                    <form method="post">
-                        <input type="hidden" name="id" value="@Model.Claim.ClaimID" />
-                        <button type="submit" asp-page-handler="Approve" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
-                            Approve Claim
-                        </button>
-                        <button type="submit" asp-page-handler="Reject" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                            Reject Claim
-                        </button>
-                    </form>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    }
                 }
-            </div>
+            }
         }
-    </main>
-</body>
-</html>
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+}
+
+<div class="container mx-auto px-4 py-8">
+    <!-- Success/Error messages -->
+    @if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+    {
+        <div class="mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@TempData["SuccessMessage"]</span>
+            <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.style.display='none'">
+                <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+    {
+        <div class="mb-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <span class="block sm:inline">@TempData["ErrorMessage"]</span>
+            <button class="absolute top-0 bottom-0 right-0 px-4 py-3" onclick="this.parentElement.style.display='none'">
+                <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    }
+
+    <!-- Breadcrumb -->
+    <nav class="flex mb-5" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="/Hod_Dashboard/HOD_Home" class="text-gray-700 hover:text-primary-600">
+                    <svg class="w-5 h-5 mr-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <a href="/Hod_Dashboard/HOD_Claims" class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2">Claims</a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="ml-1 text-gray-500 md:ml-2">Claim #@Model.Claim.ClaimID</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Page Title and Status Badge -->
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Accreditation Claim #@Model.Claim.ClaimID</h1>
+        <div>
+            @{
+                string statusClass = "";
+                switch (Model.Claim.Status.ToLower())
+                {
+                    case "pending":
+                    case "submitted":
+                        statusClass = "bg-yellow-100 text-yellow-800";
+                        break;
+                    case "approved":
+                        statusClass = "bg-green-100 text-green-800";
+                        break;
+                    case "rejected":
+                        statusClass = "bg-red-100 text-red-800";
+                        break;
+                    default:
+                        statusClass = "bg-gray-100 text-gray-800";
+                        break;
+                }
+            }
+            <span class="px-3 py-1 @statusClass rounded-full text-sm font-medium">
+                @Model.Claim.Status
+            </span>
+        </div>
+    </div>
+
+    <!-- Claim Details Card -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden mb-8">
+        <div class="bg-primary-700 px-6 py-4">
+            <h2 class="text-xl font-semibold text-white">Claim Information</h2>
+        </div>
+
+        <div class="p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-800 mb-4">General Information</h3>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">School Email</p>
+                        <p class="font-medium">@Model.Claim.SchoolEmail</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Accreditation Type</p>
+                        <p class="font-medium">@Model.Claim.AccreditationType</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Accreditation Level</p>
+                        <p class="font-medium">@Model.Claim.AccreditationLevel</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Previous Status</p>
+                        <p class="font-medium">@(string.IsNullOrEmpty(Model.Claim.PreviousStatus) ? "N/A" : Model.Claim.PreviousStatus)</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Requested Period</p>
+                        <p class="font-medium">@Model.Claim.StartDate.ToShortDateString() to @Model.Claim.EndDate.ToShortDateString()</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-800 mb-4">Contact Information</h3>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Contact Name</p>
+                        <p class="font-medium">@Model.Claim.ContactName</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Position/Title</p>
+                        <p class="font-medium">@Model.Claim.ContactPosition</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Contact Email</p>
+                        <p class="font-medium">@Model.Claim.ContactEmail</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Contact Phone</p>
+                        <p class="font-medium">@Model.Claim.ContactPhone</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-500">Submission Date</p>
+                        <p class="font-medium">@Model.Claim.SubmissionDate.ToString("MMMM dd, yyyy")</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Standards -->
+            <div class="mt-8">
+                <h3 class="text-lg font-medium text-gray-800 mb-4">Standards Compliance</h3>
+
+                <div class="bg-gray-50 p-4 rounded-md mb-4">
+                    <h4 class="font-medium mb-2">Academic Excellence Standards</h4>
+                    <p>@Model.Claim.AcademicStandards</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-md mb-4">
+                    <h4 class="font-medium mb-2">Faculty Qualifications Standards</h4>
+                    <p>@Model.Claim.FacultyStandards</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-md mb-4">
+                    <h4 class="font-medium mb-2">Facility Standards</h4>
+                    <p>@Model.Claim.FacilityStandards</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-md mb-4">
+                    <h4 class="font-medium mb-2">Student Services Standards</h4>
+                    <p>@Model.Claim.StudentServices</p>
+                </div>
+            </div>
+
+            <!-- Additional Comments Section -->
+            <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-800 mb-2">Additional Comments</h3>
+                <div class="p-4 bg-gray-50 rounded-md">
+                    <p>@(string.IsNullOrEmpty(Model.Claim.AdditionalComments) ? "No additional comments provided." : Model.Claim.AdditionalComments)</p>
+                </div>
+            </div>
+
+            <!-- Attached Documents Section -->
+            <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-800 mb-2">Attached Documents</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <ul class="divide-y divide-gray-200">
+                        @if (!string.IsNullOrEmpty(Model.Claim.SelfAssessmentReportPath))
+                        {
+                            <li class="py-3 flex justify-between">
+                                <div class="flex items-center">
+                                    <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>Self-Assessment Report</span>
+                                </div>
+                                <a href="/Hod_Dashboard/DownloadDocument?path=@Model.Claim.SelfAssessmentReportPath" class="text-primary-600 hover:text-primary-800">
+                                    Download
+                                </a>
+                            </li>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Claim.CurriculumDocumentationPath))
+                        {
+                            <li class="py-3 flex justify-between">
+                                <div class="flex items-center">
+                                    <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>Curriculum Documentation</span>
+                                </div>
+                                <a href="/Hod_Dashboard/DownloadDocument?path=@Model.Claim.CurriculumDocumentationPath" class="text-primary-600 hover:text-primary-800">
+                                    Download
+                                </a>
+                            </li>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Claim.FacultyCredentialsPath))
+                        {
+                            <li class="py-3 flex justify-between">
+                                <div class="flex items-center">
+                                    <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>Faculty Credentials</span>
+                                </div>
+                                <a href="/Hod_Dashboard/DownloadDocument?path=@Model.Claim.FacultyCredentialsPath" class="text-primary-600 hover:text-primary-800">
+                                    Download
+                                </a>
+                            </li>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.Claim.AdditionalDocumentationPath))
+                        {
+                            <li class="py-3 flex justify-between">
+                                <div class="flex items-center">
+                                    <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>Additional Documentation</span>
+                                </div>
+                                <a href="/Hod_Dashboard/DownloadDocument?path=@Model.Claim.AdditionalDocumentationPath" class="text-primary-600 hover:text-primary-800">
+                                    Download
+                                </a>
+                            </li>
+                        }
+
+                        @if (string.IsNullOrEmpty(Model.Claim.SelfAssessmentReportPath) &&
+                        string.IsNullOrEmpty(Model.Claim.CurriculumDocumentationPath) &&
+                        string.IsNullOrEmpty(Model.Claim.FacultyCredentialsPath) &&
+                        string.IsNullOrEmpty(Model.Claim.AdditionalDocumentationPath))
+                        {
+                            <li class="py-3">No documents found.</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    @if (Model.Claim.Status.ToLower() == "pending" || Model.Claim.Status.ToLower() == "submitted")
+    {
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="bg-primary-700 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">Review Decision</h2>
+            </div>
+
+            <div class="p-6">
+                <p class="mb-4">Please provide feedback and make a decision on this accreditation claim.</p>
+
+                <form method="post">
+                    <input type="hidden" name="id" value="@Model.Claim.ClaimID" />
+                    
+                    <div class="mb-6">
+                        <label for="Feedback" class="block text-sm font-medium text-gray-700 mb-2">Feedback <span class="text-red-500">*</span></label>
+                        <textarea id="Feedback" name="Feedback" rows="6" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Provide detailed feedback on your decision. If rejecting, explain the reasons clearly..."></textarea>
+                        <p class="mt-1 text-sm text-gray-500">This feedback will be included in the email notification sent to the school.</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <a href="/Hod_Dashboard/HOD_Claims" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                            Back to List
+                        </a>
+
+                        <div class="flex space-x-4">
+                            <button type="submit" asp-page-handler="Reject" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" onclick="return confirm('Are you sure you want to reject this claim?');">
+                                <svg class="mr-2 -ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                                Reject
+                            </button>
+
+                            <button type="submit" asp-page-handler="Approve" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" onclick="return confirm('Are you sure you want to approve this claim?');">
+                                <svg class="mr-2 -ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                Approve
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Previous Decision Details -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="bg-primary-700 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">Decision Details</h2>
+            </div>
+
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-sm text-gray-500">Status</p>
+                        <p class="font-medium">@Model.Claim.Status</p>
+                    </div>
+
+                    <div>
+                        <p class="text-sm text-gray-500">Decision Date</p>
+                        <p class="font-medium">
+                            @if (Model.Claim.Status.ToLower() == "approved" && Model.Claim.ApprovalDate.HasValue)
+                            {
+                                @Model.Claim.ApprovalDate.Value.ToString("MMMM dd, yyyy")
+                            }
+                            else if (Model.Claim.Status.ToLower() == "rejected" && Model.Claim.ReviewDate.HasValue)
+                            {
+                                @Model.Claim.ReviewDate.Value.ToString("MMMM dd, yyyy")
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 mb-1">Review Notes</p>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <p>@(string.IsNullOrEmpty(Model.Claim.ReviewNotes) ? "No review notes provided." : Model.Claim.ReviewNotes)</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 text-right">
+                    <a href="/Hod_Dashboard/HOD_Claims" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    // Validate form submission
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(event) {
+                const feedback = document.getElementById('Feedback').value.trim();
+                if (!feedback) {
+                    event.preventDefault();
+                    alert('Please provide feedback for your decision.');
+                    document.getElementById('Feedback').focus();
+                }
+            });
+        }
+    });
+</script>

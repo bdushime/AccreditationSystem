@@ -1,0 +1,74 @@
+﻿@page
+@model AccreditationSystem.Pages.Customer.DashboardModel
+@{
+    ViewData["Title"] = "Client Dashboard";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3>Client Dashboard</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Welcome, @Model.UserName!</h4>
+                    <p>This is your client dashboard where you can manage your accreditation applications.</p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">My Applications</h5>
+                                    <p class="card-text">View and manage your applications</p>
+                                    <a href="/Client/Applications" class="btn btn-primary">View Applications</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Submit New Application</h5>
+                                    <p class="card-text">Start a new accreditation application</p>
+                                    <a href="/Client/NewApplication" class="btn btn-primary">Start Application</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">My Profile</h5>
+                                    <p class="card-text">View and update your profile information</p>
+                                    <a href="/Client/Profile" class="btn btn-primary">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Recent Activity</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>No recent activities to display.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            console.log("Client dashboard page loaded");
+        });
+    </script>
+}

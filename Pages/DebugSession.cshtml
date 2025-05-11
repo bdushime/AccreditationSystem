@@ -1,0 +1,45 @@
+﻿@page
+@model AccreditationSystem.Pages.DebugSessionModel
+
+@{
+    ViewData["Title"] = "Debug Session";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h3>Session Debug Information</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <tr>
+                    <th style="width: 200px;">User ID</th>
+                    <td>@Model.UserId</td>
+                </tr>
+                <tr>
+                    <th>User Name</th>
+                    <td>@Model.UserName</td>
+                </tr>
+                <tr>
+                    <th>User Email</th>
+                    <td>@Model.UserEmail</td>
+                </tr>
+                <tr>
+                    <th>User Role</th>
+                    <td>@Model.UserRole</td>
+                </tr>
+                <tr>
+                    <th>Role (lowercase)</th>
+                    <td>@Model.RoleLowercase</td>
+                </tr>
+                <tr>
+                    <th>Current Path</th>
+                    <td>@Model.CurrentPath</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card-footer">
+            <p class="text-muted mb-0">This page is for debugging purposes only.</p>
+        </div>
+    </div>
+</div>
