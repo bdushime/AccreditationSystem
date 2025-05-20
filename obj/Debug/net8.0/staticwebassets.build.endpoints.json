@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
+          "Value": "Sat, 17 May 2025 16:22:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 12:44:50 GMT"
+          "Value": "Sat, 17 May 2025 16:22:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -9269,6 +9269,88 @@
       ]
     },
     {
+      "Route": "uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf",
+      "AssetFile": "uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16553014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.ttnf95rdp6.pdf",
+      "AssetFile": "uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16553014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ttnf95rdp6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf"
+        }
+      ]
+    },
+    {
       "Route": "uploads/accreditation-claims/faculty-06c9891f-d830-4629-bc73-58a060a5b539.e3j8282gsf.pdf",
       "AssetFile": "uploads/accreditation-claims/faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf",
       "Selectors": [],
@@ -10253,6 +10335,88 @@
       ]
     },
     {
+      "Route": "uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.kua6qalejo.pdf",
+      "AssetFile": "uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lPEPYpk0ZBuY+Wuhv4JOnsMrgC5rw7Ldu+yljw8ci20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kua6qalejo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lPEPYpk0ZBuY+Wuhv4JOnsMrgC5rw7Ldu+yljw8ci20="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf",
+      "AssetFile": "uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lPEPYpk0ZBuY+Wuhv4JOnsMrgC5rw7Ldu+yljw8ci20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lPEPYpk0ZBuY+Wuhv4JOnsMrgC5rw7Ldu+yljw8ci20="
+        }
+      ]
+    },
+    {
       "Route": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.e3j8282gsf.pdf",
       "AssetFile": "uploads/accreditation-claims/self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
       "Selectors": [],
@@ -10571,6 +10735,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Sun, 11 May 2025 19:12:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.e3j8282gsf.pdf",
+      "AssetFile": "uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3j8282gsf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf",
+      "AssetFile": "uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 20:27:15 GMT"
         }
       ],
       "EndpointProperties": [

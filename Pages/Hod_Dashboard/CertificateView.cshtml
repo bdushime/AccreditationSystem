@@ -1,0 +1,333 @@
+﻿@page
+@model AccreditationSystem.Pages.Hod_Dashboard.CertificateViewModel
+@{
+    ViewData["Title"] = "Certificate View - Accreditation System";
+}
+
+@{
+    ViewData["Title"] = "Certificate View - Accreditation System";
+}
+
+<style>
+    .certificate {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .certificate-border {
+        border: 8px solid #1e40af;
+        margin: 10mm;
+        height: calc(100% - 20mm);
+        position: relative;
+    }
+
+    .certificate-inner {
+        border: 2px solid #3b82f6;
+        margin: 5mm;
+        height: calc(100% - 10mm);
+        padding: 20mm;
+        text-align: center;
+        position: relative;
+    }
+
+    .watermark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 120px;
+        color: rgba(59, 130, 246, 0.05);
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .certificate-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .logo-section {
+        margin-bottom: 30px;
+    }
+
+    .certificate-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #1e40af;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .certificate-subtitle {
+        font-size: 20px;
+        color: #6b7280;
+        margin-bottom: 40px;
+    }
+
+    .recipient-section {
+        margin: 40px 0;
+    }
+
+    .this-certifies {
+        font-size: 18px;
+        color: #374151;
+        margin-bottom: 20px;
+    }
+
+    .institution-name {
+        font-size: 32px;
+        font-weight: bold;
+        color: #1f2937;
+        margin: 20px 0;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 10px;
+        display: inline-block;
+        min-width: 400px;
+    }
+
+    .program-text {
+        font-size: 18px;
+        color: #374151;
+        margin: 30px 0;
+        line-height: 1.8;
+    }
+
+    .signature-section {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .signature-line {
+        width: 200px;
+        border-bottom: 2px solid #374151;
+        margin-bottom: 10px;
+    }
+
+    .signature-label {
+        font-size: 14px;
+        color: #6b7280;
+    }
+
+    .certificate-number {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        font-size: 12px;
+        color: #6b7280;
+    }
+
+    .issue-date {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        font-size: 12px;
+        color: #6b7280;
+    }
+
+    @@media print {
+        body {
+            margin: 0;
+        }
+
+        .no-print {
+            display: none !important;
+        }
+
+        .certificate {
+            box-shadow: none;
+            margin: 0;
+        }
+    }
+</style>
+
+<div class="container mx-auto px-4 py-8 no-print">
+    <!-- Success/Error Messages -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="mb-6 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="mb-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <!-- Breadcrumb -->
+    <nav class="flex mb-5" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="/Hod_Dashboard/HOD_Home" class="text-gray-700 hover:text-blue-600">Dashboard</a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <a href="/Hod_Dashboard/HOD_ApprovedSchools" class="ml-1 text-gray-700 hover:text-blue-600 md:ml-2">Approved Schools</a>
+                </div>
+            </li>
+            <li aria-current="page">
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="ml-1 text-gray-500 md:ml-2">Certificate</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Action Buttons -->
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-900">Certificate for @Model.Certificate.InstitutionName</h1>
+        <div class="flex space-x-4">
+            <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                🖨️ Print Certificate
+            </button>
+            @if (Model.CertificateExists)
+            {
+                <form method="post" class="inline">
+                    <button type="submit" asp-page-handler="GeneratePdf" asp-route-applicationId="@Model.Certificate.ApplicationID"
+                            class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        📄 Generate PDF
+                    </button>
+                </form>
+            }
+            <a href="/Hod_Dashboard/HOD_ApprovedSchools" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                ← Back to List
+            </a>
+        </div>
+    </div>
+
+    @if (!Model.CertificateExists)
+    {
+        <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded mb-6">
+            <p>
+                <strong>No Certificate Generated:</strong> A certificate has not been generated for this application yet.
+                Please go back to the approved schools list and generate a certificate first.
+            </p>
+        </div>
+    }
+    else
+    {
+        <!-- Certificate Info -->
+        <div class="bg-white shadow rounded-lg p-6 mb-6">
+            <h2 class="text-lg font-semibold mb-4">Certificate Information</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="text-sm text-gray-600">Certificate Number</p>
+                    <p class="font-semibold">@Model.Certificate.CertificateNumber</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Issue Date</p>
+                    <p class="font-semibold">@Model.Certificate.IssueDate?.ToString("MMMM dd, yyyy")</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Issued By</p>
+                    <p class="font-semibold">@Model.Certificate.IssuedBy</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Download Count</p>
+                    <p class="font-semibold">@Model.Certificate.DownloadCount times</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Certificate Design -->
+@if (Model.CertificateExists)
+{
+    <div class="certificate">
+        <div class="watermark">ACCREDITED</div>
+        <div class="certificate-border">
+            <div class="certificate-inner">
+                <div class="certificate-content">
+                    <!-- Logo Section -->
+                    <div class="logo-section">
+                        <div style="width: 80px; height: 80px; margin: 0 auto; background: #1e40af; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white; font-size: 32px; font-weight: bold;">A</span>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Title -->
+                    <h1 class="certificate-title">Certificate of Accreditation</h1>
+                    <p class="certificate-subtitle">Department of Education & Training</p>
+
+                    <!-- Recipient Section -->
+                    <div class="recipient-section">
+                        <p class="this-certifies">This is to certify that</p>
+                        <div class="institution-name">@Model.Certificate.InstitutionName</div>
+
+                        <p class="program-text">
+                            has been duly accredited to offer the program of
+                            <strong>@Model.Certificate.Trade</strong>
+                            and has met all the standards and requirements set forth by the
+                            Department of Education & Training for quality education and training delivery.
+                        </p>
+
+                        <p class="program-text">
+                            This accreditation demonstrates the institution's commitment to excellence
+                            in education and training, ensuring that students receive high-quality
+                            instruction and preparation for their chosen field of study.
+                        </p>
+                    </div>
+
+                    <!-- Signature Section -->
+                    <div class="signature-section">
+                        <div style="text-align: center;">
+                            <div class="signature-line"></div>
+                            <p class="signature-label">Head of Department</p>
+                            <p style="font-size: 14px; margin-top: 5px;">@Model.Certificate.IssuedBy</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <!-- Official Seal Placeholder -->
+                            <div style="width: 120px; height: 120px; border: 3px solid #1e40af; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                <div style="text-align: center; color: #1e40af;">
+                                    <div style="font-size: 14px; font-weight: bold;">OFFICIAL</div>
+                                    <div style="font-size: 12px;">SEAL</div>
+                                </div>
+                            </div>
+                            <p class="signature-label" style="margin-top: 10px;">Official Seal</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div class="signature-line"></div>
+                            <p class="signature-label">Quality Assurance Officer</p>
+                            <p style="font-size: 14px; margin-top: 5px;">Department of Education</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Number and Date -->
+                    <div class="issue-date">
+                        Issued: @Model.Certificate.IssueDate?.ToString("MMMM dd, yyyy")
+                    </div>
+                    <div class="certificate-number">
+                        Certificate No: @Model.Certificate.CertificateNumber
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="certificate" style="display: flex; align-items: center; justify-content: center; background: #f9fafb;">
+        <div style="text-align: center; color: #6b7280;">
+            <h2 style="font-size: 24px; margin-bottom: 10px;">Certificate Not Generated</h2>
+            <p>Please generate a certificate for this application first.</p>
+        </div>
+    </div>
+}

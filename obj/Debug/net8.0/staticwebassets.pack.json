@@ -1,555 +1,567 @@
 {
   "Files": [
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccreditationSystem.bundle.scp.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AccreditationSystem.bundle.scp.css",
       "PackagePath": "staticwebassets\\AccreditationSystem.b6128qpab7.bundle.scp.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\certificate-styles.css",
       "PackagePath": "staticwebassets\\css\\certificate-styles.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\home page-style.css",
       "PackagePath": "staticwebassets\\css\\home page-style.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\site1.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\site1.css",
       "PackagePath": "staticwebassets\\css\\site1.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\css\\variable.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\css\\variable.css",
       "PackagePath": "staticwebassets\\css\\variable.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\favicon.ico",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\DenverCharterAcademy.jpeg",
       "PackagePath": "staticwebassets\\images\\DenverCharterAcademy.jpeg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\DigitalArtsAcademy.jpg",
       "PackagePath": "staticwebassets\\images\\DigitalArtsAcademy.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\FaithCommunityAcademy.jpg",
       "PackagePath": "staticwebassets\\images\\FaithCommunityAcademy.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\GlobalEducationCharter.jpg",
       "PackagePath": "staticwebassets\\images\\GlobalEducationCharter.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\HarmonyPublicSchool.jpg",
       "PackagePath": "staticwebassets\\images\\HarmonyPublicSchool.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\InternationalPrepSchool.jpg",
       "PackagePath": "staticwebassets\\images\\InternationalPrepSchool.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\MontessoriChildrenHouse.jpg",
       "PackagePath": "staticwebassets\\images\\MontessoriChildrenHouse.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\OakwoodPreparatoryAcademy.jpg",
       "PackagePath": "staticwebassets\\images\\OakwoodPreparatoryAcademy.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\SunshineAcademy.jpg",
       "PackagePath": "staticwebassets\\images\\SunshineAcademy.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\TechInnovationInstitute.jpg",
       "PackagePath": "staticwebassets\\images\\TechInnovationInstitute.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\VocationalTrainingCenter.jpg",
       "PackagePath": "staticwebassets\\images\\VocationalTrainingCenter.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\accredited-schools.jpg",
       "PackagePath": "staticwebassets\\images\\accredited-schools.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\blue.jpg",
       "PackagePath": "staticwebassets\\images\\blue.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\certificate-verification-.jpg",
       "PackagePath": "staticwebassets\\images\\certificate-verification-.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\hero-bg (2).jpg",
       "PackagePath": "staticwebassets\\images\\hero-bg (2).jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\hero-bg.avif",
       "PackagePath": "staticwebassets\\images\\hero-bg.avif"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\hero-bg.jpg",
       "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\hero-bg.png",
       "PackagePath": "staticwebassets\\images\\hero-bg.png"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\new-school.jpg",
       "PackagePath": "staticwebassets\\images\\new-school.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\primary-level.jpg",
       "PackagePath": "staticwebassets\\images\\primary-level.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\secondary-level.jpg",
       "PackagePath": "staticwebassets\\images\\secondary-level.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\submit-claim.jpg",
       "PackagePath": "staticwebassets\\images\\submit-claim.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\track-application.jpg",
       "PackagePath": "staticwebassets\\images\\track-application.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\tvet-trades.jpg",
       "PackagePath": "staticwebassets\\images\\tvet-trades.jpg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\images\\westside.jpeg",
       "PackagePath": "staticwebassets\\images\\westside.jpeg"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\js\\site.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-04041f6c-105b-4fb3-a0b4-875ab32f7e56.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-04041f6c-105b-4fb3-a0b4-875ab32f7e56.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-04041f6c-105b-4fb3-a0b4-875ab32f7e56.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-12fc37ea-9503-473a-86e3-259fd598b12c.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-1983b7df-3e6a-44ea-808b-21d395434f74.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-1983b7df-3e6a-44ea-808b-21d395434f74.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-1983b7df-3e6a-44ea-808b-21d395434f74.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-37d34a6f-a0de-41c9-8b9c-c067d6b12edf.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-3e92f7cc-fed6-4fd5-90c3-db082ac9e629.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-3e92f7cc-fed6-4fd5-90c3-db082ac9e629.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-3e92f7cc-fed6-4fd5-90c3-db082ac9e629.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-83831fa4-cd10-4a46-8994-016312f86fdf.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-d3e977df-3edd-46bf-bcdf-2af20c92babe.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-df0fa5ab-ff98-43f9-a9b3-262b2a63f88a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-df0fa5ab-ff98-43f9-a9b3-262b2a63f88a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-df0fa5ab-ff98-43f9-a9b3-262b2a63f88a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\additional-f262423d-9ae9-48e5-8acd-0ea9c098dc3f.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-015f760f-059f-4515-92ab-4e81d6168b17.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-015f760f-059f-4515-92ab-4e81d6168b17.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-015f760f-059f-4515-92ab-4e81d6168b17.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-10b43db8-5f1b-430b-a6da-3f2026603bfc.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-1a950371-8932-46f9-9dda-5563acc45c4d.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-1ec160c4-d97b-48ea-b066-a8463b0db962.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-1ec160c4-d97b-48ea-b066-a8463b0db962.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-1ec160c4-d97b-48ea-b066-a8463b0db962.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-20041d91-c578-4f4c-8a02-9d307def2519.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-216f5c06-dd94-4101-902e-9ed1b6e77c5d.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-216f5c06-dd94-4101-902e-9ed1b6e77c5d.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-216f5c06-dd94-4101-902e-9ed1b6e77c5d.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-2fe30bd0-5baa-4e7c-b9f6-7988ecc061fb.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-3d9fd762-7e4c-4485-8204-69b33588727b.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-475bb5e1-1d27-46e5-94f7-4602940469c3.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-475bb5e1-1d27-46e5-94f7-4602940469c3.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-475bb5e1-1d27-46e5-94f7-4602940469c3.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-5730c4b2-c654-4fbd-8a8e-38a09c367906.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-5730c4b2-c654-4fbd-8a8e-38a09c367906.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-5730c4b2-c654-4fbd-8a8e-38a09c367906.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-64a999be-92b7-4189-9d0c-5c5309d2ca4a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-64a999be-92b7-4189-9d0c-5c5309d2ca4a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-64a999be-92b7-4189-9d0c-5c5309d2ca4a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-9ad9b53e-c3a2-4814-8c3b-08937c831c45.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf"
+    },
+    {
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-2638a40e-06dd-4f37-887f-1ea7777c75db.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-2638a40e-06dd-4f37-887f-1ea7777c75db.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-2638a40e-06dd-4f37-887f-1ea7777c75db.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-27d1be12-341d-4e02-a78e-0f3019f787dc.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-423566f1-651b-44b0-a0ae-bfd47d3e5cf4.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-423566f1-651b-44b0-a0ae-bfd47d3e5cf4.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-423566f1-651b-44b0-a0ae-bfd47d3e5cf4.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-4ee07585-d8f5-4244-81f9-ca5161441c1f.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-5a6b9030-dfe5-4ea3-afb3-877aff85539b.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-5a6b9030-dfe5-4ea3-afb3-877aff85539b.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-5a6b9030-dfe5-4ea3-afb3-877aff85539b.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-80d6dac3-a8ef-4056-9f88-243c1df257c1.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-80d6dac3-a8ef-4056-9f88-243c1df257c1.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-80d6dac3-a8ef-4056-9f88-243c1df257c1.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-9ccfac05-0657-487b-8cc4-7414440204ef.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-c012f0fc-6bd7-4d4e-b5f3-27c9a455f037.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-c012f0fc-6bd7-4d4e-b5f3-27c9a455f037.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-c012f0fc-6bd7-4d4e-b5f3-27c9a455f037.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-d3f0f192-81a2-4fe3-b6e3-bbe52590d4cb.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-d40df313-c26f-4311-802b-e69872d7e04a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf"
+    },
+    {
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-3719cc66-f51b-42ee-a8b3-08f1b87dc51b.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-5f0c7acd-52a0-4616-b674-c5f9d0a0ac15.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-688d5a10-13a8-4290-8155-420aea1d106a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-688d5a10-13a8-4290-8155-420aea1d106a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-688d5a10-13a8-4290-8155-420aea1d106a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf"
+    },
+    {
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-93c3903a-fcba-4206-ac82-29c67334db8d.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b18e4cf5-c2b8-4715-a169-d46d5b191b9b.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b18e4cf5-c2b8-4715-a169-d46d5b191b9b.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-b18e4cf5-c2b8-4715-a169-d46d5b191b9b.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b8d72e1c-a237-41fc-a8cf-b00527e4cdc6.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-b8d72e1c-a237-41fc-a8cf-b00527e4cdc6.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-b8d72e1c-a237-41fc-a8cf-b00527e4cdc6.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-d07f928c-1574-4546-b875-9070b4b21482.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d512ab68-f5e1-4c5e-a940-c5b27efc47bd.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d512ab68-f5e1-4c5e-a940-c5b27efc47bd.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-d512ab68-f5e1-4c5e-a940-c5b27efc47bd.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-d7bdd063-2e71-4929-badb-0448a903b0ac.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-e4b00bd9-409f-45c7-b131-21e035b8802a.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-e4b00bd9-409f-45c7-b131-21e035b8802a.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-e4b00bd9-409f-45c7-b131-21e035b8802a.pdf"
     },
     {
-      "Id": "D:\\C#projectsOthers\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-e9b173aa-6208-4e1b-b1a0-47b70b76d29d.pdf",
+      "Id": "D:\\Hope version\\AccreditationSystem\\AccreditationSystem\\wwwroot\\uploads\\accreditation-claims\\self-assessment-e9b173aa-6208-4e1b-b1a0-47b70b76d29d.pdf",
       "PackagePath": "staticwebassets\\uploads\\accreditation-claims\\self-assessment-e9b173aa-6208-4e1b-b1a0-47b70b76d29d.pdf"
     },
     {

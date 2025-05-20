@@ -351,63 +351,6 @@
     </div>
 </div>
 
-@* @if (HttpContext.Session.GetString("UserRole")?.ToLower() == "admin") *@
-@* { *@
-@*     <div class="text-center my-8"> *@
-@*         <a href="/Admin/Dashboard" class="px-8 py-4 bg-primary-600 text-white font-bold rounded-md hover:bg-primary-700 transition duration-300 shadow-lg">Go to Dashboard</a> *@
-@*     </div> *@
-@* } *@
-
-@if (HttpContext.Session.GetInt32("UserId") != null)
-{
-    <span class="text-gray-700 mr-2">Hello, @HttpContext.Session.GetString("UserName")</span>
-    <a href="/Auth/Logout" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Logout</a>
-
-    @if (HttpContext.Session.GetString("UserRole")?.ToLower() == "admin")
-    {
-        <a href="/Admin/Dashboard" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Dashboard</a>
-    }
-    else if (HttpContext.Session.GetString("UserRole")?.ToLower() == "hod")
-    {
-        <a href="/Hod_Dashboard/HOD_Home" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Dashboard</a>
-    }
-    else if (HttpContext.Session.GetString("UserRole")?.ToLower() == "client")
-    {
-        <a href="/Client/Home" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Client Dashboard</a>
-    }
-    else
-    {
-        <a href="/" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Home</a>
-    }
-}
-else
-{
-    <a href="/Auth/Login" class="px-4 py-2 text-primary-700 font-medium rounded-md border border-primary-600 hover:bg-primary-50 transition duration-300">Login</a>
-    <a href="/Auth/Register" class="px-4 py-2 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition duration-300">Register</a>
-}
-
-
-<div class="flex flex-wrap justify-center gap-4">
-    @if (HttpContext.Session.GetInt32("UserId") != null)
-    {
-        @if (HttpContext.Session.GetString("UserRole")?.ToLower() == "admin")
-        {
-            <a href="/Admin/Dashboard" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Go to Dashboard</a>
-        }
-        else if (HttpContext.Session.GetString("UserRole")?.ToLower() == "hod")
-        {
-            <a href="/Hod_Dashboard/HOD_Home" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Go to Dashboard</a>
-        }
-        else if (HttpContext.Session.GetString("UserRole")?.ToLower() == "client")
-        {
-            <a href="/Client/Home" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Go to Client Dashboard</a>
-        }
-    }
-    else
-    {
-        <a href="/Auth/Login" class="px-6 py-3 bg-white text-primary-700 font-medium rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">Get Started</a>
-    }
-</div>
 <!-- Footer -->
 <footer class="bg-primary-800 text-white py-12">
     <div class="container mx-auto px-4">

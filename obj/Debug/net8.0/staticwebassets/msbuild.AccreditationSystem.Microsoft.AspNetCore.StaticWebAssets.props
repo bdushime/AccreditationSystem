@@ -2034,6 +2034,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-cce37b09-c3f2-44b2-951c-b67b476f942f.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AccreditationSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AccreditationSystem</BasePath>
+      <RelativePath>uploads/accreditation-claims/curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ttnf95rdp6</Fingerprint>
+      <Integrity>nwz4nhK3C9OLCiMfft8TQZhNaWOapzmLaCtz/1G6Lo4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\curriculum-f0c2e60e-bf5a-4d17-a57b-3c079ecf3b3f.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-06c9891f-d830-4629-bc73-58a060a5b539.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>AccreditationSystem</SourceId>
@@ -2250,6 +2268,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-e0655e74-0c65-4579-8f86-b969e8068ae8.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AccreditationSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AccreditationSystem</BasePath>
+      <RelativePath>uploads/accreditation-claims/faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kua6qalejo</Fingerprint>
+      <Integrity>lPEPYpk0ZBuY+Wuhv4JOnsMrgC5rw7Ldu+yljw8ci20=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\faculty-ebef24e5-7b3b-496c-bdee-c8af7d914cd5.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-205dbfac-633c-4ad1-a902-4711d5a4f80a.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>AccreditationSystem</SourceId>
@@ -2321,6 +2357,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-688d5a10-13a8-4290-8155-420aea1d106a.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AccreditationSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AccreditationSystem</BasePath>
+      <RelativePath>uploads/accreditation-claims/self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>e3j8282gsf</Fingerprint>
+      <Integrity>qpTI9+/LhCB6tnPA02qSogBT7HpkAVyAUVeD4wy/SYQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-6f2f2e0d-5481-4af6-a6b8-79fc5d509e5f.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\accreditation-claims\self-assessment-81491173-b4f7-43dd-b8a5-3f774dfef477.pdf'))">
       <SourceType>Package</SourceType>

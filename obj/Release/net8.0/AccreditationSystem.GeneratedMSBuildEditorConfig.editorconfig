@@ -124,14 +124,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/ApplicationDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxBcHBsaWNhdGlvbkRldGFpbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/CertificateView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxDZXJ0aWZpY2F0ZVZpZXcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/ClaimDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxDbGFpbURldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -150,10 +142,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/HOD_Applications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfQXBwbGljYXRpb25zLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/HOD_ApprovedSchools.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9kX0Rhc2hib2FyZFxIT0RfQXBwcm92ZWRTY2hvb2xzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Hope version/AccreditationSystem/AccreditationSystem/Pages/Hod_Dashboard/HOD_Claims.cshtml]
