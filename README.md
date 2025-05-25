@@ -6,7 +6,8 @@ A comprehensive web-based accreditation management system built with ASP.NET Cor
 
 ### Core Functionality
 - *Authentication & Authorization*: Secure user authentication with role-based access control
-- *Multi-Role Support*: Admin, Analyst, Client, and Assessment-specific user roles
+- *Multi-Role Support*: Admin
+- , Client, and Assessment-specific user roles
 - *Dashboard Management*: Centralized HOD (Head of Department) dashboard for oversight
 - *Assessment Management*: Complete assessment lifecycle management
 - *School Registration*: Streamlined registration process for educational institutions
